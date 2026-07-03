@@ -29,8 +29,11 @@ const reviews = [
       <div class="mt-8 flex items-center justify-center gap-4">
         <img src="/laurel.png" alt="" width="46" height="60" class="h-14 w-auto opacity-90" aria-hidden="true" />
         <div class="flex flex-col items-center">
-          <span class="text-lg tracking-[0.2em] text-crimson" aria-hidden="true">★★★★★</span>
-          <span class="mt-1 text-sm font-medium text-secondary">5.0 on the App Store</span>
+          <span class="relative inline-block text-lg leading-none" role="img" aria-label="4.8 out of 5 stars">
+            <span class="tracking-[0.2em] text-hairline" aria-hidden="true">★★★★★</span>
+            <span class="absolute inset-0 overflow-hidden tracking-[0.2em] text-crimson" style="width:96%" aria-hidden="true">★★★★★</span>
+          </span>
+          <span class="mt-1.5 text-sm font-medium text-secondary">4.8 on the App Store</span>
         </div>
         <img src="/laurel.png" alt="" width="46" height="60" class="h-14 w-auto -scale-x-100 opacity-90" aria-hidden="true" />
       </div>
