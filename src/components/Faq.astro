@@ -1,0 +1,41 @@
+---
+const faqs = [
+  { q: "What is a listening device?", a: "A listening device is any tool that helps amplify or capture sound to make it easier to hear. Traditional listening devices include hearing aids and assistive listening systems. Clarive turns your iPhone into a digital listening device — using the built-in microphone and your headphones to amplify the world around you in real time, with no extra hardware needed." },
+  { q: "Is Clarive the best listening device app for iPhone?", a: "Clarive is purpose-built for iPhone and requires no extra hardware — just plug in any headphones. It combines real-time amplification, live captions in 40+ languages, and smart environment presets in one app, making it one of the most complete assistive listening solutions available on iOS. It works on any iPhone running iOS 17 or later." },
+  { q: "How does a listening device that connects to a phone work?", a: "Clarive uses your iPhone's microphone to capture ambient sound, then processes it through the app and plays it back through your headphones with amplification applied — in real time. Bluetooth headphones, AirPods, and wired EarPods all work. There is no external hardware to buy, and it works the moment you open the app." },
+  { q: "What is an assistive listening device?", a: "An assistive listening device (ALD) is technology designed to help people with hearing difficulty hear more clearly. ALDs include hearing loops, FM systems, and phone-based apps like Clarive. Unlike traditional ALDs that require specialized hardware, Clarive works on any iPhone running iOS 17 or later — just connect your headphones and open the app." },
+  { q: "Does Clarive work without an internet connection?", a: "Yes. Audio amplification works completely offline. Live captions use Apple's on-device speech recognition, which also works offline after the first language model download. No Wi-Fi or mobile data required once set up." },
+  { q: "What headphones work with Clarive?", a: "Any headphones that connect to your iPhone work — AirPods, AirPods Pro, AirPods Max, wired EarPods, Bluetooth earphones, over-ear headphones, or in-ear monitors. You do not need to buy any special hardware. If it connects to your iPhone, Clarive will use it." },
+];
+---
+<section id="faq" class="relative bg-ink px-safe py-24 sm:py-32" aria-label="Frequently asked questions">
+  <div class="mx-auto max-w-3xl px-6">
+    <div class="text-center">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title mt-3">Common questions</h2>
+    </div>
+
+    <div class="mt-12 space-y-3">
+      {faqs.map((f, i) => (
+        <details class="faq-item group rounded-2xl border border-hairline bg-charcoal px-6 open:border-crimson/30" open={i === 0}>
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-left text-lg font-semibold text-white">
+            {f.q}
+            <span
+              class="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-hairline text-secondary transition-transform duration-300 group-open:rotate-45 group-open:border-crimson group-open:text-crimson"
+              aria-hidden="true"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                <path d="M12 5v14M5 12h14" />
+              </svg>
+            </span>
+          </summary>
+          <p class="pb-6 leading-relaxed text-secondary">{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-item summary::-webkit-details-marker { display: none; }
+</style>

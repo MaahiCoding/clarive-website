@@ -1,0 +1,38 @@
+---
+import EarMark from "./EarMark.astro";
+const year = new Date().getFullYear();
+---
+<footer class="border-t border-hairline bg-charcoal px-safe pb-safe">
+  <div class="mx-auto max-w-6xl px-6 py-14">
+    <div class="flex flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">
+      <div class="max-w-sm">
+        <div class="flex items-center gap-2.5">
+          <span class="grid h-9 w-9 place-items-center rounded-[0.7rem] bg-gradient-crimson text-white glow-crimson">
+            <EarMark size={22} />
+          </span>
+          <span class="text-xl font-semibold tracking-tight text-white">Clarive</span>
+        </div>
+        <p class="mt-4 text-sm leading-relaxed text-secondary">
+          Real-time amplification and live captions for iPhone. Hear more. Live fully.
+        </p>
+      </div>
+
+      <nav class="flex flex-col gap-3 text-sm" aria-label="Footer">
+        <span class="mb-1 text-xs font-semibold uppercase tracking-wider text-muted">Company</span>
+        <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
+        <a href="/terms-of-service" class="footer-link">Terms of Service</a>
+        <a href="/contact-us" class="footer-link">Contact Us</a>
+      </nav>
+    </div>
+
+    <div class="mt-12 flex flex-col gap-2 border-t border-hairline pt-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+      <span>© {year} Listening Device: Clarive · Harshva Technology Private Limited</span>
+      <span>Made for iPhone · iOS 17+</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer-link { color: var(--color-secondary); transition: color 0.2s ease; }
+  .footer-link:hover { color: #fff; }
+</style>

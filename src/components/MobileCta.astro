@@ -1,0 +1,55 @@
+---
+import EarMark from "./EarMark.astro";
+const APP_URL = "https://apps.apple.com/us/app/listening-device-clarive/id6748903280";
+---
+<div
+  id="mobile-cta"
+  class="fixed inset-x-0 bottom-0 z-40 px-safe pb-safe transition-all duration-300 md:hidden"
+>
+  <div class="mx-3 mb-3 flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-[rgba(20,20,22,0.82)] px-4 py-3 shadow-[0_12px_30px_-8px_rgba(0,0,0,0.7)] backdrop-blur-xl">
+    <div class="flex items-center gap-2.5">
+      <span class="grid h-9 w-9 place-items-center rounded-[0.6rem] bg-gradient-crimson text-white">
+        <EarMark size={20} />
+      </span>
+      <div class="flex flex-col leading-tight">
+        <span class="text-sm font-semibold text-white">Clarive</span>
+        <span class="text-xs text-secondary">Free · iOS 17+</span>
+      </div>
+    </div>
+    <a
+      href={APP_URL}
+      target="_blank"
+      rel="noopener"
+      class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-ink transition-transform duration-200 active:scale-95"
+    >
+      Download
+    </a>
+  </div>
+</div>
+
+<script is:inline>
+  (() => {
+    const cta = document.getElementById("mobile-cta");
+    const footer = document.querySelector("footer");
+    if (!cta || !footer) return;
+    // Reveal after scrolling past the hero
+    const showAfter = () => {
+      if (window.scrollY > window.innerHeight * 0.6) cta.classList.add("cta-in");
+      else cta.classList.remove("cta-in");
+    };
+    showAfter();
+    window.addEventListener("scroll", showAfter, { passive: true });
+    // Hide when footer is visible
+    const io = new IntersectionObserver(
+      ([e]) => cta.classList.toggle("cta-hide", e.isIntersecting),
+      { threshold: 0.05 }
+    );
+    io.observe(footer);
+  })();
+</script>
+
+<style>
+  #mobile-cta { transform: translateY(120%); opacity: 0; pointer-events: none; }
+  #mobile-cta.cta-in { transform: translateY(0); opacity: 1; pointer-events: auto; }
+  #mobile-cta.cta-hide { transform: translateY(120%); opacity: 0; pointer-events: none; }
+</style>

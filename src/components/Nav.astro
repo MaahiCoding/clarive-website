@@ -1,0 +1,85 @@
+---
+import EarMark from "./EarMark.astro";
+const APP_URL = "https://apps.apple.com/us/app/listening-device-clarive/id6748903280";
+---
+<nav
+  id="nav"
+  class="fixed inset-x-0 top-0 z-50 px-safe transition-colors duration-300"
+>
+  <div
+    id="nav-bar"
+    class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5 transition-all duration-300 sm:px-6"
+  >
+    <a
+      href="/"
+      class="group flex items-center gap-2.5 rounded-xl outline-none"
+      aria-label="Clarive home"
+    >
+      <span
+        class="grid h-9 w-9 place-items-center rounded-[0.7rem] bg-gradient-crimson text-white glow-crimson transition-transform duration-300 group-hover:scale-105 group-active:scale-95"
+      >
+        <EarMark size={22} />
+      </span>
+      <span class="text-[1.35rem] font-semibold tracking-tight text-white">Clarive</span>
+    </a>
+
+    <div class="hidden items-center gap-8 md:flex">
+      <a href="/#features" class="nav-link">Features</a>
+      <a href="/#captions" class="nav-link">Live Captions</a>
+      <a href="/#reviews" class="nav-link">Reviews</a>
+      <a href="/#faq" class="nav-link">FAQ</a>
+    </div>
+
+    <a
+      href={APP_URL}
+      target="_blank"
+      rel="noopener"
+      class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-[0.95rem] font-semibold text-ink transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 active:translate-y-0"
+    >
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+      </svg>
+      <span class="hidden sm:inline">Download Free</span>
+      <span class="sm:hidden">Free</span>
+    </a>
+  </div>
+</nav>
+
+<style>
+  .nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-secondary);
+    transition: color 0.2s ease;
+  }
+  .nav-link:hover { color: #fff; }
+</style>
+
+<script is:inline>
+  (() => {
+    const bar = document.getElementById("nav-bar");
+    const onScroll = () => {
+      if (window.scrollY > 24) bar.classList.add("nav-scrolled");
+      else bar.classList.remove("nav-scrolled");
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+  })();
+</script>
+
+<style is:global>
+  #nav-bar.nav-scrolled {
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    background: rgba(20, 20, 22, 0.72);
+    -webkit-backdrop-filter: saturate(160%) blur(16px);
+    backdrop-filter: saturate(160%) blur(16px);
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+  @media (min-width: 640px) {
+    #nav-bar.nav-scrolled { max-width: 62rem; }
+  }
+</style>

@@ -1,0 +1,86 @@
+---
+import Base from "../layouts/Base.astro";
+import Nav from "../components/Nav.astro";
+import Hero from "../components/Hero.astro";
+import StatsBar from "../components/StatsBar.astro";
+import HowItWorks from "../components/HowItWorks.astro";
+import FeaturesGrid from "../components/FeaturesGrid.astro";
+import FeatureSpotlight from "../components/FeatureSpotlight.astro";
+import Privacy from "../components/Privacy.astro";
+import Reviews from "../components/Reviews.astro";
+import CtaBand from "../components/CtaBand.astro";
+import Faq from "../components/Faq.astro";
+import Footer from "../components/Footer.astro";
+import MobileCta from "../components/MobileCta.astro";
+---
+<Base home={true}>
+  <Nav />
+  <main>
+    <Hero />
+    <StatsBar />
+    <HowItWorks />
+    <FeaturesGrid />
+
+    <FeatureSpotlight
+      id="captions"
+      label="Live captions"
+      title="See what's being said. In real time."
+      body="In a meeting, a restaurant, or watching TV — Clarive turns speech into text the moment it's spoken. On-device, no Wi-Fi needed."
+      bullets={[
+        "40+ languages with automatic detection",
+        "On-device — no audio ever sent to servers",
+        "Adjustable font size for easy reading",
+        "Works offline after first setup",
+      ]}
+      img="/screen-live-caption.png"
+      alt="Clarive Live Caption screen transcribing speech to text in real time, with a red record button"
+      flip={true}
+      tint={true}
+    />
+
+    <FeatureSpotlight
+      id="presets"
+      label="Sound intelligence"
+      title="Shaped for wherever you are."
+      body="Clarive tunes sound for your environment — not just how loud it is. Pick a preset, toggle Voice Isolation and Focus Mode, and let the app do the rest."
+      bullets={[
+        "Clear, Conversation, Noisy Place, TV & Media, Speech Clarity",
+        "Voice Isolation locks onto the person in front of you",
+        "Focus Mode narrows to sounds ahead",
+        "A live EQ you can shape by hand",
+      ]}
+      img="/screen-sound-controls.png"
+      alt="Clarive Sound Controls screen with an EQ shape, Voice Isolation and Focus Mode toggles, and environment preset cards"
+    />
+
+    <Privacy />
+    <Reviews />
+    <CtaBand />
+    <Faq />
+  </main>
+  <Footer />
+  <MobileCta />
+</Base>
+
+<script is:inline>
+  (() => {
+    const els = document.querySelectorAll(".reveal");
+    if (!els.length) return;
+    if (!("IntersectionObserver" in window)) {
+      els.forEach((el) => el.classList.add("visible"));
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e, i) => {
+          if (e.isIntersecting) {
+            setTimeout(() => e.target.classList.add("visible"), (i % 3) * 90);
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+    els.forEach((el) => io.observe(el));
+  })();
+</script>

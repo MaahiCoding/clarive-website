@@ -1,0 +1,76 @@
+---
+import AppStoreBadge from "./AppStoreBadge.astro";
+import PhoneFrame from "./PhoneFrame.astro";
+import Rings from "./Rings.astro";
+---
+<section class="relative overflow-hidden bg-ink px-safe">
+  <!-- Ambient glows -->
+  <div class="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
+    <div
+      class="absolute -top-40 right-[-10%] h-[720px] w-[720px] rounded-full"
+      style="background: radial-gradient(circle, rgba(255,59,48,0.22) 0%, rgba(184,29,19,0.10) 40%, transparent 68%);"
+    ></div>
+    <div
+      class="absolute bottom-[-20%] left-[-15%] h-[560px] w-[560px] rounded-full"
+      style="background: radial-gradient(circle, rgba(255,107,99,0.12) 0%, transparent 65%);"
+    ></div>
+  </div>
+
+  <div
+    class="relative z-10 mx-auto flex min-h-[100svh] max-w-6xl flex-col items-center gap-14 px-6 pb-16 pt-28 lg:grid lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-8 lg:pt-24"
+  >
+    <!-- Copy -->
+    <div class="flex max-w-xl flex-col items-center text-center lg:items-start lg:text-left">
+      <p
+        class="hero-rise hero-d1 mb-6 inline-flex items-center gap-2.5 rounded-full border border-hairline bg-white/[0.04] px-4 py-1.5 text-sm font-medium text-secondary"
+      >
+        <span class="relative flex h-2 w-2">
+          <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-crimson opacity-75"></span>
+          <span class="relative inline-flex h-2 w-2 rounded-full bg-crimson"></span>
+        </span>
+        Hear more. Live fully.
+      </p>
+
+      <h1
+        class="hero-rise hero-d2 text-[2.75rem] font-bold leading-[1.02] tracking-[-0.035em] text-white sm:text-6xl lg:text-[4.1rem]"
+      >
+        Turn your iPhone into a
+        <span class="text-gradient"> listening device.</span>
+      </h1>
+
+      <p class="hero-rise hero-d3 mt-6 max-w-lg text-lg leading-relaxed text-secondary sm:text-xl">
+        Amplify voices, cut background noise, and read live captions in real time —
+        all on-device. No internet, no account. Works with any headphones.
+      </p>
+
+      <div class="hero-rise hero-d4 mt-9 flex flex-col items-center gap-4 sm:flex-row lg:items-center">
+        <AppStoreBadge size="lg" />
+        <p class="text-sm leading-relaxed text-muted">
+          Free · iOS 17+<br />Works with any headphones
+        </p>
+      </div>
+
+      <div class="hero-rise hero-d5 mt-8 flex items-center gap-5 text-sm text-secondary">
+        <span class="inline-flex items-center gap-1.5">
+          <span class="text-crimson">★★★★★</span> 5.0 on the App Store
+        </span>
+        <span class="h-4 w-px bg-hairline"></span>
+        <span>40+ languages</span>
+      </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="hero-rise hero-d3 relative flex items-center justify-center">
+      <Rings class="left-1/2 top-1/2 h-[560px] w-[560px] -translate-x-1/2 -translate-y-1/2" pulse={true} />
+      <div class="animate-float">
+        <PhoneFrame
+          src="/screen-hearing-aid.png"
+          alt="Clarive Hearing Aid screen — a large amplify dial set to 100 with Voice Isolation and Focus Mode on"
+          width={300}
+          eager={true}
+          class="relative z-10"
+        />
+      </div>
+    </div>
+  </div>
+</section>

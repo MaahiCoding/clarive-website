@@ -1,0 +1,64 @@
+---
+const features = [
+  {
+    title: "Real-time amplify",
+    body: "Instant audio passthrough with zero noticeable lag. Boost volume far beyond your phone's normal limit, on any wired or Bluetooth headphones you already own.",
+    large: true,
+    icon: `<path d="M2 12h1m3-6v12m3-4v8m3-12v16m3-8v4m3-8v12m3-4v8"/>`,
+  },
+  {
+    title: "Live captions",
+    body: "On-device speech-to-text shows every word in real time. 40+ languages with automatic detection and adjustable font size.",
+    large: true,
+    icon: `<rect x="2" y="4" width="20" height="16" rx="3"/><path d="M6 9h12M6 13h8"/>`,
+  },
+  {
+    title: "Sound controls",
+    body: "Presets tuned for Conversation, Noisy Place, TV and more — with Voice Isolation and Focus Mode.",
+    icon: `<path d="M4 6h16M4 6V4m0 4v2M4 12h16M14 12v-2m0 4v2M4 18h16M8 18v-2m0 4v-2"/>`,
+  },
+  {
+    title: "100% on-device",
+    body: "Everything runs locally. Your audio never touches a server. No account required.",
+    icon: `<rect x="5" y="11" width="14" height="11" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>`,
+  },
+  {
+    title: "40+ languages",
+    body: "Live captions work in English, Spanish, Hindi, French and dozens more — with automatic language detection.",
+    icon: `<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 1 4 10 14.5 14.5 0 0 1-4 10M12 2a14.5 14.5 0 0 0-4 10 14.5 14.5 0 0 0 4 10M2 12h20"/>`,
+  },
+  {
+    title: "Any headphones",
+    body: "AirPods, EarPods, Bluetooth earphones, wired headphones — if it connects to your iPhone, it works.",
+    icon: `<path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5z"/>`,
+  },
+];
+---
+<section id="features" class="relative bg-ink px-safe py-24 sm:py-32" aria-label="Features">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="section-label">Features</p>
+      <h2 class="section-title mt-3">Everything you need to hear clearly</h2>
+      <p class="mt-4 text-lg text-secondary">
+        Your iPhone already has everything required. Clarive just unlocks it.
+      </p>
+    </div>
+
+    <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {features.map((f) => (
+        <div
+          class={`reveal group rounded-3xl border border-hairline bg-charcoal p-8 transition-all duration-300 hover:border-crimson/40 hover:bg-surface ${f.large ? "sm:col-span-2 lg:col-span-2" : ""}`}
+        >
+          <div
+            class="grid h-12 w-12 place-items-center rounded-2xl bg-crimson/12 text-crimson transition-colors duration-300 group-hover:bg-gradient-crimson group-hover:text-white"
+            aria-hidden="true"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={f.icon} />
+          </div>
+          <h3 class="mt-6 text-xl font-semibold text-white">{f.title}</h3>
+          <p class="mt-3 max-w-md leading-relaxed text-secondary">{f.body}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

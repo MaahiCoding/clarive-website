@@ -1,0 +1,49 @@
+---
+// iPhone device frame wrapping a real app screenshot (750x1624 source).
+export interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  eager?: boolean;
+  class?: string;
+}
+const { src, alt, width = 280, eager = false, class: cls = "" } = Astro.props;
+const height = Math.round((width * 1624) / 750);
+---
+<div
+  class={`phone-frame relative shrink-0 ${cls}`}
+  style={`width:${width}px`}
+>
+  <div
+    class="relative rounded-[2.9rem] p-[3px] bg-gradient-to-b from-[#3a3a3d] via-[#242426] to-[#161618] shadow-[0_40px_80px_-24px_rgba(255,59,48,0.28),0_20px_50px_-20px_rgba(0,0,0,0.75)]"
+  >
+    <div class="rounded-[2.7rem] p-[7px] bg-[#050506]">
+      <div class="relative overflow-hidden rounded-[2.2rem] bg-black">
+        <img
+          src={src}
+          alt={alt}
+          width={750}
+          height={1624}
+          loading={eager ? "eager" : "lazy"}
+          decoding="async"
+          fetchpriority={eager ? "high" : "auto"}
+          class="block w-full h-auto select-none"
+        />
+        <!-- Dynamic Island -->
+        <div
+          class="pointer-events-none absolute left-1/2 top-[9px] h-[22px] w-[78px] -translate-x-1/2 rounded-full bg-black"
+          aria-hidden="true"
+        ></div>
+        <!-- Screen sheen -->
+        <div
+          class="pointer-events-none absolute inset-0 rounded-[2.2rem] bg-gradient-to-tr from-white/0 via-white/0 to-white/[0.06]"
+          aria-hidden="true"
+        ></div>
+      </div>
+    </div>
+    <!-- Side buttons -->
+    <span class="absolute -left-[3px] top-[110px] h-9 w-[3px] rounded-l bg-[#3a3a3d]" aria-hidden="true"></span>
+    <span class="absolute -left-[3px] top-[160px] h-14 w-[3px] rounded-l bg-[#3a3a3d]" aria-hidden="true"></span>
+    <span class="absolute -right-[3px] top-[140px] h-16 w-[3px] rounded-r bg-[#3a3a3d]" aria-hidden="true"></span>
+  </div>
+</div>
