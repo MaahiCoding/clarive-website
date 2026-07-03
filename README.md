@@ -28,19 +28,3 @@ Smart audio tuning shaped for your environment:
 - No account required
 - Works completely offline
 
-## Getting Started
-
-```sh
-npm install
-npm run dev
-```
-
-Visit `http://localhost:3000` to preview the site locally.
-
-## Build & Deploy
-
-```sh
-npm run build
-```
-
-Built with [Astro](https://astro.build) and deployed on [Vercel](https://vercel.com).
