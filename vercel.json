@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    { "source": "/privacy-policy.html", "destination": "/privacy-policy/", "permanent": true },
+    { "source": "/terms-of-service.html", "destination": "/terms-of-service/", "permanent": true },
+    { "source": "/contact-us.html", "destination": "/contact-us/", "permanent": true },
+    { "source": "/sitemap.xml", "destination": "/sitemap-index.xml", "permanent": true }
+  ]
+}

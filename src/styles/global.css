@@ -128,6 +128,16 @@
 /* Hairline divider tuned for dark UI */
 .hairline { border-color: var(--color-hairline); }
 
+/* FAQ accordion — focus indicator.
+   The global :focus-visible outline would box just the <summary> row (looks like
+   an inner rectangle). Instead, drop it on the summary and ring the whole rounded
+   card on keyboard focus — clean, on-brand, and still accessible. */
+.faq-item > summary { outline: none; }
+.faq-item:has(> summary:focus-visible) {
+  outline: 2px solid var(--color-crimson-light);
+  outline-offset: 3px;
+}
+
 /* Section eyebrow + title */
 .section-label {
   display: inline-block;

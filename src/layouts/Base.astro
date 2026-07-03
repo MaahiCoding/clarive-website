@@ -16,7 +16,10 @@ const {
 } = Astro.props;
 
 const SITE = "https://listeningdevice.app";
-const canonical = new URL(path, SITE).href;
+// Normalize to a trailing slash so canonical + og:url match the sitemap and the
+// directory URLs Astro/Vercel actually serve (e.g. /privacy-policy/).
+const canonicalPath = path.endsWith("/") ? path : `${path}/`;
+const canonical = new URL(canonicalPath, SITE).href;
 const ogImage = `${SITE}/og-image.png`;
 const APP_URL = "https://apps.apple.com/us/app/listening-device-clarive/id6748903280";
 
