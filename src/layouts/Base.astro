@@ -9,8 +9,8 @@ export interface Props {
 }
 
 const {
-  title = "Listening Device for iPhone — Clarive: Real-Time Amplification & Live Captions",
-  description = "Clarive turns your iPhone into a real-time listening device — amplify voices, read live captions in 40+ languages, and shape sound with smart presets. All on-device. Works with any headphones. Free download.",
+  title = "Listening Device for iPhone — Clarive: Amplify + Captions",
+  description = "Turn your iPhone into a real-time listening device — amplify voices and read live captions in 40+ languages. Any headphones. Free & on-device.",
   path = "/",
   home = false,
 } = Astro.props;
@@ -33,6 +33,15 @@ const softwareLd = {
     "Real-time audio amplification and live captions for people with mild hearing difficulty. Turns iPhone and headphones into a powerful listening device.",
   url: SITE + "/",
   downloadUrl: APP_URL,
+  installUrl: APP_URL,
+  sameAs: [APP_URL],
+  featureList: [
+    "Real-time audio amplification",
+    "Live captions in 40+ languages",
+    "Voice Isolation and Focus Mode",
+    "On-device processing — no audio sent to servers",
+    "Works with any headphones",
+  ],
   publisher: { "@type": "Organization", name: "Harshva Technology Private Limited" },
 };
 
@@ -85,7 +94,7 @@ const faqLd = {
       name: "What headphones work with Clarive?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Any headphones that connect to your iPhone work — AirPods, AirPods Pro, wired EarPods, Bluetooth earphones, and hearing loop systems. No special hardware required.",
+        text: "Any headphones that connect to your iPhone work — AirPods, wired EarPods, Bluetooth earphones, over-ear or in-ear headphones. Unlike Apple's Live Listen, you do not need AirPods or an MFi hearing device — Clarive works with whatever headphones you already own. No special hardware to buy.",
       },
     },
   ],

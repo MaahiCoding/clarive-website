@@ -1,0 +1,11 @@
+# Clarive — Listening Device for iPhone
+> Free iOS app that turns an iPhone + any headphones into a real-time listening device: audio amplification and live captions in 40+ languages, 100% on-device.
+
+## Key facts
+- Platform: iOS 17+ (iPhone). Price: Free.
+- Works with ANY headphones — no AirPods or MFi hearing device required (unlike Apple Live Listen).
+- Live captions in 40+ languages, on-device, works offline after setup.
+- Sound presets: Clear, Conversation, Noisy Place, TV & Media, Speech Clarity; plus Voice Isolation & Focus Mode.
+- Privacy: no audio leaves the device, no account required.
+- App Store: https://apps.apple.com/us/app/listening-device-clarive/id6748903280
+- Site: https://listeningdevice.app/
