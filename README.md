@@ -1,43 +1,46 @@
-# Astro Starter Kit: Minimal
+# Clarive
+
+**Turn your iPhone into a listening device.**
+
+Amplify voices, cut background noise, and read live captions in real time — all on-device. No internet, no account. Works with any headphones.
+
+[Download on the App Store](https://apps.apple.com/app/clarive)
+
+## Features
+
+### Live Captions
+- Real-time speech-to-text transcription
+- 40+ languages with automatic detection
+- On-device processing — no audio ever sent to servers
+- Adjustable font size for easy reading
+- Works offline after first setup
+
+### Sound Intelligence
+Smart audio tuning shaped for your environment:
+- **5 Sound Presets** — Clear, Conversation, Noisy Place, TV & Media, Speech Clarity
+- **Voice Isolation** — Locks onto the person in front of you
+- **Focus Mode** — Narrows to sounds ahead
+- **Live EQ** — Shape your audio by hand
+
+### Privacy First
+- All processing happens on-device
+- No cloud, no servers, no tracking
+- No account required
+- Works completely offline
+
+## Getting Started
 
 ```sh
-npm create astro@latest -- --template minimal
+npm install
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Visit `http://localhost:3000` to preview the site locally.
 
-## 🚀 Project Structure
+## Build & Deploy
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```sh
+npm run build
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Built with [Astro](https://astro.build) and deployed on [Vercel](https://vercel.com).
