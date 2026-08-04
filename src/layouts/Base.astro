@@ -1,11 +1,23 @@
 ---
 import "../styles/global.css";
+import { NOINDEX } from "../lib/env";
 
 export interface Props {
   title?: string;
   description?: string;
   path?: string; // canonical path, e.g. "/" or "/privacy-policy"
   home?: boolean; // include SoftwareApplication + FAQPage JSON-LD
+  /** Extra JSON-LD blocks (BlogPosting, BreadcrumbList, FAQPage, Person…). */
+  jsonLd?: object[];
+  ogType?: "website" | "article";
+  /** Absolute or site-relative OG image override. Articles pass their hero. */
+  image?: string;
+  /** Article-only Open Graph fields. */
+  publishedTime?: string;
+  modifiedTime?: string;
+  author?: string;
+  /** Force noindex on an otherwise-indexable build (draft posts in preview). */
+  noindex?: boolean;
 }
 
 const {
@@ -13,6 +25,13 @@ const {
   description = "Turn your iPhone into a real-time listening device — amplify voices and read live captions in 40+ languages. Any headphones. Free & on-device.",
   path = "/",
   home = false,
+  jsonLd = [],
+  ogType = "website",
+  image,
+  publishedTime,
+  modifiedTime,
+  author,
+  noindex = false,
 } = Astro.props;
 
 const SITE = "https://listeningdevice.app";
@@ -20,7 +39,12 @@ const SITE = "https://listeningdevice.app";
 // directory URLs Astro/Vercel actually serve (e.g. /privacy-policy/).
 const canonicalPath = path.endsWith("/") ? path : `${path}/`;
 const canonical = new URL(canonicalPath, SITE).href;
-const ogImage = `${SITE}/og-image.png`;
+// Always absolute against production, never the *.vercel.app preview host — a
+// leaked preview page should still point authority at the real domain.
+const ogImage = image ? new URL(image, SITE).href : `${SITE}/og-image.png`;
+// NOINDEX covers every non-production build; `noindex` covers a draft that
+// somehow reaches one that is.
+const blockIndexing = NOINDEX || noindex;
 const APP_URL = "https://apps.apple.com/us/app/listening-device-clarive/id6748903280";
 
 const softwareLd = {
@@ -114,6 +138,7 @@ const faqLd = {
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <meta name="generator" content={Astro.generator} />
+    {blockIndexing && <meta name="robots" content="noindex,nofollow" />}
 
     <!-- Icons -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -135,12 +160,15 @@ const faqLd = {
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="Clarive" />
+    {publishedTime && <meta property="article:published_time" content={publishedTime} />}
+    {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+    {author && <meta property="article:author" content={author} />}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
@@ -148,10 +176,9 @@ const faqLd = {
 
     <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
 
-    {home && (
-      <script type="application/ld+json" set:html={JSON.stringify(softwareLd)} />
-      <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
-    )}
+    {[...(home ? [softwareLd, faqLd] : []), ...jsonLd].map((ld) => (
+      <script type="application/ld+json" set:html={JSON.stringify(ld)} />
+    ))}
 
     <!-- Analytics -->
     <script is:inline defer src="/_vercel/insights/script.js"></script>

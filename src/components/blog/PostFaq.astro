@@ -1,0 +1,40 @@
+---
+interface Props {
+  faq: { q: string; a: string }[];
+}
+
+const { faq } = Astro.props;
+---
+{/*
+  This visible text must stay byte-identical to the faq[] frontmatter that feeds
+  FAQPage JSON-LD — both render from the same array, so they can't drift.
+  Mismatched schema is a structured-data violation.
+*/}
+<section id="faq" aria-labelledby="faq-heading" class="mt-14">
+  <h2 id="faq-heading" class="text-2xl font-bold tracking-tight text-white">
+    Common questions
+  </h2>
+
+  <div class="mt-6 space-y-3">
+    {faq.map((f, i) => (
+      <details class="faq-item group rounded-2xl border border-hairline bg-charcoal px-5 open:border-crimson/30" open={i === 0}>
+        <summary class="flex cursor-pointer list-none items-center justify-between gap-4 py-4 text-left font-semibold text-white">
+          {f.q}
+          <span
+            class="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-hairline text-secondary transition-transform duration-300 group-open:rotate-45 group-open:border-crimson group-open:text-crimson"
+            aria-hidden="true"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </span>
+        </summary>
+        <p class="pb-5 text-[0.95rem] leading-relaxed text-secondary">{f.a}</p>
+      </details>
+    ))}
+  </div>
+</section>
+
+<style>
+  .faq-item summary::-webkit-details-marker { display: none; }
+</style>

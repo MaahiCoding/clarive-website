@@ -1,0 +1,104 @@
+---
+import Base from "../../layouts/Base.astro";
+import Nav from "../../components/Nav.astro";
+import Footer from "../../components/Footer.astro";
+import MobileCta from "../../components/MobileCta.astro";
+import FeaturedPost from "../../components/blog/FeaturedPost.astro";
+import PostCard from "../../components/blog/PostCard.astro";
+import { CLUSTERS } from "../../content.config";
+import { getPublishedPosts, getActiveClusters, clusterUrl, postUrl } from "../../lib/posts";
+import { SITE, collectionPage } from "../../lib/schema";
+
+const posts = await getPublishedPosts();
+const [featured, ...rest] = posts;
+const clusters = await getActiveClusters();
+
+const title = "Blog — Hearing, captions, and iPhone audio | Clarive";
+const description =
+  "Practical guides on hearing conversations more easily: iPhone audio settings, live captions, listening devices, and honest app comparisons.";
+
+const jsonLd = [
+  collectionPage({
+    name: "Clarive Blog",
+    description,
+    url: `${SITE}/blog/`,
+    items: posts.map((p) => ({ title: p.data.title, url: new URL(postUrl(p.id), SITE).href })),
+  }),
+];
+---
+<Base title={title} description={description} path="/blog" jsonLd={jsonLd}>
+  <Nav />
+
+  <main class="px-safe pb-24 pt-28 sm:pt-32">
+    <div class="mx-auto max-w-6xl px-5 sm:px-6">
+      <header class="max-w-2xl">
+        <p class="section-label">Blog</p>
+        <h1 class="section-title mt-3">Hearing more of what's said</h1>
+        <p class="mt-5 text-[1.05rem] leading-relaxed text-secondary">
+          Guides on iPhone audio, live captions, and listening devices — written by the person
+          who builds Clarive, tested in real rooms rather than summarised from other articles.
+        </p>
+      </header>
+
+      {posts.length === 0 ? (
+        <p class="mt-16 rounded-2xl border border-hairline bg-charcoal p-8 text-secondary">
+          The first articles are being written. Check back shortly.
+        </p>
+      ) : (
+        <>
+          <div class="mt-12">
+            <FeaturedPost post={featured} />
+          </div>
+
+          {clusters.length > 1 && (
+            <nav aria-label="Topics" class="mt-14 flex flex-wrap gap-2.5">
+              {clusters.map((c) => (
+                <a
+                  href={clusterUrl(c.id)}
+                  class="rounded-full border border-hairline bg-charcoal px-4 py-2 text-sm text-secondary transition-colors hover:border-crimson/40 hover:text-white"
+                >
+                  {CLUSTERS[c.id].title}
+                  <span class="ml-1.5 text-secondary">{c.count}</span>
+                </a>
+              ))}
+            </nav>
+          )}
+
+          {rest.length > 0 && (
+            <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {rest.map((post, i) => (
+                <PostCard post={post} eager={i < 3} />
+              ))}
+            </div>
+          )}
+        </>
+      )}
+    </div>
+  </main>
+
+  <Footer />
+  <MobileCta />
+</Base>
+
+<script is:inline>
+  (() => {
+    const els = document.querySelectorAll(".reveal");
+    if (!els.length) return;
+    if (!("IntersectionObserver" in window)) {
+      els.forEach((el) => el.classList.add("visible"));
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e, i) => {
+          if (e.isIntersecting) {
+            setTimeout(() => e.target.classList.add("visible"), (i % 3) * 90);
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+    els.forEach((el) => io.observe(el));
+  })();
+</script>

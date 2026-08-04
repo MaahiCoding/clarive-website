@@ -1,0 +1,33 @@
+---
+interface Props {
+  shortAnswer: string;
+  takeaways: string[];
+}
+
+const { shortAnswer, takeaways } = Astro.props;
+---
+{/*
+  The short answer is the page's contract: the question is answered before
+  anything else asks for attention. It is also what featured snippets and AI
+  Overviews lift, so it has to stand alone without the surrounding article.
+*/}
+<div class="short-answer">
+  <p class="mb-2 text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-crimson">
+    Short answer
+  </p>
+  <p>{shortAnswer}</p>
+</div>
+
+<div class="mt-6 rounded-[1.1rem] border border-hairline bg-charcoal p-6">
+  <h2 class="text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-secondary">
+    Key takeaways
+  </h2>
+  <ul class="mt-4 space-y-3">
+    {takeaways.map((t) => (
+      <li class="flex gap-3 text-[0.95rem] leading-relaxed text-prose">
+        <span aria-hidden="true" class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-crimson"></span>
+        <span>{t}</span>
+      </li>
+    ))}
+  </ul>
+</div>

@@ -1,0 +1,99 @@
+---
+import Base from "../layouts/Base.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import MobileCta from "../components/MobileCta.astro";
+import EarMark from "../components/EarMark.astro";
+import { SITE, LINKEDIN, APP_URL, profilePage, breadcrumbList } from "../lib/schema";
+
+const title = "About the author — Mahipal, developer of Clarive";
+const description =
+  "Mahipal is an iOS product engineer and the developer of Clarive, a free listening device app for iPhone. Who writes these articles, and what they're based on.";
+
+const bio =
+  "iOS product engineer and the developer of Clarive, a free listening device app for iPhone that combines real-time audio amplification with live captions.";
+
+const jsonLd = [
+  profilePage("Mahipal", bio),
+  breadcrumbList([
+    { name: "Home", url: `${SITE}/` },
+    { name: "About", url: `${SITE}/about/` },
+  ]),
+];
+---
+<Base title={title} description={description} path="/about" jsonLd={jsonLd}>
+  <Nav />
+
+  <main class="legal px-safe">
+    <div class="flex items-center gap-4">
+      <span
+        class="grid h-14 w-14 shrink-0 place-items-center rounded-[1rem] bg-gradient-crimson text-white glow-crimson"
+        aria-hidden="true"
+      >
+        <EarMark size={30} />
+      </span>
+      <div>
+        <h1 class="!text-[2rem]">Mahipal</h1>
+        <p class="updated !mt-1">iOS Product Engineer · Developer of Clarive</p>
+      </div>
+    </div>
+
+    <p>
+      I build <a href="/">Clarive</a>, a free iOS app that turns an iPhone and any headphones into
+      a real-time listening device — audio amplification plus live captions, processed entirely on
+      the device. I also write the articles on this site.
+    </p>
+
+    <h2>Why there's a name on these articles</h2>
+    <p>
+      Hearing is close enough to health that it matters who's telling you things. So: I'm a
+      software engineer, not a clinician. What I can speak to with any authority is how iPhone
+      audio actually behaves — how the microphone, headphone routing, and Apple's on-device speech
+      recognition perform in real rooms, because I've spent a lot of time shipping against them and
+      watching them fail in specific ways.
+    </p>
+    <p>
+      What I can't speak to is anything clinical. I can't tell you what your symptoms mean, whether
+      you need a hearing aid, or how to interpret a hearing test. When an article gets near that
+      line, it says so and points you to someone qualified. Anything about how hearing works cites
+      a real source — usually the <a href="https://www.nidcd.nih.gov/" target="_blank" rel="noopener">NIDCD</a>
+      or the <a href="https://www.who.int/health-topics/hearing-loss" target="_blank" rel="noopener">WHO</a> —
+      rather than my own say-so.
+    </p>
+
+    <h2>How the articles get written</h2>
+    <p>
+      Every article starts from a real question people search for, and answers it in the first few
+      lines rather than making you scroll. Claims about Clarive are checked against what the app
+      actually does — including a written list of what it deliberately doesn't do, so features
+      don't get invented on its behalf. Where I compare Clarive to other apps, I say up front that
+      I built one of them, and I name the places the others are better.
+    </p>
+    <p>
+      I use AI tooling to help draft and edit, the same way I use it to write software. What
+      reaches the page is reviewed by me, tested against the real app, and rewritten until it
+      sounds like a person — because a page that reads like filler wastes your time regardless of
+      how it was produced.
+    </p>
+
+    <h2>The disclaimer, plainly</h2>
+    <p>
+      Clarive is a sound amplification app, not a hearing aid or medical device. It doesn't
+      diagnose or treat hearing loss. If you're having persistent trouble hearing — or you've had a
+      sudden change in your hearing, which needs attention quickly — see an audiologist or your
+      doctor.
+    </p>
+
+    <div class="contact-card">
+      <h2 class="!mt-0">Elsewhere</h2>
+      <p class="contact-email">
+        <a href={LINKEDIN} target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href={APP_URL} target="_blank" rel="noopener">Clarive on the App Store</a> ·
+        <a href="/contact-us/">Contact</a>
+      </p>
+    </div>
+  </main>
+
+  <Footer />
+  <MobileCta />
+</Base>
