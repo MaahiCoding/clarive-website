@@ -23,7 +23,7 @@ const posts = await getPostsByCluster(cluster);
 
 const path = clusterUrl(cluster);
 const url = new URL(path, SITE).href;
-const title = `${meta.title} — Clarive Blog`;
+const title = `${meta.title} | Clarive Blog`;
 
 const jsonLd = [
   collectionPage({
