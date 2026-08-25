@@ -55,33 +55,23 @@ const softwareLd = {
   alternateName: "Clarive",
   applicationCategory: "HealthApplication",
   operatingSystem: "iOS 17+",
-  // Freemium, not free. The download costs nothing and the free tier is capped at
-  // 5 uses/day; paid plans unlock unlimited use. Declaring a bare price:"0" told
-  // Google the app had no paid tier, which is false. Verified 2026-06-22 against
-  // clarive-agent/memory/project-clarive-aso.md — re-check before changing.
-  offers: [
-    {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-      name: "Free tier",
-      description: "Free to download. Up to 5 uses per day.",
-    },
-    {
-      "@type": "Offer",
-      price: "5.99",
-      priceCurrency: "USD",
-      name: "Monthly",
-      description: "Unlimited use. 3-day free trial.",
-    },
-    {
-      "@type": "Offer",
-      price: "49.99",
-      priceCurrency: "USD",
-      name: "Yearly",
-      description: "Unlimited use. 7-day free trial.",
-    },
-  ],
+  // Freemium: free to download, paid plans unlock unlimited use.
+  //
+  // A PRICE RANGE, deliberately, not a list of SKUs. Superwall carries five
+  // products (weekly/monthly/yearly/promo-yearly/lifetime) and two of them had
+  // their prices changed on 2026-08-20. Enumerating exact prices here means the
+  // schema is wrong every time a paywall experiment ships. The range stays true
+  // across those changes; the App Store listing is the authority on today's exact
+  // number. Verified against Superwall project 17918 on 2026-08-22.
+  offers: {
+    "@type": "AggregateOffer",
+    priceCurrency: "USD",
+    lowPrice: "0",
+    highPrice: "29.99",
+    offerCount: 6,
+    description:
+      "Free to download with a limited free tier. Paid plans unlock unlimited use; see the App Store listing for current pricing.",
+  },
   aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", ratingCount: "5" },
   description:
     "Real-time audio amplification and live captions for people with mild hearing difficulty. Turns iPhone and headphones into a powerful listening device.",

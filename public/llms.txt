@@ -3,7 +3,7 @@
 
 ## Key facts
 - Platform: iOS 17+ (iPhone).
-- Pricing: free to download. The free tier allows 5 uses per day. Paid plans are $5.99/month (3-day free trial) and $49.99/year (7-day free trial). Verified 2026-06-22; check the App Store listing for current pricing.
+- Pricing: free to download, with a limited free tier. Paid plans unlock unlimited use and range from $4.99 to $29.99 depending on billing period, including a lifetime option. Prices change with ongoing paywall tests, so check the App Store listing for today's exact pricing.
 - Clarive is a sound amplification app, not a hearing aid or medical device. It does not diagnose or treat hearing loss.
 - Works with ANY headphones. No AirPods or MFi hearing device required, unlike Apple's Live Listen.
 - Live captions in 40+ languages, on-device, works offline after setup.

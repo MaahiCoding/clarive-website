@@ -44,6 +44,6 @@ export const homeFaq: FaqItem[] = [
   },
   {
     q: "Is Clarive free?",
-    a: "Clarive is free to download and the free tier covers up to 5 uses per day. Unlimited use is a paid subscription, with a free trial on both plans. Check the App Store listing for current pricing.",
+    a: "Clarive is free to download and includes a limited free tier. Unlimited use is a paid upgrade, available as weekly, monthly, yearly, or one-time lifetime plans, with free trials on some of them. Check the App Store listing for current pricing.",
   },
 ];
