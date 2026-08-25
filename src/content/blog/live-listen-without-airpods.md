@@ -38,7 +38,7 @@ You add the Hearing control, tap Live Listen, and nothing reaches your headphone
 
 ## What Live Listen actually is
 
-Live Listen turns your iPhone into a remote microphone. Put the phone near whoever you're trying to hear, across a restaurant table or at the front of a lecture room, and its microphone picks up the sound and pipes it to your ears. It's genuinely useful, and it's been part of iOS for years.
+Live Listen turns your iPhone into a remote microphone. It is one of several [iPhone hearing tools](/blog/topics/iphone-hearing/) worth knowing about. Put the phone near whoever you're trying to hear, across a restaurant table or at the front of a lecture room, and its microphone picks up the sound and pipes it to your ears. It's genuinely useful, and it's been part of iOS for years.
 
 The catch is the last step. Live Listen doesn't send audio out through the normal route that music and podcasts use. It uses a separate path Apple built for hearing accessibility, and only three kinds of device can receive it:
 
@@ -67,11 +67,11 @@ Menu wording shifts a little between iOS versions, but the ear icon in Control C
 
 The restriction is on Apple's private audio path, not on your iPhone's microphone. Any app can read the microphone and play the result back through the standard output, the same route your music takes. That route works with every set of headphones your phone can connect to.
 
-That's the whole reason third-party amplification apps exist, and why they don't care what's on your head.
+That's the whole reason [third-party amplification apps](/) exist, and why they don't care what's on your head.
 
 Two things are worth knowing before you try one:
 
-**Connection type changes the experience more than the app does.** Bluetooth introduces delay. It's not huge, but if you can see the speaker's face you'll notice voices arriving a beat after the lips move, and once noticed it's hard to un-notice. Wired headphones are meaningfully tighter. I keep a pair of wired EarPods in a bag specifically for conversations where I want to watch someone's face while they talk. It makes more difference than any setting.
+**Connection type changes the experience more than the app does.** Bluetooth introduces delay. It's not huge, but if you can see the speaker's face you'll notice voices arriving a beat after the lips move, and once noticed it's hard to un-notice. Wired headphones are meaningfully tighter. I build audio software for a living ([more about that](/about/)), and I keep a pair of wired EarPods in a bag specifically for conversations where I want to watch someone's face while they talk. It makes more difference than any setting.
 
 **Where you put the phone matters more than any of this.** The microphone is at the bottom edge. Phone face-up on the table, bottom edge pointed at the person talking, is a real improvement over phone in your lap. In a café with a hard floor and no soft furnishing, that placement did more for intelligibility than anything I changed in software.
 
