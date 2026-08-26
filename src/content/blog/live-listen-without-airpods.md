@@ -9,7 +9,7 @@ secondaryKeywords:
   - "does live listen work with bluetooth headphones"
 cluster: "iphone-hearing"
 intent: "how-to"
-publishDate: 2026-08-04
+publishDate: 2026-08-26
 author: "Mahipal"
 heroImage: "../../assets/blog/live-listen-without-airpods.png"
 heroAlt: "Live Listen Without AirPods: What Actually Works — article cover"
