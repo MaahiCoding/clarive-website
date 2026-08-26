@@ -24,7 +24,7 @@ export const homeFaq: FaqItem[] = [
   },
   {
     q: "Is Clarive the best listening device app for iPhone?",
-    a: "Clarive is purpose-built for iPhone and requires no extra hardware. Just plug in any headphones. It combines real-time amplification, live captions in 40+ languages, and smart environment presets in one app, making it one of the most complete assistive listening solutions available on iOS. It works on any iPhone running iOS 17 or later.",
+    a: "Clarive is purpose-built for iPhone and requires no extra hardware. Just plug in any headphones. It combines real-time amplification, live captions in 40+ languages, and smart environment presets in one app, making it one of the most complete assistive listening solutions available on iOS. It works on any iPhone running iOS 26 or later.",
   },
   {
     q: "How does a listening device that connects to a phone work?",
@@ -32,7 +32,7 @@ export const homeFaq: FaqItem[] = [
   },
   {
     q: "What is an assistive listening device?",
-    a: "An assistive listening device (ALD) is technology designed to help people with hearing difficulty hear more clearly. ALDs include hearing loops, FM systems, and phone-based apps like Clarive. Unlike traditional ALDs that require specialized hardware, Clarive works on any iPhone running iOS 17 or later. Just connect your headphones and open the app.",
+    a: "An assistive listening device (ALD) is technology designed to help people with hearing difficulty hear more clearly. ALDs include hearing loops, FM systems, and phone-based apps like Clarive. Unlike traditional ALDs that require specialized hardware, Clarive works on any iPhone running iOS 26 or later. Just connect your headphones and open the app.",
   },
   {
     q: "Does Clarive work without an internet connection?",

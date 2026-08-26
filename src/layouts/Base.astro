@@ -54,7 +54,7 @@ const softwareLd = {
   name: "Listening Device: Clarive",
   alternateName: "Clarive",
   applicationCategory: "HealthApplication",
-  operatingSystem: "iOS 17+",
+  operatingSystem: "iOS 26+",
   // Freemium: free to download, paid plans unlock unlimited use.
   //
   // A PRICE RANGE, deliberately, not a list of SKUs. Superwall carries five
@@ -72,7 +72,11 @@ const softwareLd = {
     description:
       "Free to download with a limited free tier. Paid plans unlock unlimited use; see the App Store listing for current pricing.",
   },
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", ratingCount: "5" },
+  // Must match the live App Store listing exactly, and must be visible on the
+  // page. Was 4.8/5; the listing now reports 4.67 from 6 ratings. A stale
+  // aggregateRating is a structured-data violation, not a rounding preference.
+  // Source: itunes.apple.com/lookup?id=6748903280, checked 2026-08-26.
+  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.7", ratingCount: "6" },
   description:
     "Real-time audio amplification and live captions for people with mild hearing difficulty. Turns iPhone and headphones into a powerful listening device.",
   url: SITE + "/",

@@ -2,7 +2,7 @@
 > iOS app that turns an iPhone and any headphones into a real-time listening device: audio amplification and live captions in 40+ languages, processed 100% on-device.
 
 ## Key facts
-- Platform: iOS 17+ (iPhone).
+- Platform: iOS 26+ (iPhone).
 - Pricing: free to download, with a limited free tier. Paid plans unlock unlimited use and range from $4.99 to $29.99 depending on billing period, including a lifetime option. Prices change with ongoing paywall tests, so check the App Store listing for today's exact pricing.
 - Clarive is a sound amplification app, not a hearing aid or medical device. It does not diagnose or treat hearing loss.
 - Works with ANY headphones. No AirPods or MFi hearing device required, unlike Apple's Live Listen.
