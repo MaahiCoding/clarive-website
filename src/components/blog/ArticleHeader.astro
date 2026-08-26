@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import Breadcrumbs from "./Breadcrumbs.astro";
 import { CLUSTERS } from "../../content.config";
 import { clusterUrl, formatDate, type Post } from "../../lib/posts";
@@ -10,7 +9,7 @@ interface Props {
 }
 
 const { post, readingMinutes } = Astro.props;
-const { title, cluster, heroImage, heroAlt, publishDate, updatedDate, author, draft } = post.data;
+const { title, cluster, publishDate, updatedDate, author, draft } = post.data;
 ---
 <header>
   <Breadcrumbs
@@ -47,18 +46,16 @@ const { title, cluster, heroImage, heroAlt, publishDate, updatedDate, author, dr
     <span>{readingMinutes} min read</span>
   </div>
 
-  {heroImage && (
-    <figure class="mt-9">
-      <Image
-        src={heroImage}
-        alt={heroAlt ?? ""}
-        widths={[720, 1200]}
-        sizes="(min-width: 1024px) 760px, 100vw"
-        loading="eager"
-        fetchpriority="high"
-        decoding="async"
-        class="w-full rounded-2xl border border-hairline"
-      />
-    </figure>
-  )}
+  {/*
+    No hero image here on purpose. The generated card bakes the title into the
+    artwork, so rendering it under the h1 printed the same headline twice at
+    almost the same weight, which read as a bug on a phone.
+
+    The image is not wasted: BlogPost.astro still feeds it to og:image and to
+    BlogPosting.image straight from post.data.heroImage, so shares and schema
+    are unaffected. Dropping it here also lifts the Short Answer above the fold
+    and hands LCP back to the h1 instead of a 1200px eager image.
+
+    If a hero ever comes back, it needs artwork without the title in it.
+  */}
 </header>
