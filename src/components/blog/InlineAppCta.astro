@@ -1,0 +1,29 @@
+---
+import AppStoreBadge from "../AppStoreBadge.astro";
+
+interface Props {
+  /** One honest line about where Clarive fits this article's question. */
+  pitch?: string;
+}
+
+const {
+  pitch = "Clarive turns your iPhone and any headphones into a real-time listening device: amplification plus live captions, processed on the device. Free to download.",
+} = Astro.props;
+---
+{/*
+  One CTA per article, placed after the reader's question is fully answered.
+  See product-facts.md §4 — front-loading the pitch costs both the reader and
+  the ranking.
+*/}
+<aside class="my-12 overflow-hidden rounded-[1.25rem] border border-hairline bg-ink">
+  <div class="p-6 sm:p-8">
+    <p class="text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-crimson">
+      The app
+    </p>
+    <p class="mt-3 max-w-xl text-[1.05rem] leading-relaxed text-white">{pitch}</p>
+    <div class="mt-5">
+      <AppStoreBadge />
+    </div>
+    <p class="mt-4 text-xs text-secondary">Free to download · iPhone, iOS 17+ · No account needed</p>
+  </div>
+</aside>

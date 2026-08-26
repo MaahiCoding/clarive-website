@@ -1,0 +1,64 @@
+---
+import { Image } from "astro:assets";
+import Breadcrumbs from "./Breadcrumbs.astro";
+import { CLUSTERS } from "../../content.config";
+import { clusterUrl, formatDate, type Post } from "../../lib/posts";
+
+interface Props {
+  post: Post;
+  readingMinutes: number;
+}
+
+const { post, readingMinutes } = Astro.props;
+const { title, cluster, heroImage, heroAlt, publishDate, updatedDate, author, draft } = post.data;
+---
+<header>
+  <Breadcrumbs
+    items={[
+      { label: "Home", href: "/" },
+      { label: "Blog", href: "/blog/" },
+      { label: CLUSTERS[cluster].title, href: clusterUrl(cluster) },
+      { label: title },
+    ]}
+  />
+
+  {draft && (
+    <p class="mt-5 rounded-xl border border-crimson/40 bg-crimson/10 px-4 py-3 text-sm text-white">
+      <strong class="font-semibold">Draft preview.</strong> This article isn't published. It's
+      excluded from the live site and from search engines.
+    </p>
+  )}
+
+  <h1 class="mt-5 text-[2rem] font-bold leading-[1.1] tracking-tight text-white sm:text-[2.6rem]">
+    {title}
+  </h1>
+
+  <div class="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-secondary">
+    <span class="font-medium text-white">{author}</span>
+    <span aria-hidden="true">·</span>
+    <time datetime={publishDate.toISOString()}>{formatDate(publishDate)}</time>
+    {updatedDate && (
+      <>
+        <span aria-hidden="true">·</span>
+        <span>Updated {formatDate(updatedDate)}</span>
+      </>
+    )}
+    <span aria-hidden="true">·</span>
+    <span>{readingMinutes} min read</span>
+  </div>
+
+  {heroImage && (
+    <figure class="mt-9">
+      <Image
+        src={heroImage}
+        alt={heroAlt ?? ""}
+        widths={[720, 1200]}
+        sizes="(min-width: 1024px) 760px, 100vw"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+        class="w-full rounded-2xl border border-hairline"
+      />
+    </figure>
+  )}
+</header>

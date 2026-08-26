@@ -17,15 +17,24 @@ const year = new Date().getFullYear();
         </p>
       </div>
 
-      <nav class="flex flex-col gap-3 text-sm" aria-label="Footer">
-        <span class="mb-1 text-xs font-semibold uppercase tracking-wider text-muted">Company</span>
-        <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
-        <a href="/terms-of-service" class="footer-link">Terms of Service</a>
-        <a href="/contact-us" class="footer-link">Contact Us</a>
-      </nav>
+      <div class="flex gap-14">
+        <nav class="flex flex-col gap-3 text-sm" aria-label="Read">
+          <span class="mb-1 text-xs font-semibold uppercase tracking-wider text-secondary">Read</span>
+          <a href="/blog/" class="footer-link">Blog</a>
+          <a href="/about/" class="footer-link">About the author</a>
+          <a href="/rss.xml" class="footer-link">RSS</a>
+        </nav>
+
+        <nav class="flex flex-col gap-3 text-sm" aria-label="Company">
+          <span class="mb-1 text-xs font-semibold uppercase tracking-wider text-secondary">Company</span>
+          <a href="/privacy-policy" class="footer-link">Privacy Policy</a>
+          <a href="/terms-of-service" class="footer-link">Terms of Service</a>
+          <a href="/contact-us" class="footer-link">Contact Us</a>
+        </nav>
+      </div>
     </div>
 
-    <div class="mt-12 flex flex-col gap-2 border-t border-hairline pt-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+    <div class="mt-12 flex flex-col gap-2 border-t border-hairline pt-6 text-xs text-secondary sm:flex-row sm:items-center sm:justify-between">
       <span>© {year} Listening Device: Clarive · Harshva Technology Private Limited</span>
       <span>Made for iPhone · iOS 17+</span>
     </div>

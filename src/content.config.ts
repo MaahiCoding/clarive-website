@@ -1,0 +1,116 @@
+import { defineCollection, z } from "astro:content";
+import { glob } from "astro/loaders";
+
+/**
+ * Cluster slugs. These are the topical hubs at /blog/topics/<cluster>/ and they
+ * mirror seo/clusters.md in the clarive-seo repo. Adding one here means adding
+ * it to CLUSTERS below too.
+ */
+export const CLUSTER_IDS = [
+  "listening-devices",
+  "iphone-hearing",
+  "live-captions",
+  "situations",
+  "hearing-health",
+  "comparisons",
+] as const;
+
+export type ClusterId = (typeof CLUSTER_IDS)[number];
+
+export const CLUSTERS: Record<ClusterId, { title: string; blurb: string }> = {
+  "listening-devices": {
+    title: "Listening devices",
+    blurb: "What assistive listening devices are, how they work, and how a phone fits in.",
+  },
+  "iphone-hearing": {
+    title: "iPhone hearing tools",
+    blurb: "Live Listen, accessibility settings, and the audio features already on your phone.",
+  },
+  "live-captions": {
+    title: "Live captions",
+    blurb: "Reading speech as it happens — on calls, on TV, and in the room.",
+  },
+  situations: {
+    title: "Situations",
+    blurb: "Restaurants, meetings, lectures, TV, travel. The places hearing gets hard.",
+  },
+  "hearing-health": {
+    title: "Hearing health",
+    blurb: "Plain explanations of the basics, with sources. Not medical advice.",
+  },
+  comparisons: {
+    title: "Comparisons",
+    blurb: "Honest side-by-sides of the apps and tools available on iPhone.",
+  },
+};
+
+/** Search intent drives the article template. Set by gate 2 of write_article.md. */
+export const INTENTS = [
+  "how-to",
+  "definition",
+  "comparison",
+  "list",
+  "troubleshooting",
+  "buying-guide",
+] as const;
+
+const blog = defineCollection({
+  loader: glob({ base: "./src/content/blog", pattern: "**/*.md" }),
+  schema: ({ image }) =>
+    z.object({
+      /** Also the <h1>. Keep under 60 chars so the SERP title doesn't truncate. */
+      title: z.string().min(10).max(70),
+      /** Meta description. Google truncates around 155. */
+      description: z.string().min(50).max(160),
+
+      // --- SEO targeting -------------------------------------------------
+      /** Primary keyword, pulled from seo/keyword-backlog.csv. One per article. */
+      keyword: z.string().min(2),
+      secondaryKeywords: z.array(z.string()).default([]),
+      cluster: z.enum(CLUSTER_IDS),
+      intent: z.enum(INTENTS),
+
+      // --- Dates ---------------------------------------------------------
+      publishDate: z.coerce.date(),
+      updatedDate: z.coerce.date().optional(),
+
+      // --- Author (E-E-A-T) ----------------------------------------------
+      author: z.string().default("Mahipal"),
+
+      // --- Images --------------------------------------------------------
+      /**
+       * Optional for now: compose_hero.py (Phase 3) generates these. Until then
+       * the article falls back to a CSS gradient card on-page and the site
+       * og-image for social. article_qa.py requires a real hero before publish.
+       */
+      heroImage: image().optional(),
+      heroAlt: z.string().min(10).optional(),
+
+      // --- Article structure ---------------------------------------------
+      /** The 40–60 word answer directly under the H1. Snippet + AI Overview bait. */
+      shortAnswer: z.string().min(120).max(600),
+      takeaways: z.array(z.string()).min(3).max(5),
+      /** Mirrored verbatim into FAQPage JSON-LD. Visible text must match byte for byte. */
+      faq: z
+        .array(z.object({ q: z.string().min(8), a: z.string().min(30) }))
+        .min(4)
+        .max(8),
+
+      // --- Linking -------------------------------------------------------
+      relatedSlugs: z.array(z.string()).default([]),
+
+      // --- Publishing ----------------------------------------------------
+      /** Defaults to true: nothing reaches production unless explicitly cleared. */
+      draft: z.boolean().default(true),
+    })
+      .refine((d) => !d.heroImage || d.heroAlt, {
+        message: "heroAlt is required whenever heroImage is set",
+        path: ["heroAlt"],
+      })
+      .refine((d) => !d.updatedDate || d.updatedDate >= d.publishDate, {
+        message: "updatedDate cannot be before publishDate",
+        path: ["updatedDate"],
+      }),
+});
+
+export const collections = { blog };

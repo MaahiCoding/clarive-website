@@ -1,0 +1,118 @@
+---
+import type { MarkdownHeading } from "astro";
+import Base from "./Base.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import MobileCta from "../components/MobileCta.astro";
+import ArticleHeader from "../components/blog/ArticleHeader.astro";
+import ReadingProgress from "../components/blog/ReadingProgress.astro";
+import KeyTakeaways from "../components/blog/KeyTakeaways.astro";
+import Toc from "../components/blog/Toc.astro";
+import PostFaq from "../components/blog/PostFaq.astro";
+import AuthorCard from "../components/blog/AuthorCard.astro";
+import RelatedPosts from "../components/blog/RelatedPosts.astro";
+import InlineAppCta from "../components/blog/InlineAppCta.astro";
+import { CLUSTERS } from "../content.config";
+import { clusterUrl, postUrl, type Post } from "../lib/posts";
+import {
+  SITE,
+  blogPosting,
+  breadcrumbList,
+  faqPage,
+  needsDisclaimer,
+} from "../lib/schema";
+
+interface Props {
+  post: Post;
+  headings: MarkdownHeading[];
+  related: Post[];
+  readingMinutes: number;
+  wordCount: number;
+  bodyText: string;
+}
+
+const { post, headings, related, readingMinutes, wordCount, bodyText } = Astro.props;
+const d = post.data;
+
+const path = postUrl(post.id);
+const url = new URL(path, SITE).href;
+const heroUrl = d.heroImage ? new URL(d.heroImage.src, SITE).href : undefined;
+
+const jsonLd = [
+  blogPosting({
+    title: d.title,
+    description: d.description,
+    url,
+    author: d.author,
+    publishDate: d.publishDate,
+    updatedDate: d.updatedDate,
+    image: heroUrl,
+    keywords: [d.keyword, ...d.secondaryKeywords],
+    section: CLUSTERS[d.cluster].title,
+    wordCount,
+  }),
+  breadcrumbList([
+    { name: "Home", url: `${SITE}/` },
+    { name: "Blog", url: `${SITE}/blog/` },
+    { name: CLUSTERS[d.cluster].title, url: new URL(clusterUrl(d.cluster), SITE).href },
+    { name: d.title, url },
+  ]),
+  faqPage(d.faq),
+];
+
+const showDisclaimer = needsDisclaimer({
+  cluster: d.cluster,
+  title: d.title,
+  description: d.description,
+  body: bodyText,
+});
+---
+<Base
+  title={d.title}
+  description={d.description}
+  path={path}
+  jsonLd={jsonLd}
+  ogType="article"
+  image={d.heroImage?.src}
+  publishedTime={d.publishDate.toISOString()}
+  modifiedTime={(d.updatedDate ?? d.publishDate).toISOString()}
+  author={d.author}
+  noindex={d.draft}
+>
+  <Nav />
+  <ReadingProgress />
+
+  <main class="px-safe pb-24 pt-28 sm:pt-32">
+    <div class="mx-auto max-w-6xl px-5 sm:px-6">
+      <div class="lg:grid lg:grid-cols-[minmax(0,1fr)_15rem] lg:items-start lg:gap-14">
+        <article id="article-body" class="min-w-0">
+          <ArticleHeader post={post} readingMinutes={readingMinutes} />
+
+          <div class="mt-9">
+            <KeyTakeaways shortAnswer={d.shortAnswer} takeaways={d.takeaways} />
+          </div>
+
+          <div class="prose-clarive mt-11">
+            <slot />
+          </div>
+
+          <InlineAppCta />
+          <PostFaq faq={d.faq} />
+          <AuthorCard
+            author={d.author}
+            showDisclaimer={showDisclaimer}
+            updatedDate={d.updatedDate}
+          />
+          <RelatedPosts posts={related} />
+        </article>
+
+        <aside class="hidden lg:block">
+          <Toc headings={headings} />
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <Footer />
+  <MobileCta />
+</Base>

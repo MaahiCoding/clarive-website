@@ -1,0 +1,103 @@
+---
+import Base from "../../../layouts/Base.astro";
+import Nav from "../../../components/Nav.astro";
+import Footer from "../../../components/Footer.astro";
+import MobileCta from "../../../components/MobileCta.astro";
+import PostCard from "../../../components/blog/PostCard.astro";
+import Breadcrumbs from "../../../components/blog/Breadcrumbs.astro";
+import { CLUSTERS } from "../../../content.config";
+import { getActiveClusters, getPostsByCluster, clusterUrl, postUrl } from "../../../lib/posts";
+import { SITE, breadcrumbList, collectionPage } from "../../../lib/schema";
+
+export async function getStaticPaths() {
+  // Only clusters with posts get a page — an empty hub is a thin page, and thin
+  // pages drag on a small site rather than helping it.
+  const clusters = await getActiveClusters();
+  return clusters.map((c) => ({ params: { topic: c.id } }));
+}
+
+const { topic } = Astro.params;
+const cluster = topic as keyof typeof CLUSTERS;
+const meta = CLUSTERS[cluster];
+const posts = await getPostsByCluster(cluster);
+
+const path = clusterUrl(cluster);
+const url = new URL(path, SITE).href;
+const title = `${meta.title} | Clarive Blog`;
+
+const jsonLd = [
+  collectionPage({
+    name: meta.title,
+    description: meta.blurb,
+    url,
+    items: posts.map((p) => ({ title: p.data.title, url: new URL(postUrl(p.id), SITE).href })),
+  }),
+  breadcrumbList([
+    { name: "Home", url: `${SITE}/` },
+    { name: "Blog", url: `${SITE}/blog/` },
+    { name: meta.title, url },
+  ]),
+];
+---
+<Base title={title} description={meta.blurb} path={path} jsonLd={jsonLd}>
+  <Nav />
+
+  <main class="px-safe pb-24 pt-28 sm:pt-32">
+    <div class="mx-auto max-w-6xl px-5 sm:px-6">
+      <Breadcrumbs
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Blog", href: "/blog/" },
+          { label: meta.title },
+        ]}
+      />
+
+      <header class="mt-6 max-w-2xl">
+        <p class="section-label">Topic</p>
+        <h1 class="section-title mt-3">{meta.title}</h1>
+        <p class="mt-5 text-[1.05rem] leading-relaxed text-secondary">{meta.blurb}</p>
+        <p class="mt-3 text-sm text-secondary">
+          {posts.length} {posts.length === 1 ? "article" : "articles"}
+        </p>
+      </header>
+
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {posts.map((post, i) => (
+          <PostCard post={post} eager={i < 3} />
+        ))}
+      </div>
+
+      <p class="mt-14">
+        <a href="/blog/" class="text-crimson-light underline underline-offset-4 hover:text-crimson">
+          ← All articles
+        </a>
+      </p>
+    </div>
+  </main>
+
+  <Footer />
+  <MobileCta />
+</Base>
+
+<script is:inline>
+  (() => {
+    const els = document.querySelectorAll(".reveal");
+    if (!els.length) return;
+    if (!("IntersectionObserver" in window)) {
+      els.forEach((el) => el.classList.add("visible"));
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e, i) => {
+          if (e.isIntersecting) {
+            setTimeout(() => e.target.classList.add("visible"), (i % 3) * 90);
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    );
+    els.forEach((el) => io.observe(el));
+  })();
+</script>

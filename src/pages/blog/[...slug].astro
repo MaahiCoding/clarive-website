@@ -1,0 +1,35 @@
+---
+import { render } from "astro:content";
+import BlogPost from "../../layouts/BlogPost.astro";
+import { getPublishedPosts, getRelatedPosts, readingTime } from "../../lib/posts";
+
+export async function getStaticPaths() {
+  // getPublishedPosts applies the draft gate, so a draft simply has no route in
+  // a production build — which is also why it can't reach the sitemap.
+  const posts = await getPublishedPosts();
+
+  return Promise.all(
+    posts.map(async (post) => ({
+      params: { slug: post.id },
+      props: { post, related: await getRelatedPosts(post) },
+    })),
+  );
+}
+
+const { post, related } = Astro.props;
+const { Content, headings } = await render(post);
+
+const bodyText = post.body ?? "";
+const wordCount = bodyText.trim().split(/\s+/).filter(Boolean).length;
+const readingMinutes = readingTime(bodyText);
+---
+<BlogPost
+  post={post}
+  headings={headings}
+  related={related}
+  readingMinutes={readingMinutes}
+  wordCount={wordCount}
+  bodyText={bodyText}
+>
+  <Content />
+</BlogPost>

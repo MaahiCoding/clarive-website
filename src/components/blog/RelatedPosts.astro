@@ -1,0 +1,41 @@
+---
+import { CLUSTERS } from "../../content.config";
+import { postUrl, type Post } from "../../lib/posts";
+
+interface Props {
+  posts: Post[];
+}
+
+const { posts } = Astro.props;
+---
+{posts.length > 0 && (
+  <section aria-labelledby="related-heading" class="mt-14 border-t border-hairline pt-10">
+    <h2 id="related-heading" class="text-xl font-bold tracking-tight text-white">
+      Keep reading
+    </h2>
+
+    <ul class="mt-5 space-y-3">
+      {posts.map((p) => (
+        <li>
+          <a
+            href={postUrl(p.id)}
+            class="group flex items-baseline justify-between gap-5 rounded-xl border border-hairline bg-charcoal px-5 py-4 transition-colors hover:border-crimson/35"
+          >
+            <span>
+              <span class="block text-[0.7rem] font-semibold uppercase tracking-wider text-crimson">
+                {CLUSTERS[p.data.cluster].title}
+              </span>
+              <span class="mt-1 block font-medium leading-snug text-white">{p.data.title}</span>
+            </span>
+            <span
+              aria-hidden="true"
+              class="shrink-0 text-muted transition-transform duration-300 group-hover:translate-x-0.5 group-hover:text-crimson"
+            >
+              →
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}

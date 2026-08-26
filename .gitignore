@@ -4,16 +4,14 @@ dist/
 
 # Dependencies
 node_modules/
-package-lock.json
 yarn.lock
 pnpm-lock.yaml
+# package-lock.json is intentionally COMMITTED — Vercel needs it for reproducible
+# installs. It was already tracked, so the previous ignore line had no effect.
 
 # Environment variables (NEVER COMMIT - always keep secret)
-.env
-.env.local
-.env.*.local
-.env.production
-.env.production.local
+# Broad glob so a stray .env.preview / .env.staging can't slip through.
+.env*
 
 # Logs
 npm-debug.log*

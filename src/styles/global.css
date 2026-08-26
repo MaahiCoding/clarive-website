@@ -216,6 +216,242 @@
 .contact-email { font-size: 1.05rem; }
 
 /* ============================================================
+   Blog — editorial system
+   ============================================================ */
+
+/* Long-form body text needs to be brighter than --color-secondary (#8e8e93).
+   That value is tuned for short UI copy; across 2,000 words on a dark ground it
+   reads as dim, and a meaningful share of this audience has low vision. #d1d1d6
+   lands around 11:1 on --color-charcoal instead of ~5:1. */
+@theme {
+  --color-prose: #d1d1d6;
+  --font-editorial: ui-serif, "New York", Iowan Old Style, Georgia, serif;
+}
+
+.prose-clarive {
+  max-width: 68ch;
+  font-size: 1.0625rem;      /* 17px — iOS body size; comfortable, not childish */
+  line-height: 1.75;
+  color: var(--color-prose);
+}
+
+.prose-clarive > * + * { margin-top: 1.35em; }
+
+.prose-clarive h2 {
+  margin-top: 3.25rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-hairline);
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  color: #fff;
+}
+
+.prose-clarive h3 {
+  margin-top: 2.25rem;
+  font-size: 1.2rem;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+  color: #fff;
+}
+
+.prose-clarive h2 + *,
+.prose-clarive h3 + * { margin-top: 0.85em; }
+
+.prose-clarive strong { color: #fff; font-weight: 650; }
+
+.prose-clarive a {
+  color: var(--color-crimson-light);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+.prose-clarive a:hover { color: var(--color-crimson); }
+
+.prose-clarive ul,
+.prose-clarive ol { padding-left: 1.3rem; }
+.prose-clarive ul { list-style: disc; }
+.prose-clarive ol { list-style: decimal; }
+.prose-clarive li { margin-top: 0.5em; padding-left: 0.2rem; }
+.prose-clarive li::marker { color: var(--color-crimson); }
+
+/* Pull quote — one of two places the editorial serif is allowed. Large enough
+   that serif stems don't thin out against the dark ground. */
+.prose-clarive blockquote {
+  margin-top: 2rem;
+  border-left: 2px solid var(--color-crimson);
+  padding: 0.25rem 0 0.25rem 1.5rem;
+  font-family: var(--font-editorial);
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.prose-clarive code {
+  border-radius: 0.35rem;
+  background: var(--color-floating);
+  padding: 0.15em 0.4em;
+  font-size: 0.9em;
+}
+
+.prose-clarive pre {
+  overflow-x: auto;
+  border: 1px solid var(--color-hairline);
+  border-radius: 0.9rem;
+  background: var(--color-ink);
+  padding: 1.1rem 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.prose-clarive pre code { background: none; padding: 0; }
+
+.prose-clarive img {
+  border: 1px solid var(--color-hairline);
+  border-radius: 1rem;
+}
+
+.prose-clarive figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.prose-clarive hr {
+  margin-top: 2.5rem;
+  border: 0;
+  border-top: 1px solid var(--color-hairline);
+}
+
+/* Comparison tables carry the money-page cluster, so they get real styling —
+   and they must never be shipped as images. Wrapper handles narrow screens. */
+.prose-clarive .table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--color-hairline);
+  border-radius: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+.prose-clarive table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  text-align: left;
+}
+.prose-clarive thead th {
+  position: sticky;
+  top: 0;
+  background: var(--color-surface);
+  padding: 0.85rem 1rem;
+  font-weight: 650;
+  color: #fff;
+  white-space: nowrap;
+}
+.prose-clarive tbody td {
+  border-top: 1px solid var(--color-hairline);
+  padding: 0.85rem 1rem;
+  vertical-align: top;
+}
+.prose-clarive tbody tr:nth-child(even) { background: rgba(255, 255, 255, 0.02); }
+.prose-clarive tbody td:first-child { color: #fff; font-weight: 550; }
+
+/* --- Short answer: the signature block ---------------------------------
+   The page's contract with the reader — the question is answered before
+   anything else asks for their attention. Structural, not decorative. */
+.short-answer {
+  position: relative;
+  border-radius: 1.1rem;
+  border: 1px solid var(--color-hairline);
+  border-left: 3px solid var(--color-crimson);
+  background: linear-gradient(
+    100deg,
+    rgba(255, 59, 48, 0.07) 0%,
+    rgba(255, 59, 48, 0) 55%
+  ), var(--color-surface);
+  padding: 1.5rem 1.6rem;
+}
+.short-answer p {
+  font-family: var(--font-editorial);
+  font-size: 1.2rem;
+  line-height: 1.55;
+  color: #fff;
+}
+
+/* --- Table of contents rail --------------------------------------------
+   The active-section marker borrows the app's own visual language: a level
+   meter, not a generic dot. */
+.toc-link {
+  display: block;
+  border-left: 2px solid var(--color-hairline);
+  padding: 0.4rem 0 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--color-secondary);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.toc-link:hover { color: #fff; }
+.toc-link.is-active {
+  border-left-color: var(--color-crimson);
+  color: #fff;
+}
+.toc-link.depth-3 { padding-left: 1.6rem; font-size: 0.85rem; }
+
+/* --- Reading progress --------------------------------------------------- */
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  height: 2px;
+  width: 100%;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  background: var(--gradient-crimson);
+  will-change: transform;
+}
+
+/* --- Post cards ---------------------------------------------------------
+   Visual treatment only. `display` deliberately lives on the components as
+   utility classes: this rule is unlayered, so setting display here would beat
+   Tailwind's layered `sm:grid` on the featured card and silently win. */
+.post-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color-hairline);
+  border-radius: 1.25rem;
+  background: var(--color-charcoal);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s ease;
+}
+.post-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 59, 48, 0.35);
+}
+.post-card:has(a:focus-visible) {
+  outline: 2px solid var(--color-crimson-light);
+  outline-offset: 3px;
+}
+/* Whole card clickable, title stays the accessible name. */
+.post-card .stretched::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* Fallback hero for posts without a generated image yet. */
+.hero-fallback {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(120% 140% at 12% 0%, rgba(255, 59, 48, 0.32) 0%, rgba(255, 59, 48, 0) 60%),
+    var(--color-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-card:hover { transform: none; }
+}
+
+/* ============================================================
    Texture — fine grain overlay for depth (very subtle)
    ============================================================ */
 body::before {
