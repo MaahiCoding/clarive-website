@@ -31,7 +31,7 @@ faq:
   - q: "Will this help if I already wear hearing aids?"
     a: "Probably not, and it isn't designed to. Hearing aids are fitted to your specific hearing and do far more than raise volume. If your hearing aids aren't working well in a particular situation, that's a conversation for your audiologist rather than a phone app."
 relatedSlugs: []
-draft: true
+draft: false
 ---
 
 You add the Hearing control, tap Live Listen, and nothing reaches your headphones. Nothing's broken. Live Listen was never able to send audio to them.
