@@ -11,6 +11,8 @@ cluster: "iphone-hearing"
 intent: "how-to"
 publishDate: 2026-08-04
 author: "Mahipal"
+heroImage: "../../assets/blog/live-listen-without-airpods.png"
+heroAlt: "Live Listen Without AirPods: What Actually Works — article cover"
 shortAnswer: "Live Listen only sends audio to AirPods, Beats, or MFi hearing devices. It won't work with generic Bluetooth or wired headphones. To use other headphones as a listening device, you need a third-party app that routes microphone audio through the standard output path instead of Apple's private one."
 takeaways:
   - "Live Listen is restricted by which headphones you own, not by your iPhone model."
