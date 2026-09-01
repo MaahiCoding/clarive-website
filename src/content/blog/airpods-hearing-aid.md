@@ -27,7 +27,7 @@ faq:
     a: "No, and Apple doesn't say they are. Independent testing puts tuned AirPods Pro at roughly half to two thirds of what a fitted device manages for speech in a noisy room, and battery life is five to 10 hours against 12 to 13. For mild loss in a quiet room they do real work. For anything beyond that the gap is wide."
   - q: "Why isn't the Hearing Aid feature amplifying anything?"
     a: "Almost always because you're not in Transparency mode. The feature amplifies only in Transparency. Switch to Noise Cancellation or Adaptive and the amplification stops, with no warning that it has. Check the noise control setting before you assume anything is broken."
-  - q: "Do I need a hearing test to use it?"
+  - q: "Does the Hearing Aid feature work without tuning it first?"
     a: "Not strictly, but the testing says you should. Untuned, both labs scored speech in noise below 1.5 out of five. Take the five-minute Hearing Test on the earbuds themselves or import an audiogram from an audiologist, and the same hardware scores roughly three times higher. It's free and it's the difference between the feature working and not."
   - q: "Can I use the Hearing Aid feature with AirPods 4?"
     a: "No. AirPods 4 support Conversation Boost and Transparency, which help a little, but not the Hearing Aid feature itself. There's no firmware update or setting that adds it, because the feature depends on hardware those earbuds don't have."

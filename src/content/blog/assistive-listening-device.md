@@ -22,8 +22,8 @@ takeaways:
   - "Venues covered by the ADA have to provide auxiliary aids, and assistive listening systems are named on that list. You can ask."
   - "An iPhone with headphones is a personal amplifier, and it's the cheapest way to find out whether this whole category helps you before spending anything."
 faq:
-  - q: "What is an assistive listening device?"
-    a: "It's any tool that carries sound from where it's produced to your ears while cutting down what the room adds along the way. The category is deliberately wide. It includes hearing loops and FM systems installed in venues, small personal amplifiers you carry, and a phone running an amplification app with headphones."
+  - q: "Which assistive listening device should I try first?"
+    a: "Start with what you already own. A phone plus headphones running an amplification app costs nothing to test and tells you whether getting the microphone closer to the speaker is the thing that helps you. If it is, that same answer points at what to buy next, whether that's a dedicated personal amplifier or a hearing aid fitted by a clinician. Working up from free means you spend money knowing what problem you're solving."
   - q: "What's the difference between an assistive listening device and a hearing aid?"
     a: "A hearing aid is regulated health hardware, fitted to your specific hearing and worn all day. An assistive listening device solves one situation by getting the sound closer to your ears, and it doesn't need to be fitted to you. People who wear hearing aids often use assistive listening devices too, because the two do different jobs."
   - q: "What are the four main types of assistive listening device?"
