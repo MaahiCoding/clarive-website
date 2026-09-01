@@ -331,6 +331,77 @@
   border: 1px solid var(--color-hairline);
   border-radius: 1rem;
   -webkit-overflow-scrolling: touch;
+
+  /* Scroll shadows. A table that scrolls with no visual edge just looks like a
+     table with a word cut off, so on a phone people do not discover the swipe.
+     The classic background-attachment trick: the two `local` gradients travel
+     WITH the content and mask the shadows at each end, so a shadow only shows
+     while there is more table in that direction. No JS, no scroll listener. */
+  background:
+    linear-gradient(to right, var(--color-surface) 40%, rgba(28, 28, 30, 0)) 0 0 / 34px 100% no-repeat local,
+    linear-gradient(to left, var(--color-surface) 40%, rgba(28, 28, 30, 0)) 100% 0 / 34px 100% no-repeat local,
+    linear-gradient(to right, rgba(255, 59, 48, 0.22), rgba(255, 59, 48, 0)) 0 0 / 18px 100% no-repeat scroll,
+    linear-gradient(to left, rgba(255, 59, 48, 0.22), rgba(255, 59, 48, 0)) 100% 0 / 18px 100% no-repeat scroll,
+    var(--color-surface);
+}
+
+/* On a phone, stack each row into a labelled card instead of scrolling.
+   A three-column comparison table in a 335px column wraps to one or two words
+   per line — technically readable, genuinely unpleasant, and this audience
+   skews older and reads on a phone. Each cell carries its column header as
+   `data-label` (stamped by the rehype plugin in astro.config.mjs, since CSS
+   cannot know which column a <td> belongs to), so the header row can be hidden
+   and every value can name itself. */
+@media (max-width: 640px) {
+  .prose-clarive .table-scroll {
+    overflow-x: visible;      /* nothing overflows once stacked */
+    background: var(--color-surface);
+    border: 0;
+    border-radius: 0;
+  }
+  .prose-clarive table,
+  .prose-clarive tbody,
+  .prose-clarive tr,
+  .prose-clarive td { display: block; width: 100%; }
+
+  /* Hidden, not removed: the labels are echoed per cell below, and screen
+     readers still get the association from the source table markup. */
+  .prose-clarive thead { position: absolute; width: 1px; height: 1px;
+                         overflow: hidden; clip-path: inset(50%); }
+
+  .prose-clarive tbody tr {
+    border: 1px solid var(--color-hairline);
+    border-radius: 1rem;
+    background: var(--color-surface);
+    padding: 0.35rem 0.15rem;
+  }
+  .prose-clarive tbody tr + tr { margin-top: 0.75rem; }
+  .prose-clarive tbody tr:nth-child(even) { background: var(--color-surface); }
+
+  .prose-clarive tbody td { border-top: 0; padding: 0.5rem 1rem; }
+  .prose-clarive tbody td + td { border-top: 1px solid var(--color-hairline); }
+
+  /* The row's first cell is the thing being compared, so it reads as a title
+     rather than as another labelled value. */
+  .prose-clarive tbody td:first-child {
+    font-size: 1.05rem;
+    font-weight: 650;
+    color: #fff;
+    padding-bottom: 0.35rem;
+  }
+  .prose-clarive tbody td:not(:first-child)::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 0.15rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+  }
+  /* A cell whose column had no header (a leading metric column) would otherwise
+     render an empty label strip. */
+  .prose-clarive tbody td:not([data-label])::before { content: none; }
 }
 .prose-clarive table {
   width: 100%;

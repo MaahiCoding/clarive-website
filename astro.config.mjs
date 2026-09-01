@@ -23,12 +23,58 @@ import sitemap from '@astrojs/sitemap';
  * any install that hoists differently. A short walk has no such risk.
  */
 function rehypeTableScroll() {
+  /** Flatten a hast node to its text, for reading header labels. */
+  const text = (node) =>
+    node.type === 'text'
+      ? node.value
+      : (node.children || []).map(text).join('');
+
+  /** Find the first descendant element with this tag name. */
+  const find = (node, tag) => {
+    if (node.type === 'element' && node.tagName === tag) return node;
+    for (const c of node.children || []) {
+      const hit = find(c, tag);
+      if (hit) return hit;
+    }
+    return null;
+  };
+
+  /**
+   * Copy each column's header onto its cells as `data-label`, so the phone
+   * stylesheet can stack the table into labelled rows.
+   *
+   * A three-column comparison table in a 335px column wraps to one or two words
+   * per line, which is unreadable — and this audience skews older and reads on a
+   * phone. CSS alone cannot do this: stacked cells need to carry their own
+   * header text, and markdown gives `<td>` no way to know which column it is in.
+   */
+  const label = (table) => {
+    const head = find(table, 'thead');
+    if (!head) return;
+    const headers = (find(head, 'tr')?.children || [])
+      .filter((c) => c.type === 'element' && c.tagName === 'th')
+      .map((c) => text(c).trim());
+    if (!headers.length) return;
+
+    const body = find(table, 'tbody');
+    for (const row of body?.children || []) {
+      if (row.type !== 'element' || row.tagName !== 'tr') continue;
+      let i = 0;
+      for (const cell of row.children) {
+        if (cell.type !== 'element' || cell.tagName !== 'td') continue;
+        if (headers[i]) cell.properties = { ...cell.properties, dataLabel: headers[i] };
+        i++;
+      }
+    }
+  };
+
   return (tree) => {
     const walk = (node) => {
       if (!Array.isArray(node.children)) return;
       node.children = node.children.map((child) => {
         walk(child);
         if (child.type === 'element' && child.tagName === 'table') {
+          label(child);
           return {
             type: 'element',
             tagName: 'div',
