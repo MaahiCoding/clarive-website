@@ -5,7 +5,7 @@ keyword: "pipeline self test"
 secondaryKeywords: []
 cluster: "iphone-hearing"
 intent: "definition"
-publishDate: 2020-01-01
+publishDate: 2026-09-01
 author: "Mahipal"
 shortAnswer: "This article exists only to test the publishing automation end to end. It carries an old publish date on purpose, so that a correct run visibly rewrites it to today. It is removed as soon as the test passes."
 takeaways:
@@ -22,7 +22,7 @@ faq:
   - q: "Will this ever be indexed?"
     a: "No. It is removed within minutes, long before any search engine would crawl it."
 relatedSlugs: []
-draft: true
+draft: false
 ---
 
 This article exists only to prove the publish automation works. It is deleted immediately after.
