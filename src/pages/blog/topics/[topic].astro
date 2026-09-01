@@ -28,7 +28,7 @@ const title = `${meta.title} | Clarive Blog`;
 const jsonLd = [
   collectionPage({
     name: meta.title,
-    description: meta.blurb,
+    description: meta.metaDescription,
     url,
     items: posts.map((p) => ({ title: p.data.title, url: new URL(postUrl(p.id), SITE).href })),
   }),
@@ -39,7 +39,7 @@ const jsonLd = [
   ]),
 ];
 ---
-<Base title={title} description={meta.blurb} path={path} jsonLd={jsonLd}>
+<Base title={title} description={meta.metaDescription} path={path} jsonLd={jsonLd}>
   <Nav />
 
   <main class="px-safe pb-24 pt-28 sm:pt-32">

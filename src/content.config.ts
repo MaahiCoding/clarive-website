@@ -17,30 +17,48 @@ export const CLUSTER_IDS = [
 
 export type ClusterId = (typeof CLUSTER_IDS)[number];
 
-export const CLUSTERS: Record<ClusterId, { title: string; blurb: string }> = {
+/**
+ * `blurb` is on-page intro copy and stays short. `metaDescription` is the SERP
+ * snippet and wants 120-155 chars. They were the same string, which made every
+ * hub's meta description too short for Google to use well.
+ */
+export const CLUSTERS: Record<ClusterId,
+  { title: string; blurb: string; metaDescription: string }> = {
   "listening-devices": {
     title: "Listening devices",
     blurb: "What assistive listening devices are, how they work, and how a phone fits in.",
+    metaDescription:
+      "Assistive listening devices explained: personal amplifiers, venue loop systems, and where an iPhone genuinely replaces dedicated hardware.",
   },
   "iphone-hearing": {
     title: "iPhone hearing tools",
     blurb: "Live Listen, accessibility settings, and the audio features already on your phone.",
+    metaDescription:
+      "Guides to the hearing tools already on your iPhone: Live Listen, Hearing Aid mode, and accessibility audio settings, plus what each one requires.",
   },
   "live-captions": {
     title: "Live captions",
-    blurb: "Reading speech as it happens — on calls, on TV, and in the room.",
+    blurb: "Reading speech as it happens, on calls, on TV, and in the room.",
+    metaDescription:
+      "Live captions on iPhone: reading speech as it happens on calls, on TV, and in the room, and how accurate on-device transcription really is.",
   },
   situations: {
     title: "Situations",
     blurb: "Restaurants, meetings, lectures, TV, travel. The places hearing gets hard.",
+    metaDescription:
+      "Practical guides for the places hearing gets hard: restaurants, meetings, lectures, TV and travel, with what actually helps in each one.",
   },
   "hearing-health": {
     title: "Hearing health",
     blurb: "Plain explanations of the basics, with sources. Not medical advice.",
+    metaDescription:
+      "Plain explanations of hearing health basics, cited to NIDCD and WHO. Background reading, not medical advice, and no substitute for an audiologist.",
   },
   comparisons: {
     title: "Comparisons",
     blurb: "Honest side-by-sides of the apps and tools available on iPhone.",
+    metaDescription:
+      "Side-by-side comparisons of iPhone hearing apps and Apple's built-in tools, tested in real rooms rather than summarized from other reviews.",
   },
 };
 
