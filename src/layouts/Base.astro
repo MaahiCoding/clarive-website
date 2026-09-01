@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { NOINDEX } from "../lib/env";
+import { NOINDEX, IS_PRODUCTION_BUILD } from "../lib/env";
 import { homeFaq } from "../data/home-faq";
 import { appRating } from "../data/app-rating";
 
@@ -164,15 +164,34 @@ const faqLd = {
       <script type="application/ld+json" set:html={JSON.stringify(ld)} />
     ))}
 
-    <!-- Analytics -->
-    <script is:inline defer src="/_vercel/insights/script.js"></script>
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-WD4RQW7ZZF"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag("js", new Date());
-      gtag("config", "G-WD4RQW7ZZF");
-    </script>
+    {/*
+      Analytics, production only.
+
+      These used to load on every build. Vercel gives each draft branch a preview
+      deployment, so every draft push was firing GA4 pageviews that look like real
+      traffic — plus local `astro dev`. Reporting on a site this small is easy to
+      skew: a handful of self-visits is a meaningful fraction of the numbers.
+
+      The Ahrefs data-key is a public, client-side identifier, not a secret.
+    */}
+    {IS_PRODUCTION_BUILD && (
+      <>
+        <script is:inline defer src="/_vercel/insights/script.js"></script>
+        <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-WD4RQW7ZZF"></script>
+        <script is:inline>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag("js", new Date());
+          gtag("config", "G-WD4RQW7ZZF");
+        </script>
+        <script
+          is:inline
+          async
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="1Tf5+wCz6yfLuUjr/sFwoQ"
+        ></script>
+      </>
+    )}
   </head>
   <body>
     <slot />
