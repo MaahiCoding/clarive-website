@@ -9,7 +9,7 @@ secondaryKeywords:
   - "apple hearing aid requirements"
 cluster: "iphone-hearing"
 intent: "definition"
-publishDate: 2026-08-26
+publishDate: 2026-09-01
 author: "Mahipal"
 heroImage: "../../assets/blog/apple-hearing-aid-feature.png"
 heroAlt: "Article cover: Apple's Hearing Aid Feature, What It Is, Who Gets It"
@@ -35,7 +35,7 @@ faq:
     a: "Because the feature only runs in Transparency mode. Noise Cancellation and Adaptive both shut the amplification off, which is the single most common reason someone thinks the feature is broken when it's working exactly as designed."
 relatedSlugs:
   - "live-listen-without-airpods"
-draft: true
+draft: false
 ---
 
 The hearing aid Apple built isn't a device you buy. It's software, and it lives on exactly two products: AirPods Pro 2 and AirPods Pro 3.

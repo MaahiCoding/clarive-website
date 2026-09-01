@@ -36,7 +36,7 @@ faq:
     a: "It ranges from nothing to several hundred dollars. A venue's system is free to use while you're there. Dedicated personal amplifiers are hardware you buy. An app on a phone you already own sits at the cheap end, which is why it's a reasonable first test of whether the category helps you at all."
 relatedSlugs:
   - "live-listen-without-airpods"
-draft: true
+draft: false
 ---
 
 Someone suggests an assistive listening device, you go looking, and the results are a wall of hardware. Neck loops. Body-pack receivers. Systems that get installed in a ceiling by a contractor. None of it looks like it has anything to do with the dinner table where you actually couldn't hear.

@@ -9,7 +9,7 @@ secondaryKeywords:
   - "do airpods work as hearing aids"
 cluster: "iphone-hearing"
 intent: "comparison"
-publishDate: 2026-08-28
+publishDate: 2026-09-01
 author: "Mahipal"
 heroImage: "../../assets/blog/airpods-hearing-aid.png"
 heroAlt: "Article cover: AirPods Hearing Aid, What the Lab Tests Actually Show"
@@ -35,7 +35,7 @@ faq:
     a: "Apple's hearing features won't cover you, and buying $249 earbuds to test whether amplification helps is an expensive experiment. A third-party amplification app runs on the headphones you already own, including wired ones. It won't tune itself to an audiogram the way Apple's feature does, but it costs far less to find out whether amplification is worth pursuing."
 relatedSlugs:
   - "live-listen-without-airpods"
-draft: true
+draft: false
 ---
 
 Your AirPods might run a hearing aid feature. Whether that sentence has anything to do with you depends entirely on which AirPods are in your ears, and for a good share of people searching this, the answer is that it doesn't.

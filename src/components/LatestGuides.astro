@@ -1,0 +1,71 @@
+---
+/**
+ * Latest guides on the homepage.
+ *
+ * This exists for crawling as much as for readers. On 2026-09-01 the homepage
+ * was the ONLY indexed page on the site — everything else sat at
+ * "Discovered - currently not indexed" with no crawl date at all, meaning Google
+ * had never fetched them. The homepage linked to /blog/ but to no article, so
+ * the path to every guide was / → /blog/ → article, and Google had not taken
+ * step two.
+ *
+ * Linking the newest guides straight from the one page Google actually crawls
+ * puts them one hop closer. `publish_and_index.md` already names this as the
+ * real lever: "Internal links from already-crawled pages."
+ *
+ * Reads getPublishedPosts(), so drafts can never appear here.
+ */
+import { getPublishedPosts, postUrl, formatDate } from "../lib/posts";
+import { CLUSTERS } from "../content.config";
+
+const posts = (await getPublishedPosts()).slice(0, 3);
+---
+{posts.length > 0 && (
+  <section class="border-t border-hairline bg-charcoal px-safe">
+    <div class="mx-auto max-w-6xl px-6 py-20 sm:py-24">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="section-label">From the blog</p>
+        <h2 class="section-title mt-3">Guides on hearing more clearly</h2>
+        <p class="mt-4 text-base leading-relaxed text-secondary">
+          Written and tested by the person who builds Clarive.
+        </p>
+      </div>
+
+      <ul class="mt-12 grid gap-4 sm:grid-cols-3">
+        {posts.map((post) => (
+          <li class="guide-link rounded-2xl border border-hairline bg-surface p-6">
+            <p class="text-xs font-semibold uppercase tracking-wider text-crimson">
+              {CLUSTERS[post.data.cluster].title}
+            </p>
+            <h3 class="mt-3 text-lg font-semibold leading-snug tracking-tight text-white">
+              <a href={postUrl(post.id)} class="stretched-guide">{post.data.title}</a>
+            </h3>
+            <p class="mt-2.5 text-sm leading-relaxed text-secondary">
+              {post.data.description}
+            </p>
+            <time datetime={post.data.publishDate.toISOString()} class="mt-4 block text-xs text-secondary">
+              {formatDate(post.data.publishDate)}
+            </time>
+          </li>
+        ))}
+      </ul>
+
+      <div class="mt-10 text-center">
+        <a href="/blog/" class="text-sm font-medium text-crimson hover:underline">
+          Read all guides
+        </a>
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  /* Layout stays on utility classes. Anything structural put here would beat
+     Tailwind's utilities, because these rules are unlayered and the utilities
+     are not — see memory/clarive-website-css-gotchas. Visual treatment only. */
+  .guide-link { position: relative; transition: border-color 0.2s ease, transform 0.2s ease; }
+  .guide-link:hover { border-color: rgba(255, 59, 48, 0.4); transform: translateY(-2px); }
+  .stretched-guide::after { content: ""; position: absolute; inset: 0; }
+  .guide-link:has(a:focus-visible) { outline: 2px solid var(--color-crimson-light); outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) { .guide-link:hover { transform: none; } }
+</style>

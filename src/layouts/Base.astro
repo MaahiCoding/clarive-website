@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import { NOINDEX } from "../lib/env";
 import { homeFaq } from "../data/home-faq";
+import { appRating } from "../data/app-rating";
 
 export interface Props {
   title?: string;
@@ -72,11 +73,14 @@ const softwareLd = {
     description:
       "Free to download with a limited free tier. Paid plans unlock unlimited use; see the App Store listing for current pricing.",
   },
-  // Must match the live App Store listing exactly, and must be visible on the
-  // page. Was 4.8/5; the listing now reports 4.67 from 6 ratings. A stale
-  // aggregateRating is a structured-data violation, not a rounding preference.
-  // Source: itunes.apple.com/lookup?id=6748903280, checked 2026-08-26.
-  aggregateRating: { "@type": "AggregateRating", ratingValue: "4.7", ratingCount: "6" },
+  // Read from data/app-rating.ts so the schema and the visible stars cannot
+  // drift. They had: the schema said 6 ratings while the listing had moved to 7.
+  // Refresh with `uv run tools/sync_rating.py`; never hand-edit the numbers.
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: appRating.value,
+    ratingCount: appRating.count,
+  },
   description:
     "Real-time audio amplification and live captions for people with mild hearing difficulty. Turns iPhone and headphones into a powerful listening device.",
   url: SITE + "/",
