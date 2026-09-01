@@ -27,8 +27,13 @@ permissions:
 
 jobs:
   publish:
-    # Without this guard the job's own commit re-triggers the workflow forever.
-    if: ${{ !contains(github.event.head_commit.message, '[auto-publish]') }}
+    # Skip the job's own commit so it cannot re-trigger itself. Matching on the
+    # actor, not the message: the first version matched '[auto-publish]' anywhere
+    # in the commit text and skipped the very commit that ADDED this workflow,
+    # because the body explained the marker. The actor is unambiguous.
+    # (GitHub also refuses to re-trigger on pushes made with GITHUB_TOKEN, so this
+    # is the second of two locks, not the only one.)
+    if: ${{ github.actor != 'github-actions[bot]' }}
     runs-on: ubuntu-latest
 
     steps:
