@@ -1,0 +1,93 @@
+# Merging a draft to main IS the publish decision.
+#
+# The pipeline writes articles with `draft: true`, which produces no route in
+# production, so a draft can sit on main harmlessly. This flips the flag and
+# stamps the real publish date the moment one lands on main.
+#
+# Why it exists: publishing used to require a shell on the Mac mini. That made
+# "approve an article" a desk job, and three finished articles sat unpublished
+# for a week because of it. Merging a PR is something you can do from a phone.
+#
+# The date matters. `publishDate` is written by the drafting agent on the day the
+# draft is CREATED, and a draft sits in review for days, so shipping it unchanged
+# backdates the byline, article:published_time, datePublished, dateModified and
+# the RSS pubDate. The first article went live 22 days backdated exactly this way.
+name: Publish merged drafts
+
+on:
+  push:
+    branches: [main]
+
+# The job commits back to main, so it needs write access. If this fails with a
+# 403, the repo setting is the cause, not the workflow:
+#   Settings → Actions → General → Workflow permissions
+#     → "Read and write permissions"
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    # Without this guard the job's own commit re-triggers the workflow forever.
+    if: ${{ !contains(github.event.head_commit.message, '[auto-publish]') }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Flip draft flags and stamp today's date
+        id: flip
+        run: |
+          python3 - <<'PY'
+          import os, re, pathlib
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          # Mahipal's local date, not the runner's UTC. A merge at 02:00 IST is
+          # still "today" to the person publishing and to the reader.
+          today = datetime.now(ZoneInfo("Asia/Kolkata")).date().isoformat()
+
+          changed = []
+          for md in sorted(pathlib.Path("src/content/blog").glob("*.md")):
+              text = md.read_text()
+              if not re.search(r"^draft:\s*true\s*$", text, re.M):
+                  continue
+              text = re.sub(r"^draft:\s*true\s*$", "draft: false", text, count=1, flags=re.M)
+              text = re.sub(r"^(publishDate:\s*).*$", rf"\g<1>{today}", text, count=1, flags=re.M)
+              md.write_text(text)
+              changed.append(md.name)
+              print(f"published {md.name} with publishDate {today}")
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"count={len(changed)}\n")
+              f.write(f"names={', '.join(changed)}\n")
+          if not changed:
+              print("no drafts on main, nothing to do")
+          PY
+
+      - name: Commit
+        if: steps.flip.outputs.count != '0'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/content/blog
+          git commit -m "publish: ${{ steps.flip.outputs.names }} [auto-publish]" \
+                     -m "draft: false and publishDate stamped on merge to main."
+          # A 403 here means workflow permissions are read-only. Say so, rather
+          # than leaving a green tick on a job that published nothing.
+          git push || {
+            echo "::error::Push failed. Set Settings → Actions → General → Workflow permissions to 'Read and write permissions'."
+            exit 1
+          }
+
+      - name: Summary
+        run: |
+          if [ "${{ steps.flip.outputs.count }}" = "0" ]; then
+            echo "### No drafts to publish" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### Published ${{ steps.flip.outputs.count }} article(s)" >> $GITHUB_STEP_SUMMARY
+            echo "${{ steps.flip.outputs.names }}" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "Vercel is deploying now. Hub links shipped in the same branch." >> $GITHUB_STEP_SUMMARY
+          fi
