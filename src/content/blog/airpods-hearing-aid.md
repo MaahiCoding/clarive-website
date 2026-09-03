@@ -29,8 +29,8 @@ faq:
     a: "Almost always because you're not in Transparency mode. The feature amplifies only in Transparency. Switch to Noise Cancellation or Adaptive and the amplification stops, with no warning that it has. Check the noise control setting before you assume anything is broken."
   - q: "Does the Hearing Aid feature work without tuning it first?"
     a: "Not strictly, but the testing says you should. Untuned, both labs scored speech in noise below 1.5 out of five. Take the five-minute Hearing Test on the earbuds themselves or import an audiogram from an audiologist, and the same hardware scores roughly three times higher. It's free and it's the difference between the feature working and not."
-  - q: "Can I use the Hearing Aid feature with AirPods 4?"
-    a: "No. AirPods 4 support Conversation Boost and Transparency, which help a little, but not the Hearing Aid feature itself. There's no firmware update or setting that adds it, because the feature depends on hardware those earbuds don't have."
+  - q: "Can you wear AirPods Pro as hearing aids all day?"
+    a: "Not on one charge. AirPods Pro run five to 10 hours with the Hearing Aid feature on, against 12 to 13 for a fitted device, and Soundly puts the realistic wearing window at about 90 minutes before ear fatigue sets in. The awkward part is when they charge: a fitted device charges overnight while you sleep, and AirPods want the case during the hours you're awake and talking to people."
   - q: "What are my options if I don't own AirPods Pro?"
     a: "Apple's hearing features won't cover you, and buying $249 earbuds to test whether amplification helps is an expensive experiment. A third-party amplification app runs on the headphones you already own, including wired ones. It won't tune itself to an audiogram the way Apple's feature does, but it costs far less to find out whether amplification is worth pursuing."
 relatedSlugs:
