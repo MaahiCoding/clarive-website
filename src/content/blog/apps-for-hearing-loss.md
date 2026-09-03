@@ -41,7 +41,7 @@ relatedSlugs:
 draft: true
 ---
 
-I build Clarive, one of the apps below. I've tried to be straight about where it wins and where it doesn't.
+I build Clarive and iScribe, two of the apps below. I've tried to be straight about where each one wins and where it doesn't, and this article argues that an app is probably not your best option at all.
 
 Search for apps for hearing loss and you'll get a dozen ranked lists. Nearly all of them make the same mistake: they put a captioning app, a sound amplifier, and a hearing aid remote control in one list and number them one through ten, as if you're meant to pick a winner.
 
@@ -51,7 +51,7 @@ Those three things don't compete. They solve different problems. Picking from th
 
 Here's the split. Find yourself in it before you install anything.
 
-**Captioning apps** turn speech into text on your screen. You read instead of listen. These help when you can tell someone is talking but can't separate the words. That pattern has a cause: [age-related hearing loss](https://www.nidcd.nih.gov/health/age-related-hearing-loss) usually takes the high frequencies first, and high frequencies are where the consonants live. Vowels carry the volume, consonants carry the meaning. Apple's own Live Captions, Google's Live Transcribe, Otter, and Ava all live here.
+**Captioning apps** turn speech into text on your screen. You read instead of listen. These help when you can tell someone is talking but can't separate the words. That pattern has a cause: [age-related hearing loss](https://www.nidcd.nih.gov/health/age-related-hearing-loss) usually takes the high frequencies first, and high frequencies are where the consonants live. Vowels carry the volume, consonants carry the meaning. Apple's own Live Captions, Google's Live Transcribe, Otter, and Ava all live here. So does iScribe, which I also build.
 
 **Amplifier apps** use your phone's microphone to pick up sound, make it louder, and play it into your headphones. These help when speech is clear enough but too quiet, or when the person you want to hear is across a table in a room with other noise. Clarive is one of these. So is Apple's Live Listen, which is built into your iPhone already.
 
@@ -86,6 +86,12 @@ Where they fall over is conversation. Reading has a lag, and by the time you've 
 The other limit is noise. Recognition degrades when several people talk at once, which is exactly the restaurant scenario that sends people looking in the first place. Test one in the room you actually struggle in, not in your kitchen.
 
 One thing worth checking before you commit: whether the app runs recognition on your phone or sends audio to a server. On-device is faster, works without a connection, and doesn't put your conversations on someone else's computer. Server-based tends to be more accurate on hard audio. Both are legitimate. Just know which one you've installed.
+
+My own two apps both run on-device, so that isn't what separates them. What separates them is whether you want to hear better or read better. Clarive amplifies sound and captions it, in 40+ languages. iScribe doesn't amplify at all: it captions, in 100+ languages, and afterward it can pull out the key points and decisions from what was said.
+
+So a lecture in a language Clarive doesn't cover, or a meeting you need a summary of, points one way. A dinner where you mainly need the person opposite to be louder points the other.
+
+Want specific captioning apps compared side by side rather than sorted into categories? I've written a [ranked list of iPhone apps for hearing loss](https://livetranscribe.pro/best-apps-for-hearing-loss/) on my other site. The same disclosure applies there.
 
 ## Amplifier apps: getting the microphone closer
 
