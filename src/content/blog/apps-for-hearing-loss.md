@@ -41,7 +41,7 @@ relatedSlugs:
 draft: true
 ---
 
-I build Clarive and iScribe, two of the apps below. I've tried to be straight about where each one wins and where it doesn't, and this article argues that an app is probably not your best option at all.
+Disclosure: I build Clarive and iScribe, two of the apps below.
 
 Search for apps for hearing loss and you'll get a dozen ranked lists. Nearly all of them make the same mistake: they put a captioning app, a sound amplifier, and a hearing aid remote control in one list and number them one through ten, as if you're meant to pick a winner.
 
