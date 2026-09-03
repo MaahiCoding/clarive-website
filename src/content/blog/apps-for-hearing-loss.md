@@ -45,17 +45,21 @@ Disclosure: I build Clarive, one of the apps below.
 
 Search for apps for hearing loss and you'll get a dozen ranked lists. Nearly all of them make the same mistake: they put a captioning app, a sound amplifier, and a hearing aid remote control in one list and number them one through ten, as if you're meant to pick a winner.
 
-Those three things don't compete. They solve different problems. Picking from the wrong category is how someone ends up downloading three apps, finding none of them helps, and deciding the whole idea doesn't work.
+Those three things don't compete. They solve different problems. Picking from the wrong one is how someone ends up downloading three apps, finding none of them helps, and deciding the whole idea doesn't work.
+
+One thing the ranked lists never say: these are three jobs, not three walled gardens. A few apps do two of them. That's worth knowing before you buy, because it changes what you're comparing.
 
 ## Three kinds of app, and which one you actually need
 
 Here's the split. Find yourself in it before you install anything.
 
-**Captioning apps** turn speech into text on your screen. You read instead of listen. These help when you can tell someone is talking but can't separate the words. That pattern has a cause: [age-related hearing loss](https://www.nidcd.nih.gov/health/age-related-hearing-loss) usually takes the high frequencies first, and high frequencies are where the consonants live. Vowels carry the volume, consonants carry the meaning. Apple's own Live Captions, Google's Live Transcribe, Otter, and Ava all live here.
+**Captioning apps** turn speech into text on your screen. You read instead of listen. These help when you can tell someone is talking but can't separate the words. That pattern has a cause: [age-related hearing loss](https://www.nidcd.nih.gov/health/age-related-hearing-loss) usually takes the high frequencies first, and high frequencies are where the consonants live. Vowels carry the volume, consonants carry the meaning. On an iPhone the options worth knowing are [Live Captions](https://support.apple.com/guide/iphone/use-live-captions-iphc3fecdc35/ios), which is built into iOS and costs nothing, plus [Ava](https://apps.apple.com/us/app/id1030067058) and [Otter](https://apps.apple.com/us/app/id1276437113). Clarive does captions too, alongside amplification.
 
-**Amplifier apps** use your phone's microphone to pick up sound, make it louder, and play it into your headphones. These help when speech is clear enough but too quiet, or when the person you want to hear is across a table in a room with other noise. Clarive is one of these. So is Apple's Live Listen, which is built into your iPhone already.
+If you've seen Google's Live Transcribe recommended, check the platform before you go looking. It's an Android app, and the things named Live Transcribe on the App Store are made by other developers.
 
-**Companion apps** are made by hearing aid manufacturers to control hearing aids you already own. myPhonak, Oticon Companion, ReSound Smart. If you don't wear that brand's hearing aids, the app does nothing for you.
+**Amplifier apps** use your phone's microphone to pick up sound, make it louder, and play it into your headphones. These help when speech is clear enough but too quiet, or when the person you want to hear is across a table in a room with other noise. [Live Listen](https://support.apple.com/en-us/HT203990) is built into your iPhone already. [Hear Boost](https://apps.apple.com/us/app/id1437159134) and Clarive are two of the third-party options.
+
+**Companion apps** are made by hearing aid manufacturers to control hearing aids you already own. [Oticon Companion](https://apps.apple.com/us/app/id1597064213), [Philips HearLink 2](https://apps.apple.com/us/app/id1597063716), myPhonak, ReSound Smart. If you don't wear that brand's hearing aids, the app does nothing for you.
 
 The test is what fails first. Can you hear that someone is speaking but not make out the words? That's a clarity problem, and captions attack it directly.
 
@@ -86,8 +90,6 @@ Where they fall over is conversation. Reading has a lag, and by the time you've 
 The other limit is noise. Recognition degrades when several people talk at once, which is exactly the restaurant scenario that sends people looking in the first place. Test one in the room you actually struggle in, not in your kitchen.
 
 One thing worth checking before you commit: whether the app runs recognition on your phone or sends audio to a server. On-device is faster, works without a connection, and doesn't put your conversations on someone else's computer. Server-based tends to be more accurate on hard audio. Both are legitimate. Just know which one you've installed.
-
-Want specific captioning apps compared side by side rather than sorted into categories? There's a [ranked list of iPhone apps for hearing loss](https://livetranscribe.pro/best-apps-for-hearing-loss/) that goes through them one by one.
 
 ## Amplifier apps: getting the microphone closer
 
@@ -121,7 +123,7 @@ Clarive works this way too. The free tier gives you five uses a day, and beyond 
 
 ## Where Clarive fits, and where it doesn't
 
-Clarive is a sound amplification app with live captions, and it sits in the amplifier category above.
+Clarive is one of the apps that does two of the three jobs. It amplifies, and it captions. If you're weighing it against something that only does one, that's the comparison to make, not a feature count.
 
 The one thing it does that Apple's Live Listen doesn't is work with **any** headphones that connect to your iPhone. Wired EarPods, cheap Bluetooth earbuds, over-ear headphones you already own. No AirPods, no certified hearing device, nothing extra to buy. That's the entire reason it exists.
 
@@ -139,4 +141,4 @@ Where it loses:
 
 If you already wear hearing aids that work, you probably don't need this. If you own AirPods Pro, try Apple's Hearing Aid feature first. It's free and it's tuned to you.
 
-[Try Clarive on the App Store](https://apps.apple.com/us/app/listening-device-clarive/id6748903280) if the amplifier category sounds like the right one and you don't own AirPods.
+[Try Clarive on the App Store](https://apps.apple.com/us/app/listening-device-clarive/id6748903280) if amplification is the job you need doing, or if you want captions and amplification from one app.
