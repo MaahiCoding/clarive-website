@@ -41,8 +41,6 @@ relatedSlugs:
 draft: true
 ---
 
-Disclosure: I build Clarive, one of the apps below.
-
 Search for apps for hearing loss and you'll get a dozen ranked lists. Nearly all of them make the same mistake: they put a captioning app, a sound amplifier, and a hearing aid remote control in one list and number them one through ten, as if you're meant to pick a winner.
 
 Those three things don't compete. They solve different problems. Picking from the wrong one is how someone ends up downloading three apps, finding none of them helps, and deciding the whole idea doesn't work.
@@ -53,11 +51,9 @@ One thing the ranked lists never say: these are three jobs, not three walled gar
 
 Here's the split. Find yourself in it before you install anything.
 
-**Captioning apps** turn speech into text on your screen. You read instead of listen. These help when you can tell someone is talking but can't separate the words. That pattern has a cause: [age-related hearing loss](https://www.nidcd.nih.gov/health/age-related-hearing-loss) usually takes the high frequencies first, and high frequencies are where the consonants live. Vowels carry the volume, consonants carry the meaning. On an iPhone the options worth knowing are [Live Captions](https://support.apple.com/guide/iphone/use-live-captions-iphc3fecdc35/ios), which is built into iOS and costs nothing, plus [Ava](https://apps.apple.com/us/app/id1030067058) and [Otter](https://apps.apple.com/us/app/id1276437113). Clarive does captions too, alongside amplification.
+**Captioning apps** turn speech into text on your screen. You read instead of listen. These help when you can tell someone is talking but can't separate the words. That pattern has a cause: [age-related hearing loss](https://www.nidcd.nih.gov/health/age-related-hearing-loss) usually takes the high frequencies first, and high frequencies are where the consonants live. Vowels carry the volume, consonants carry the meaning. On an iPhone, [iScribe](https://apps.apple.com/us/app/voice-dictation-iscribe/id6468081340) is the one built for this job: live captions in 100+ languages, on-device, with a summary of the key points when you're done. [Clarive](https://apps.apple.com/us/app/listening-device-clarive/id6748903280) captions too, in 40+ languages, and amplifies at the same time. [Live Captions](https://support.apple.com/guide/iphone/use-live-captions-iphc3fecdc35/ios) is free and already on your iPhone. [Ava](https://apps.apple.com/us/app/id1030067058) and [Otter](https://apps.apple.com/us/app/id1276437113) are the other two worth knowing.
 
-If you've seen Google's Live Transcribe recommended, check the platform before you go looking. It's an Android app, and the things named Live Transcribe on the App Store are made by other developers.
-
-**Amplifier apps** use your phone's microphone to pick up sound, make it louder, and play it into your headphones. These help when speech is clear enough but too quiet, or when the person you want to hear is across a table in a room with other noise. [Live Listen](https://support.apple.com/en-us/HT203990) is built into your iPhone already. [Hear Boost](https://apps.apple.com/us/app/id1437159134) and Clarive are two of the third-party options.
+**Amplifier apps** use your phone's microphone to pick up sound, make it louder, and play it into your headphones. These help when speech is clear enough but too quiet, or when the person you want to hear is across a table in a room with other noise. [Clarive](https://apps.apple.com/us/app/listening-device-clarive/id6748903280) is the one to start with if you own ordinary headphones, because it works with any pair that connects to your iPhone. [Live Listen](https://support.apple.com/en-us/HT203990) is free and built in, but only with AirPods, Beats, or a certified hearing device. [Hear Boost](https://apps.apple.com/us/app/id1437159134) is the other third-party option.
 
 **Companion apps** are made by hearing aid manufacturers to control hearing aids you already own. [Oticon Companion](https://apps.apple.com/us/app/id1597064213), [Philips HearLink 2](https://apps.apple.com/us/app/id1597063716), myPhonak, ReSound Smart. If you don't wear that brand's hearing aids, the app does nothing for you.
 
