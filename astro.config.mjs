@@ -89,12 +89,62 @@ function rehypeTableScroll() {
   };
 }
 
+/**
+ * Add `rel="nofollow"` to links pointing at competitor domains.
+ *
+ * Two different things get confused under "don't link competitors", and the
+ * distinction decides which one this handles:
+ *
+ *   A product or App Store link  -> never publish one. It is a one-tap install
+ *                                   button for a rival at the moment of intent.
+ *                                   Name the app instead. slop_lint.py fails on it.
+ *   A citation backing a number  -> keep it. The AirPods article's whole argument
+ *                                   rests on measured scores from HearingUp,
+ *                                   HearingTracker and Soundly, and
+ *                                   claims-guardrails.md forbids uncited health
+ *                                   facts. Removing the source does not make the
+ *                                   claim ours, it makes it unsupported.
+ *
+ * So citations stay and stop passing link equity to a domain we are trying to
+ * outrank. nofollow is the standard instrument for exactly this: the reader can
+ * still verify the number, Google is told not to count the endorsement.
+ */
+const COMPETITOR_DOMAINS = [
+  'hearingtracker.com',
+  'soundly.com',
+  'hearingup.com',
+  'sorenson.com',
+  'truhearing.com',
+  'abilitycentral.org',
+  'rnid.org.uk',
+  'abilitynet.org.uk',
+];
+
+function rehypeCompetitorNofollow() {
+  const isCompetitor = (href) =>
+    typeof href === 'string' &&
+    COMPETITOR_DOMAINS.some((d) => href.includes(d));
+
+  return (tree) => {
+    const walk = (node) => {
+      if (node.type === 'element' && node.tagName === 'a' && isCompetitor(node.properties?.href)) {
+        const rel = new Set(String(node.properties.rel || '').split(/\s+/).filter(Boolean));
+        rel.add('nofollow');
+        rel.add('noopener');
+        node.properties = { ...node.properties, rel: [...rel].join(' ') };
+      }
+      for (const child of node.children || []) walk(child);
+    };
+    walk(tree);
+  };
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://listeningdevice.app',
   integrations: [sitemap()],
   markdown: {
-    rehypePlugins: [rehypeTableScroll],
+    rehypePlugins: [rehypeTableScroll, rehypeCompetitorNofollow],
   },
   vite: {
     plugins: [tailwindcss()],
