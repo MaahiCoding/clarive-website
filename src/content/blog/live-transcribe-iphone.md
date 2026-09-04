@@ -67,7 +67,9 @@ Apple's Live Captions is English only. If that's not your language, or your iPho
 
 **It isn't limited to Apple's language list.** 100+ languages, because it doesn't depend on the same on-device recognizer every other iPhone app is built against.
 
-**The transcript survives.** Apple's captions scroll away as they go. iScribe saves them, makes them searchable, and pulls out the key points afterward, which matters when the reason you needed captions was a doctor's appointment or a meeting you have to act on.
+**The transcript survives, and it stays yours.** Apple's captions scroll away as they go. iScribe saves them, makes them searchable, and pulls out the key points afterward, which matters when the reason you needed captions was a doctor's appointment or a meeting you have to act on. Those transcripts are stored on the phone, not on anyone's server.
+
+**It keeps working without a signal.** Download the language you need and it runs on-device, and the screen tells you which engine is producing the words rather than leaving you guessing. That's the difference between a caption app you can rely on in a hospital basement and one that quietly stops.
 
 Otter is aimed at meetings and note-taking, and it's strong there. Ava is built for in-person conversation and is the one most often recommended in deaf and hard of hearing communities. The various App Store apps using the Live Transcribe name are small independent products of mixed quality, and the name tells you nothing about which.
 
