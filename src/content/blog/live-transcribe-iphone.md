@@ -16,7 +16,7 @@ heroImage: "../../assets/blog/live-transcribe-iphone.png"
 heroAlt: "Article cover: Live Transcribe on iPhone, What Actually Exists"
 shortAnswer: "On iPhone, Apple's Live Captions is the free built-in option, on iPhone 11 or later, and it only works in English. If you need another language, better accuracy in a noisy room, or an app built specifically for deaf and hard of hearing users, that is what a third-party app like iScribe is for. Your language decides it first."
 takeaways:
-  - "Google's Live Transcribe is Android only. The iPhone apps carrying that name are from other developers entirely."
+  - "On iPhone the choice is Apple's free built-in Live Captions, or a third-party app when you need a language Apple doesn't cover."
   - "Apple's Live Captions is free, built in, and runs on-device. It needs an iPhone 11 or later and English set as your primary language."
   - "If Apple's version covers your language and your phone, use it and spend nothing. That's the honest answer for anyone whose iPhone is already set to English."
   - "Third-party captioning apps earn their place on languages other than English, not on accuracy."
@@ -45,19 +45,17 @@ If you're on an iPhone and you want live captions, the short version is this: Ap
 
 The longer version starts with a naming problem. Search the App Store for Live Transcribe and you'll get results. None of them is the app you're probably thinking of.
 
-Google's Live Transcribe is an Android app. It has never shipped for iOS, and Google has never said it will. The listings carrying that name on the App Store come from other developers who found a search term with demand already attached to it. Some of those apps are good. They just aren't the thing people mean when they ask the question, and none of the pages ranking for it say so directly.
+The name comes from an Android app that has never shipped for iOS, so the listings carrying it on the App Store are from other developers entirely. Some of them are good. The name just tells you nothing about which.
 
-So here's the map. Three different products share this one search term, and which one you want comes down to your language and your phone.
+So here's the map. Two things are actually available to you on an iPhone, and which one you want comes down to your language.
 
-## Three things share one name
+## What you can actually use on an iPhone
 
-The first is **Google's Live Transcribe**, on Android only. It's well liked, it's free, and it isn't available to you on an iPhone. That's the end of that branch.
+The first is **Apple's Live Captions**, built into iOS since version 16. It's free, it's already on your phone, and Apple doesn't market it under the Live Transcribe name, which is exactly why people searching that term never find it.
 
-The second is **Apple's Live Captions**, built into iOS since version 16. Apple doesn't market it under the Live Transcribe name, which is exactly why people searching don't find it.
+The second is a **third-party captioning app**. This is where you end up if Apple's version doesn't cover your language, or your iPhone is older than an 11. [iScribe](https://apps.apple.com/us/app/voice-dictation-iscribe/id6468081340) is the one built specifically for this job on iPhone, in 100+ languages rather than Apple's English only, and it saves the transcript instead of letting it scroll away.
 
-The third is a **set of third-party App Store apps**, some of which use "Live Transcribe" in their names. They're unrelated to Google and unrelated to each other, and quality varies a lot. [iScribe](https://apps.apple.com/us/app/voice-dictation-iscribe/id6468081340) is the one in this group built specifically for live transcription on iPhone, in 100+ languages rather than Apple's English only.
-
-Almost every roundup treats these as competitors to be ranked one through five. They aren't competing. Two of them you can't have, or already own, and the ranking question only starts after you've worked out which branch you're on. Other guides in this area are collected under [live captions on iPhone](/blog/topics/live-captions/).
+That's the whole decision. Almost every roundup ranks a dozen apps one through five before telling you that the free option already on your phone might settle it. Work out which of those two you're in first, then compare. Other guides in this area are collected under [live captions on iPhone](/blog/topics/live-captions/).
 
 ## Apple's Live Captions is the free option, if it covers you
 
@@ -141,6 +139,6 @@ The free tier gives you five uses a day. Past that it's a subscription, ranging 
 
 ## The short version
 
-Google's Live Transcribe isn't coming to iPhone, so stop looking for it. Turn on Apple's Live Captions first, because it's free and already installed, and it'll answer the question outright if your phone is set to English. When your language isn't covered, that's the point where a paid app is worth your money, and language support is the thing to compare rather than the ratings.
+Turn on Apple's Live Captions first, because it's free and already installed, and it'll answer the question outright if your phone is set to English. When your language isn't covered, that's the point where a paid app is worth your money, and language support is the thing to compare rather than the ratings.
 
-Want the amplification and the captions together in a language Apple skips? [Clarive](https://apps.apple.com/us/app/listening-device-clarive/id6748903280) is what I built for that. Anyone already wearing hearing aids should start with the manufacturer's own app instead, and it's worth reading [what your iPhone already offers](/blog/apple-hearing-aid-feature/) and [how phone-based tools compare to dedicated hardware](/blog/assistive-listening-device/) before adding anything.
+For captions on their own, in 100+ languages, with the transcript saved and summarized afterward, [iScribe](https://apps.apple.com/us/app/voice-dictation-iscribe/id6468081340) is the one I'd point you at. Want amplification and captions together instead? [Clarive](https://apps.apple.com/us/app/listening-device-clarive/id6748903280) does both. Anyone already wearing hearing aids should start with the manufacturer's own app instead, and it's worth reading [what your iPhone already offers](/blog/apple-hearing-aid-feature/) and [how phone-based tools compare to dedicated hardware](/blog/assistive-listening-device/) before adding anything.
