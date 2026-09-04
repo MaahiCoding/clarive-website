@@ -65,7 +65,7 @@ Apple's Live Captions is English only. If that's not your language, or your iPho
 
 **It has modes for how you're actually listening.** Auto handles everyday conversation and splits a group around a table into separate speakers, so you can tell who said what instead of reading one undivided block. TV & Media is for anything coming through a speaker, near or across a room, which is where most captioning apps fall apart. Hearing Aid captures through Bluetooth hearing aids or earbuds, and falls back to the phone's own microphone when the aids are output-only rather than dropping you out of the mode.
 
-**It isn't limited to Apple's language list.** 100+ languages, because it doesn't depend on the same on-device recognizer every other iPhone app is built against.
+**It isn't limited to Apple's language list.** 100+ languages, because it doesn't depend on the same on-device recognizer every other iPhone app is built against. It also handles a conversation that switches between languages partway through, which is normal in most of the world and which almost no captioning app admits to, and it can put the summary into your language rather than the one the room was speaking.
 
 **The transcript survives, and it stays yours.** Apple's captions scroll away as they go. iScribe saves them, makes them searchable, and pulls out the key points afterward, which matters when the reason you needed captions was a doctor's appointment or a meeting you have to act on. Those transcripts are stored on the phone, not on anyone's server.
 
