@@ -1,6 +1,6 @@
 ---
 title: "Live Transcribe on iPhone: What Actually Exists"
-description: "Google's Live Transcribe is Android only. Here's what that name means on the App Store, what Apple's built-in Live Captions covers, and what fills the gap."
+description: "Apple's Live Captions is free and built in, but English only. Here's what covers the other languages on iPhone, and what that App Store name really means."
 keyword: "live transcribe iphone"
 secondaryKeywords:
   - "live transcribe for iphone"
@@ -14,7 +14,7 @@ publishDate: 2026-09-04
 author: "Mahipal"
 heroImage: "../../assets/blog/live-transcribe-iphone.png"
 heroAlt: "Article cover: Live Transcribe on iPhone, What Actually Exists"
-shortAnswer: "Google's Live Transcribe is an Android app and has never been released for iPhone. The App Store listings using that name come from unrelated developers. Apple's own Live Captions does the same job on iPhone 11 or later, for free, but only in English. Third-party apps cover the languages Apple leaves out."
+shortAnswer: "On iPhone, Apple's Live Captions is the free built-in option, on iPhone 11 or later, and it only works in English. If you need another language, better accuracy in a noisy room, or an app built specifically for deaf and hard of hearing users, that is what a third-party app like iScribe is for. Your language decides it first."
 takeaways:
   - "Google's Live Transcribe is Android only. The iPhone apps carrying that name are from other developers entirely."
   - "Apple's Live Captions is free, built in, and runs on-device. It needs an iPhone 11 or later and English set as your primary language."
@@ -41,13 +41,13 @@ relatedSlugs:
 draft: true
 ---
 
-Search the App Store on your iPhone for Live Transcribe and you'll get results. None of them is the app you're probably thinking of.
+If you're on an iPhone and you want live captions, the short version is this: Apple's own Live Captions is already on your phone and costs nothing, and it only speaks English. Everything past that is about which app covers your language.
+
+The longer version starts with a naming problem. Search the App Store for Live Transcribe and you'll get results. None of them is the app you're probably thinking of.
 
 Google's Live Transcribe is an Android app. It has never shipped for iOS, and Google has never said it will. The listings carrying that name on the App Store come from other developers who found a search term with demand already attached to it. Some of those apps are good. They just aren't the thing people mean when they ask the question, and none of the pages ranking for it say so directly.
 
 So here's the map. Three different products share this one search term, and which one you want comes down to your language and your phone.
-
-I build Clarive, one of the apps below. I've tried to be straight about where it wins and where it doesn't.
 
 ## Three things share one name
 
@@ -55,7 +55,7 @@ The first is **Google's Live Transcribe**, on Android only. It's well liked, it'
 
 The second is **Apple's Live Captions**, built into iOS since version 16. Apple doesn't market it under the Live Transcribe name, which is exactly why people searching don't find it.
 
-The third is a **set of third-party App Store apps**, some of which use "Live Transcribe" in their names. They're unrelated to Google and unrelated to each other.
+The third is a **set of third-party App Store apps**, some of which use "Live Transcribe" in their names. They're unrelated to Google and unrelated to each other, and quality varies a lot. [iScribe](https://apps.apple.com/us/app/voice-dictation-iscribe/id6468081340) is the one in this group built specifically for live transcription on iPhone, in 100+ languages rather than Apple's English only.
 
 Almost every roundup treats these as competitors to be ranked one through five. They aren't competing. Two of them you can't have, or already own, and the ranking question only starts after you've worked out which branch you're on. Other guides in this area are collected under [live captions on iPhone](/blog/topics/live-captions/).
 
@@ -106,6 +106,8 @@ It runs on-device, so conversations stay on your phone rather than going to a se
 Otter is aimed at meetings and note-taking, and it's strong there. Ava is built for in-person conversation and is the one most often recommended in deaf and hard of hearing communities. The various App Store apps named Live Transcribe are small independent products of mixed quality, and the name tells you nothing about which.
 
 What to actually compare, in order: does it support your language, does it work offline, does it store audio, and what does the free tier cut off at. Star ratings won't tell you any of those.
+
+If you want them lined up side by side rather than described, there's a [detailed comparison of iPhone transcription apps](https://livetranscribe.pro/ai-audio-transcription-apps/) that goes through them one at a time with pricing.
 
 ## What captions still can't do
 
