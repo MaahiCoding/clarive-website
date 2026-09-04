@@ -1,0 +1,63 @@
+# Merge a pre-approved draft on the date its label names.
+#
+# Rule 1 of this project is that nothing publishes without Mahipal. This does
+# not change that. The APPROVAL is the label: he reads the preview, decides,
+# and records the decision on the PR as `publish-YYYY-MM-DD`. This job only
+# carries out a decision already made, on the day it was made for.
+#
+# Why a label and not a config file or a comment: it is visible on the PR list,
+# it is auditable in the PR timeline, and removing it cancels the publish with
+# no code change. A draft with no label never merges, whatever else is true.
+name: Scheduled publish
+
+on:
+  schedule:
+    - cron: "35 3 * * *"      # 09:05 IST, before the Tue/Fri writing run at 09:07
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge PRs whose publish label is due
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          TODAY="$(date -u +%F)"
+          echo "Today (UTC): $TODAY"
+
+          # Open PRs carrying any publish-* label.
+          gh pr list --repo "$REPO" --state open \
+            --json number,title,labels \
+            --jq '.[] | {n: .number, t: .title, l: [.labels[].name | select(startswith("publish-"))]}
+                  | select(.l | length > 0)' > due.jsonl || true
+
+          if [ ! -s due.jsonl ]; then
+            echo "No labelled PRs. Nothing to do."
+            exit 0
+          fi
+
+          while read -r row; do
+            N=$(echo "$row" | jq -r .n)
+            T=$(echo "$row" | jq -r .t)
+            for LBL in $(echo "$row" | jq -r '.l[]'); do
+              DATE="${LBL#publish-}"
+              # A malformed label must not become "publish immediately".
+              if ! echo "$DATE" | grep -qE '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then
+                echo "PR #$N: label '$LBL' is not publish-YYYY-MM-DD, skipping."
+                continue
+              fi
+              if [ "$DATE" \> "$TODAY" ]; then
+                echo "PR #$N ($T): scheduled for $DATE, not yet."
+                continue
+              fi
+              echo "PR #$N ($T): due $DATE, merging."
+              gh pr merge "$N" --repo "$REPO" --squash --delete-branch
+            done
+          done < due.jsonl
