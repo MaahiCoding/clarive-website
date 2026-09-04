@@ -57,6 +57,24 @@ The second is a **third-party captioning app**. This is where you end up if Appl
 
 That's the whole decision. Almost every roundup ranks a dozen apps one through five before telling you that the free option already on your phone might settle it. Work out which of those two you're in first, then compare. Other guides in this area are collected under [live captions on iPhone](/blog/topics/live-captions/).
 
+## If Apple's version doesn't cover you, this is what does
+
+Apple's Live Captions is English only. If that's not your language, or your iPhone is older than an 11, the built-in option is out and you're choosing an app.
+
+[iScribe](https://apps.apple.com/us/app/voice-dictation-iscribe/id6468081340) is the one built for this specific job rather than adapted to it, and three things separate it from a general transcription app.
+
+**It has modes for how you're actually listening.** Auto handles everyday conversation and splits a group around a table into separate speakers, so you can tell who said what instead of reading one undivided block. TV & Media is for anything coming through a speaker, near or across a room, which is where most captioning apps fall apart. Hearing Aid captures through Bluetooth hearing aids or earbuds, and falls back to the phone's own microphone when the aids are output-only rather than dropping you out of the mode.
+
+**It isn't limited to Apple's language list.** 100+ languages, because it doesn't depend on the same on-device recognizer every other iPhone app is built against.
+
+**The transcript survives.** Apple's captions scroll away as they go. iScribe saves them, makes them searchable, and pulls out the key points afterward, which matters when the reason you needed captions was a doctor's appointment or a meeting you have to act on.
+
+Otter is aimed at meetings and note-taking, and it's strong there. Ava is built for in-person conversation and is the one most often recommended in deaf and hard of hearing communities. The various App Store apps using the Live Transcribe name are small independent products of mixed quality, and the name tells you nothing about which.
+
+What to actually compare, in order: does it support your language, does it work offline, does it store audio, and what does the free tier cut off at. Star ratings won't tell you any of those.
+
+If you want them lined up side by side rather than described, there's a [detailed comparison of iPhone transcription apps](https://livetranscribe.pro/ai-audio-transcription-apps/) that goes through them one at a time with pricing.
+
 ## Apple's Live Captions is the free option, if it covers you
 
 This is the part the search results bury, so I'll put it first: if Apple's version works for your situation, use it and spend nothing.
@@ -86,26 +104,6 @@ Four taps, and it's easy to miss, because it sits under Accessibility rather tha
 A caption window appears and starts transcribing. Drag it where you want it. Tap **Appearance** on that same screen to change text size and color, which matters more than it sounds like it does when you're reading a fast conversation across a table.
 
 If Live Captions isn't in that menu, it's one of the two limits above. Check your iPhone model first, then Settings > General > Language & Region.
-
-## The apps that fill Apple's gap
-
-Third-party captioning apps earn their place on languages, and to a lesser degree on how the text is presented. They don't earn it on raw accuracy, because most of them on iOS are built against the same on-device speech recognition Apple uses. An app can't easily be more accurate than the engine underneath it.
-
-[iScribe](https://apps.apple.com/us/app/voice-dictation-iscribe/id6468081340) is the closest thing on iPhone to what people mean when they search for Live Transcribe, and it beats Apple's built-in option on the three things that actually decide whether captions work for you.
-
-**Languages.** 100+, against English only on Apple's Live Captions. If the conversation you need captioned isn't in English, that single difference settles it.
-
-**What happens after.** Apple's captions vanish as they scroll. iScribe saves the transcript, lets you search it later, and pulls out the key points and decisions when you're done, which matters if the reason you needed captions was a doctor's appointment or a work meeting you have to act on.
-
-**Reading it comfortably.** Adjustable text size and high-contrast themes, which sounds minor until you're reading a live transcript across a table in bad light.
-
-It runs on-device, so conversations stay on your phone rather than going to a server, and it's free to start with paid plans beyond that. It needs iOS 26.2 or later.
-
-Otter is aimed at meetings and note-taking, and it's strong there. Ava is built for in-person conversation and is the one most often recommended in deaf and hard of hearing communities. The various App Store apps named Live Transcribe are small independent products of mixed quality, and the name tells you nothing about which.
-
-What to actually compare, in order: does it support your language, does it work offline, does it store audio, and what does the free tier cut off at. Star ratings won't tell you any of those.
-
-If you want them lined up side by side rather than described, there's a [detailed comparison of iPhone transcription apps](https://livetranscribe.pro/ai-audio-transcription-apps/) that goes through them one at a time with pricing.
 
 ## What captions still can't do
 
