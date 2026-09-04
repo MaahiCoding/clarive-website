@@ -10,7 +10,7 @@ secondaryKeywords:
   - "app to turn phone into hearing aid"
 cluster: "comparisons"
 intent: "list"
-publishDate: 2026-09-03
+publishDate: 2026-09-04
 author: "Mahipal"
 heroImage: "../../assets/blog/apps-for-hearing-loss.png"
 heroAlt: "Article cover: Apps for Hearing Loss, Which Kind You Actually Need"
@@ -38,7 +38,7 @@ relatedSlugs:
   - "assistive-listening-device"
   - "live-listen-without-airpods"
   - "apple-hearing-aid-feature"
-draft: true
+draft: false
 ---
 
 Search for apps for hearing loss and you'll get a dozen ranked lists. Nearly all of them make the same mistake: they put a captioning app, a sound amplifier, and a hearing aid remote control in one list and number them one through ten, as if you're meant to pick a winner.
