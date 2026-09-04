@@ -81,6 +81,10 @@ And if any of this is new, or if the change came on suddenly, see an audiologist
 
 Captions are the strongest option in the category, and it isn't close. Speech recognition got good enough that reading a live transcript of a meeting is genuinely workable.
 
+What separates a good one from a generic transcription app is whether it knows what you're listening to. [iScribe](https://apps.apple.com/us/app/voice-dictation-iscribe/id6468081340) makes that a setting: **Hearing Aid** captures through Bluetooth hearing aids or earbuds, **TV & Media** is for anything coming through a speaker across a room, and **Auto** handles everyday conversation and splits a group around a table into separate speakers, so you can see who said what instead of one undivided block of text. A dictation app pointed at a dinner table gives you the words with no idea who spoke them.
+
+The other thing worth having is what happens after. Captions scroll away while you're still reading them, and if the reason you needed them was a doctor's appointment, the sentence you missed is the one that mattered. iScribe keeps the transcript, makes it searchable, and pulls out the key points, in your own language if the room wasn't speaking it.
+
 Where they fall over is conversation. Reading has a lag, and by the time you've read the sentence, the room has moved on. That's fine in a lecture where you're receiving rather than replying. In a four-person dinner it means you're always slightly behind, and the moment to say something has passed by the time you know what was said.
 
 The other limit is noise. Recognition degrades when several people talk at once, which is exactly the restaurant scenario that sends people looking in the first place. Test one in the room you actually struggle in, not in your kitchen.
@@ -93,7 +97,9 @@ An amplifier app does something simpler than it sounds like. Your phone's microp
 
 The reason it helps is distance, not volume. Put the phone on the table between you and whoever you're talking to, and the microphone is two feet from their mouth instead of six feet away like your ears are. That change in distance does more than the volume slider does.
 
-The reason it fails is also distance. Across a lecture hall, your phone's microphone hears the room, not the speaker, and no amount of amplification fixes that. Personal amplifiers are a close-range tool. That's a property of the category, not a flaw in any particular app.
+What varies between apps is what they do to the sound after picking it up. Raw volume makes a noisy room louder, not clearer, which is why the useful controls are the ones that change the shape of it. [Clarive](https://apps.apple.com/us/app/listening-device-clarive/id6748903280) ships five presets for this, and the names tell you the situation each is for: Clear, Conversation, Noisy Place, TV & Media, and Speech Clarity. On top of that, Voice Isolation pulls out the person in front of you and Focus Mode narrows to what's ahead, so a cafe with a tile floor and a lecture hall aren't handled with the same settings.
+
+The reason it fails is also distance. Across a lecture hall, your phone's microphone hears the room, not the speaker, and no amount of amplification fixes that. Personal amplifiers are a close-range tool. That's a property of the category, not a flaw in any particular app, and no preset gets around it.
 
 Apple's [Live Listen](https://support.apple.com/en-us/HT203990) is already on your iPhone and does this for free. It's worth trying first for exactly that reason. The catch is that Apple restricts it to AirPods, Beats, and certified hearing devices, so if you own ordinary Bluetooth headphones it won't work for you. We wrote about [that restriction and the ways around it](/blog/live-listen-without-airpods/) in more detail.
 
