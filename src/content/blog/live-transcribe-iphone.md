@@ -66,7 +66,7 @@ Apple's list is longer than people expect, but it's still a list, and the featur
 
 **It has modes for how you're actually listening.** Auto handles everyday conversation and splits a group around a table into separate speakers, so you can tell who said what instead of reading one undivided block. TV & Media is for anything coming through a speaker, near or across a room, which is where most captioning apps fall apart. Hearing Aid captures through Bluetooth hearing aids or earbuds, and falls back to the phone's own microphone when the aids are output-only rather than dropping you out of the mode.
 
-**It isn't limited to Apple's language list.** 100+ languages against Apple's 16, because it doesn't depend on the same on-device recognizer every other iPhone app is built against. Hindi, Arabic, Italian, Portuguese and Russian are all outside what Apple covers. It also handles a conversation that switches between languages partway through, which is normal in most of the world and which almost no captioning app admits to, and it can put the summary into your language rather than the one the room was speaking.
+**It isn't limited to Apple's language list.** 100+ languages against Apple's 16, because it doesn't depend on the same on-device recognizer every other iPhone app is built against. Italian, Portuguese, Russian, Arabic and Turkish are all outside what Apple covers. It also handles a conversation that switches between languages partway through, which is normal in most of the world and which almost no captioning app admits to, and it can put the summary into your language rather than the one the room was speaking.
 
 **The transcript survives, and it stays yours.** Apple's captions scroll away as they go. iScribe saves them, makes them searchable, and pulls out the key points afterward, which matters when the reason you needed captions was a doctor's appointment or a meeting you have to act on. Those transcripts are stored on the phone, not on anyone's server.
 
@@ -91,7 +91,7 @@ Two limits decide whether it's an option for you at all:
 
 That language list is longer than most articles on this topic admit, and it has quietly grown. Apple currently lists Live Captions in Cantonese, English, French, German, Japanese, Korean, Mandarin Chinese and Spanish, across 16 countries and regions in total, including English in the US, UK, Canada, Australia, India and Singapore. If you read somewhere that this feature is English only, that was true once and isn't now.
 
-It's still a list, though. Hindi, Arabic, Italian, Portuguese and Russian aren't on it, and that's a lot of the world. Apple's own page puts it plainly: Live Captions "isn't available in all languages, countries, or regions."
+It's still a list, though. Italian, Portuguese, Russian, Arabic and Turkish aren't on it, and that's a lot of the world. Apple's own page puts it plainly: Live Captions "isn't available in all languages, countries, or regions."
 
 One more thing in its favor, and it's a genuine advantage nothing else on this page has: Live Captions reaches phone calls and FaceTime. An app working through the microphone can't get at the call audio path. If captioned phone calls are the thing you need, Apple's is the only option in this comparison that does it.
 
