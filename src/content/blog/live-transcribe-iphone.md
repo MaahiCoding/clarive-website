@@ -1,6 +1,6 @@
 ---
 title: "Live Transcribe on iPhone: What Actually Exists"
-description: "Apple's Live Captions is free and built in, but English only. Here's what covers the other languages on iPhone, and what that App Store name really means."
+description: "Apple's Live Captions is free, built in, and covers 8 languages, not just English. Here's where it's enough, and where a paid app earns its money."
 keyword: "live transcribe iphone"
 secondaryKeywords:
   - "live transcribe for iphone"
@@ -14,12 +14,12 @@ publishDate: 2026-09-08
 author: "Mahipal"
 heroImage: "../../assets/blog/live-transcribe-iphone.png"
 heroAlt: "Article cover: Live Transcribe on iPhone, What Actually Exists"
-shortAnswer: "On iPhone, Apple's Live Captions is the free built-in option, on iPhone 11 or later, and it only works in English. If you need another language, better accuracy in a noisy room, or an app built specifically for deaf and hard of hearing users, that is what a third-party app like iScribe is for. Your language decides it first."
+shortAnswer: "On iPhone, Apple's Live Captions is the free built-in option, on iPhone 11 or later, and it covers 8 languages across 16 countries and regions. It is good for basic use. If you need a language it does not cover, a transcript that survives the conversation, or an app built around following people rather than captioning any audio, that is what a third-party app like iScribe is for."
 takeaways:
-  - "On iPhone the choice is Apple's free built-in Live Captions, or a third-party app when you need a language Apple doesn't cover."
-  - "Apple's Live Captions is free, built in, and runs on-device. It needs an iPhone 11 or later and English set as your primary language."
-  - "If Apple's version covers your language and your phone, use it and spend nothing. That's the honest answer for anyone whose iPhone is already set to English."
-  - "Third-party captioning apps earn their place on languages other than English, not on accuracy."
+  - "On iPhone the choice is Apple's free built-in Live Captions, or a third-party app when basic captioning isn't enough."
+  - "Apple's Live Captions is free, built in, and runs on-device. It needs an iPhone 11 or later, and it covers 8 languages across 16 countries and regions, not English alone."
+  - "Try Apple's first and spend nothing. If it covers your language and your phone, it may settle the question outright."
+  - "Third-party apps earn their place on what Apple's doesn't do: languages outside its list, a saved transcript, telling speakers apart, and modes for how you're actually listening."
   - "Microphone distance decides caption quality more than room noise does. Getting the phone closer beats every setting."
 faq:
   - q: "Do iPhones have Live Transcribe?"
@@ -39,33 +39,34 @@ relatedSlugs:
   - "assistive-listening-device"
   - "apple-hearing-aid-feature"
 draft: false
+updatedDate: 2026-09-08
 ---
 
-If you're on an iPhone and you want live captions, the short version is this: Apple's own Live Captions is already on your phone and costs nothing, and it only speaks English. Everything past that is about which app covers your language.
+If you're on an iPhone and you want live captions, the short version is this: Apple's own Live Captions is already on your phone, costs nothing, and speaks more languages than most people realize. Everything past that is about whether basic captioning is enough for what you're doing.
 
 The longer version starts with a naming problem. Search the App Store for Live Transcribe and you'll get results. None of them is the app you're probably thinking of.
 
 The name comes from an Android app that has never shipped for iOS, so the listings carrying it on the App Store are from other developers entirely. Some of them are good. The name just tells you nothing about which.
 
-So here's the map. Two things are actually available to you on an iPhone, and which one you want comes down to your language.
+So here's the map. Two things are actually available to you on an iPhone, and which one you want comes down to how hard you're leaning on the captions.
 
 ## What you can actually use on an iPhone
 
 The first is **Apple's Live Captions**, built into iOS since version 16. It's free, it's already on your phone, and Apple doesn't market it under the Live Transcribe name, which is exactly why people searching that term never find it.
 
-The second is a **third-party captioning app**. This is where you end up if Apple's version doesn't cover your language, or your iPhone is older than an 11. [iScribe](https://apps.apple.com/us/app/voice-dictation-iscribe/id6468081340) is the one built specifically for this job on iPhone, in 100+ languages rather than Apple's English only, and it saves the transcript instead of letting it scroll away.
+The second is a **third-party captioning app**. This is where you end up if Apple's version doesn't cover your language, if your iPhone is older than an 11, or if you're relying on captions to follow a conversation rather than to catch the odd line. [iScribe](https://apps.apple.com/us/app/voice-dictation-iscribe/id6468081340) is the one built specifically for this job on iPhone, in 100+ languages rather than Apple's 16, and it saves the transcript instead of letting it scroll away.
 
 That's the whole decision. Almost every roundup ranks a dozen apps one through five before telling you that the free option already on your phone might settle it. Work out which of those two you're in first, then compare. Other guides in this area are collected under [live captions on iPhone](/blog/topics/live-captions/).
 
 ## If Apple's version doesn't cover you, this is what does
 
-Apple's Live Captions is English only. If that's not your language, or your iPhone is older than an 11, the built-in option is out and you're choosing an app.
+Apple's list is longer than people expect, but it's still a list, and the feature is built to caption any audio rather than to help you follow a conversation. If your language isn't on it, if your iPhone is older than an 11, or if you need more than the words scrolling past once, you're choosing an app.
 
 [iScribe](https://apps.apple.com/us/app/voice-dictation-iscribe/id6468081340) is the one built for this specific job rather than adapted to it, and three things separate it from a general transcription app.
 
 **It has modes for how you're actually listening.** Auto handles everyday conversation and splits a group around a table into separate speakers, so you can tell who said what instead of reading one undivided block. TV & Media is for anything coming through a speaker, near or across a room, which is where most captioning apps fall apart. Hearing Aid captures through Bluetooth hearing aids or earbuds, and falls back to the phone's own microphone when the aids are output-only rather than dropping you out of the mode.
 
-**It isn't limited to Apple's language list.** 100+ languages, because it doesn't depend on the same on-device recognizer every other iPhone app is built against. It also handles a conversation that switches between languages partway through, which is normal in most of the world and which almost no captioning app admits to, and it can put the summary into your language rather than the one the room was speaking.
+**It isn't limited to Apple's language list.** 100+ languages against Apple's 16, because it doesn't depend on the same on-device recognizer every other iPhone app is built against. Hindi, Arabic, Italian, Portuguese and Russian are all outside what Apple covers. It also handles a conversation that switches between languages partway through, which is normal in most of the world and which almost no captioning app admits to, and it can put the summary into your language rather than the one the room was speaking.
 
 **The transcript survives, and it stays yours.** Apple's captions scroll away as they go. iScribe saves them, makes them searchable, and pulls out the key points afterward, which matters when the reason you needed captions was a doctor's appointment or a meeting you have to act on. Those transcripts are stored on the phone, not on anyone's server.
 
@@ -86,13 +87,17 @@ This is the part the search results bury, so I'll put it first: if Apple's versi
 Two limits decide whether it's an option for you at all:
 
 - **iPhone 11 or later.** Older hardware doesn't get it.
-- **English (U.S.) or English (Canada)** as your iPhone's primary language. Not English as a language you speak. The phone's primary language setting.
+- **A supported language**, set as your iPhone's primary language. Not a language you happen to speak. The phone's primary language setting.
 
-That second one is the real wall, and it's why a whole category of paid apps exists. If your phone is set to Spanish, Hindi, German, or any of the other languages people actually live in, Apple's captions aren't there for you.
+That language list is longer than most articles on this topic admit, and it has quietly grown. Apple currently lists Live Captions in Cantonese, English, French, German, Japanese, Korean, Mandarin Chinese and Spanish, across 16 countries and regions in total, including English in the US, UK, Canada, Australia, India and Singapore. If you read somewhere that this feature is English only, that was true once and isn't now.
+
+It's still a list, though. Hindi, Arabic, Italian, Portuguese and Russian aren't on it, and that's a lot of the world. Apple's own page puts it plainly: Live Captions "isn't available in all languages, countries, or regions."
 
 One more thing in its favor, and it's a genuine advantage nothing else on this page has: Live Captions reaches phone calls and FaceTime. An app working through the microphone can't get at the call audio path. If captioned phone calls are the thing you need, Apple's is the only option in this comparison that does it.
 
-Apple also says accuracy varies and that you shouldn't rely on it in high-risk or emergency situations. That's worth repeating rather than skipping past. It applies to every app here, not only Apple's.
+Where it stops being enough is accuracy and purpose. Apple says outright that the accuracy of Live Captions varies and shouldn't be relied upon in high-risk or emergency situations, and that caveat is doing real work: this is a general feature that captions whatever audio is playing, not a tool built around the problem of following people talking. It gives you one stream of text. It doesn't tell you who spoke, it doesn't keep what it wrote, and it has no notion of whether you're in a meeting, watching a screen, or sitting across a table.
+
+For catching the odd line, or reading along with a video, that's fine and it costs nothing. For a doctor's appointment where you need the words right and you need them afterward, it's the wrong tool, and no setting turns it into the right one. That gap is what the paid apps are actually selling, and it's a better reason to pay than the language list is.
 
 ## How to turn on live captions on your iPhone
 
@@ -121,9 +126,9 @@ And the honest ordering, which I'd give a friend before any of this: when conver
 
 ## Where Clarive fits
 
-Clarive is the app I build, and it lands on the language branch of the map above.
+Clarive is the app I build, and it sits on the branch where you need more than the built-in feature gives you.
 
-It shows live captions in 40+ languages with automatic language detection, using Apple's on-device speech recognition. That's the same engine Apple's own feature uses, aimed at the case Apple's English-only restriction excludes. Captions can be saved as transcripts and reopened later, and you can set the caption font size.
+It shows live captions in 40+ languages with automatic language detection, using Apple's on-device speech recognition. That's the same engine behind Apple's own feature, covering languages Apple's list leaves out. Captions can be saved as transcripts and reopened later, which is the part Apple's version doesn't do, and you can set the caption font size.
 
 It also amplifies sound through your headphones at the same time, with any headphones that connect to your iPhone. No AirPods, no MFi hearing device, nothing extra to buy. That matters because Apple's [Live Listen](/blog/live-listen-without-airpods/) won't work with ordinary Bluetooth earbuds.
 
@@ -139,6 +144,8 @@ The free tier gives you five uses a day. Past that it's a subscription, ranging 
 
 ## The short version
 
-Turn on Apple's Live Captions first, because it's free and already installed, and it'll answer the question outright if your phone is set to English. When your language isn't covered, that's the point where a paid app is worth your money, and language support is the thing to compare rather than the ratings.
+Turn on Apple's Live Captions first, because it's free and already installed, and for basic use it may settle the question outright. Its language list is wider than most articles claim, so check it before you assume you're excluded.
+
+Pay for an app when basic stops being enough: your language isn't on Apple's list, or you need the transcript afterward, or you need to know who said what, or the situation is one where getting the words wrong actually costs you something. Those are the things to compare, rather than the star ratings.
 
 For captions on their own, in 100+ languages, with the transcript saved and summarized afterward, [iScribe](https://apps.apple.com/us/app/voice-dictation-iscribe/id6468081340) is the one I'd point you at. Want amplification and captions together instead? [Clarive](https://apps.apple.com/us/app/listening-device-clarive/id6748903280) does both. Anyone already wearing hearing aids should start with the manufacturer's own app instead, and it's worth reading [what your iPhone already offers](/blog/apple-hearing-aid-feature/) and [how phone-based tools compare to dedicated hardware](/blog/assistive-listening-device/) before adding anything.
