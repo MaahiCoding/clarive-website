@@ -35,6 +35,7 @@ faq:
     a: "Because the feature only runs in Transparency mode. Noise Cancellation and Adaptive both shut the amplification off, which is the single most common reason someone thinks the feature is broken when it's working exactly as designed."
 relatedSlugs:
   - "live-listen-without-airpods"
+  - "live-transcribe-iphone"
 draft: false
 ---
 
@@ -120,7 +121,7 @@ For a lot of people reading this, that's the actual situation, and Apple's answe
 
 Live Listen, the feature that turns your iPhone into a remote microphone, has the same shape of restriction: it only sends audio to AirPods, some Beats models, and Made for iPhone hearing devices. Generic Bluetooth earbuds and wired headphones can't receive it. We went through that in detail in [Live Listen without AirPods](/blog/live-listen-without-airpods/), and the short version is that no setting unlocks it.
 
-Everything else on the phone is adjacent rather than useful for this. Headphone Accommodations shapes media playback, not the room around you. Background Sounds are for masking. Live Captions read speech as text, which helps in a different way and doesn't make anything louder.
+Everything else on the phone is adjacent rather than useful for this. Headphone Accommodations shapes media playback, not the room around you. Background Sounds are for masking. [Live Captions](/blog/live-transcribe-iphone/) read speech as text, which helps in a different way and doesn't make anything louder.
 
 That leaves third-party apps, which sit outside Apple's hardware restrictions because they use the ordinary audio output path every app uses. Any headphones that connect to your iPhone will work with them.
 

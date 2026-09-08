@@ -38,6 +38,7 @@ relatedSlugs:
   - "assistive-listening-device"
   - "live-listen-without-airpods"
   - "apple-hearing-aid-feature"
+  - "live-transcribe-iphone"
 draft: false
 ---
 
@@ -90,6 +91,8 @@ Where they fall over is conversation. Reading has a lag, and by the time you've 
 The other limit is noise. Recognition degrades when several people talk at once, which is exactly the restaurant scenario that sends people looking in the first place. Test one in the room you actually struggle in, not in your kitchen.
 
 One thing worth checking before you commit: whether the app runs recognition on your phone or sends audio to a server. On-device is faster, works without a connection, and doesn't put your conversations on someone else's computer. Server-based tends to be more accurate on hard audio. Both are legitimate. Just know which one you've installed.
+
+Before you pay for any of them, check what the phone already does. We went through [what Live Transcribe on iPhone actually means](/blog/live-transcribe-iphone/) separately, including which built-in captioning is free and where it stops.
 
 ## Amplifier apps: getting the microphone closer
 
