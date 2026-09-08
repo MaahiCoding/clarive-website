@@ -10,7 +10,7 @@ secondaryKeywords:
   - "iphone live captions app"
 cluster: "live-captions"
 intent: "definition"
-publishDate: 2026-09-04
+publishDate: 2026-09-08
 author: "Mahipal"
 heroImage: "../../assets/blog/live-transcribe-iphone.png"
 heroAlt: "Article cover: Live Transcribe on iPhone, What Actually Exists"
@@ -38,7 +38,7 @@ relatedSlugs:
   - "live-listen-without-airpods"
   - "assistive-listening-device"
   - "apple-hearing-aid-feature"
-draft: true
+draft: false
 ---
 
 If you're on an iPhone and you want live captions, the short version is this: Apple's own Live Captions is already on your phone and costs nothing, and it only speaks English. Everything past that is about which app covers your language.
