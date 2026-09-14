@@ -32,7 +32,8 @@ faq:
     a: "Yes. If you own AirPods, Live Listen is already built into iOS at no cost. If you don't, third-party amplification apps work with the headphones you already have, and several have free tiers. Neither option requires buying hardware."
   - q: "Will this help if I already wear hearing aids?"
     a: "Probably not, and it isn't designed to. Hearing aids are fitted to your specific hearing and do far more than raise volume. If your hearing aids aren't working well in a particular situation, that's a conversation for your audiologist rather than a phone app."
-relatedSlugs: []
+relatedSlugs:
+  - "hearing-aid-app-iphone"
 draft: false
 ---
 
@@ -47,6 +48,8 @@ The catch is the last step. Live Listen doesn't send audio out through the norma
 - AirPods (most models, including the standard ones)
 - Beats headphones with Apple's H-series chip
 - Hearing devices certified under the [Made for iPhone program](https://support.apple.com/en-us/HT201466)
+
+That third one matters if you already wear hearing aids: Live Listen is the free remote microphone for them, and we've covered how to pair them and what the brand app does on top in [hearing aid app for iPhone](/blog/hearing-aid-app-iphone/).
 
 Everything else is excluded. Not throttled, not degraded. Excluded. Your Sony over-ears, the Bluetooth earbuds that came free with something, the wired EarPods in the drawer: none of them can receive a Live Listen stream, and no setting will change that.
 

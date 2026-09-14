@@ -35,6 +35,7 @@ faq:
   - q: "Can these apps caption phone calls?"
     a: "Most cannot, and it catches people out. Amplifier and captioning apps work on what the phone's microphone hears in the room around you, which is a different audio path from the one a phone call uses. Captioned calling is a separate category with its own services, and in the US some of it is federally funded."
 relatedSlugs:
+  - "hearing-aid-app-iphone"
   - "assistive-listening-device"
   - "live-listen-without-airpods"
   - "apple-hearing-aid-feature"
@@ -56,7 +57,7 @@ Here's the split. Find yourself in it before you install anything.
 
 **Amplifier apps** use your phone's microphone to pick up sound, make it louder, and play it into your headphones. These help when speech is clear enough but too quiet, or when the person you want to hear is across a table in a room with other noise. [Clarive](https://apps.apple.com/us/app/listening-device-clarive/id6748903280) is the one to start with if you own ordinary headphones, because it works with any pair that connects to your iPhone. [Live Listen](https://support.apple.com/en-us/HT203990) is free and built in, but only with AirPods, Beats, or a certified hearing device. Hear Boost is the other third-party option.
 
-**Companion apps** are made by hearing aid manufacturers to control hearing aids you already own. Oticon Companion, Philips HearLink 2, myPhonak, ReSound Smart. If you don't wear that brand's hearing aids, the app does nothing for you.
+**Companion apps** are made by hearing aid manufacturers to control hearing aids you already own. Oticon Companion, Philips HearLink 2, myPhonak, ReSound Smart. If you don't wear that brand's hearing aids, the app does nothing for you. This is also half of what people mean when they search for a hearing aid app, and the other half is the amplifier category above. We've split that phrase properly in [hearing aid app for iPhone: which of the two you mean](/blog/hearing-aid-app-iphone/).
 
 The test is what fails first. Can you hear that someone is speaking but not make out the words? That's a clarity problem, and captions attack it directly.
 

@@ -36,6 +36,7 @@ faq:
 relatedSlugs:
   - "live-listen-without-airpods"
   - "live-transcribe-iphone"
+  - "hearing-aid-app-iphone"
 draft: false
 ---
 
@@ -123,7 +124,7 @@ Live Listen, the feature that turns your iPhone into a remote microphone, has th
 
 Everything else on the phone is adjacent rather than useful for this. Headphone Accommodations shapes media playback, not the room around you. Background Sounds are for masking. [Live Captions](/blog/live-transcribe-iphone/) read speech as text, which helps in a different way and doesn't make anything louder.
 
-That leaves third-party apps, which sit outside Apple's hardware restrictions because they use the ordinary audio output path every app uses. Any headphones that connect to your iPhone will work with them.
+That leaves third-party apps, which sit outside Apple's hardware restrictions because they use the ordinary audio output path every app uses. Any headphones that connect to your iPhone will work with them. All three routes, this feature, Live Listen, and the apps, sit side by side with their hardware gates in [hearing aid app for iPhone](/blog/hearing-aid-app-iphone/).
 
 One thing I learned the hard way building in this space: latency matters far more than gain does, and nobody warns you about it. Bluetooth adds enough delay that if you can see the speaker's face, the voice lands a beat after the lips move, and your brain fights the mismatch all evening. Wired headphones through an adapter are noticeably tighter. It's an unglamorous fix and it's the one I'd try first if amplification technically works for you but somehow feels wrong to use.
 
