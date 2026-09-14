@@ -10,7 +10,7 @@ secondaryKeywords:
   - "use iphone as hearing aid"
 cluster: "comparisons"
 intent: "comparison"
-publishDate: 2026-09-11
+publishDate: 2026-09-14
 author: "Mahipal"
 heroImage: "../../assets/blog/hearing-aid-app-iphone.png"
 heroAlt: "Article cover: Hearing Aid App for iPhone, Which of the Two You Mean"
@@ -38,7 +38,7 @@ relatedSlugs:
   - "apps-for-hearing-loss"
   - "apple-hearing-aid-feature"
   - "live-listen-without-airpods"
-draft: true
+draft: false
 ---
 
 Search "hearing aid app for iPhone" and half the results are apps that control hearing aids you already own. The other half are apps that try to turn the iPhone into one. Google can't tell which you meant, so it shows you both, and you're left comparing a Phonak remote control against a sound amplifier as if they were rivals.
