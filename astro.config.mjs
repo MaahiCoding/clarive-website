@@ -1,4 +1,5 @@
 // @ts-check
+import { existsSync, readFileSync } from 'node:fs';
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
@@ -139,10 +140,55 @@ function rehypeCompetitorNofollow() {
   };
 }
 
+/**
+ * `<lastmod>` for every article in the sitemap.
+ *
+ * The sitemap carried `<loc>` alone, so an edited article looked no different
+ * to Google from an untouched one and had no claim to an earlier recrawl.
+ * `lastmod` is the one sitemap field Google says it reads, and only while it
+ * stays honest, so it comes from the frontmatter: `updatedDate` when the post
+ * has been touched, else `publishDate`. Never the build clock, which would
+ * stamp every URL with today on every deploy and teach Google to ignore it.
+ *
+ * Read with a regex rather than the content collection because this runs in
+ * astro.config, where `astro:content` does not exist. Both dates are unquoted
+ * `YYYY-MM-DD` in every post (mark_published.py writes them), and the sitemap
+ * package accepts that string and normalises it to ISO.
+ *
+ * Only `/blog/<slug>/` gets one; every other page is left without rather than
+ * given a fake date. And the item is always returned: a `serialize` that
+ * returns nothing DROPS the URL (@astrojs/sitemap checks `if (serialized)`),
+ * and one that throws skips writing the sitemap altogether.
+ */
+const POST_URL = /^https:\/\/listeningdevice\.app\/blog\/([^/]+)\/$/;
+
+/** @param {string} slug */
+function postLastmod(slug) {
+  const file = new URL(`./src/content/blog/${slug}.md`, import.meta.url);
+  if (!existsSync(file)) return undefined;
+  const front = readFileSync(file, 'utf8').split(/^---$/m)[1] ?? '';
+  return front.match(/^updatedDate:\s*(\d{4}-\d{2}-\d{2})/m)?.[1]
+    ?? front.match(/^publishDate:\s*(\d{4}-\d{2}-\d{2})/m)?.[1];
+}
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://listeningdevice.app',
-  integrations: [sitemap()],
+  // Pairs with build.format 'directory' (the default), as Astro's docs advise,
+  // and with "trailingSlash": true in vercel.json. On a static site this only
+  // bites in `astro dev` (301 to the slash form) and `astro preview` (404
+  // without it); the production redirect is Vercel's.
+  trailingSlash: 'always',
+  integrations: [
+    sitemap({
+      serialize(item) {
+        const slug = item.url.match(POST_URL)?.[1];
+        const lastmod = slug && postLastmod(slug);
+        if (lastmod) item.lastmod = lastmod;
+        return item;
+      },
+    }),
+  ],
   markdown: {
     rehypePlugins: [rehypeTableScroll, rehypeCompetitorNofollow],
   },
