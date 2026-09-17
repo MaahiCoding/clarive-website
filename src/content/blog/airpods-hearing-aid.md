@@ -34,6 +34,7 @@ faq:
   - q: "What are my options if I don't own AirPods Pro?"
     a: "Apple's hearing features won't cover you, and buying $249 earbuds to test whether amplification helps is an expensive experiment. A third-party amplification app runs on the headphones you already own, including wired ones. It won't tune itself to an audiogram the way Apple's feature does, but it costs far less to find out whether amplification is worth pursuing."
 relatedSlugs:
+  - "airpods-hearing-test"
   - "live-listen-without-airpods"
 draft: false
 ---
@@ -90,7 +91,7 @@ Tuning costs nothing and takes about 10 minutes:
 
 1. Connect the AirPods, open **Settings**, and tap your AirPods name at the top of the screen.
 2. Tap **Hearing Assistance**, then **Set Up Hearing Assistance**.
-3. Take the **Hearing Test** on the earbuds themselves, or select prior results if an audiologist has already tested you. The test wants a quiet room and about five minutes, and it's worth doing properly rather than with a dishwasher running.
+3. Take the **[Hearing Test](/blog/airpods-hearing-test/)** on the earbuds themselves, or select prior results if an audiologist has already tested you. The test wants a quiet room and about five minutes, and it's worth doing properly rather than with a dishwasher running.
 4. Tap **Set Up Hearing Aid** and follow through to **Turn On Hearing Aid**. The profile is now built from your result rather than a generic starting point.
 5. Turn **ambient noise reduction down**, which is the specific adjustment HearingTracker credits for most of their improvement.
 6. Set amplification and tone by hand afterward, in a room you actually struggle in rather than a silent one. The amplification slider lives in Control Center once the feature is on, so you can adjust it at the table instead of digging back through Settings.

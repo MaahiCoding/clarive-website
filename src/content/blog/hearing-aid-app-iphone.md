@@ -37,7 +37,7 @@ faq:
 relatedSlugs:
   - "apps-for-hearing-loss"
   - "apple-hearing-aid-feature"
-  - "live-listen-without-airpods"
+  - "airpods-hearing-test"
 draft: false
 ---
 
@@ -121,7 +121,7 @@ It also shows live captions in 40+ languages at the same time, which none of the
 Three places it won't suit you, and they're the same three the table shows:
 
 - **It needs iOS 26 or later.** Older iPhones can't run it. That's the flip side of the "does this need a new phone" question people ask on the forums, and for this app the answer is yes.
-- **It isn't a hearing aid and it has no hearing test.** It won't measure you or tune itself to you. If you clear the AirPods Pro gates, that feature does something this can't.
+- **It isn't a hearing aid and it has no hearing test.** It won't measure you or tune itself to you. If you clear the AirPods Pro gates, [Apple's Hearing Test](/blog/airpods-hearing-test/) and the feature it feeds do something this can't.
 - **It drives headphones, not hearing aids, and it can't reach phone calls.** It works on what the microphone hears in the room. If you already wear hearing aids, this page's first half is for you, not this section.
 
 The free tier gives you five uses a day. Past that it's a subscription, from $4.99 to $29.99 depending on the billing period, with a lifetime option in there. Check the App Store for today's price.

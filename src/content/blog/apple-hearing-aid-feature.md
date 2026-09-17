@@ -34,6 +34,7 @@ faq:
   - q: "Why does the amplification stop when I switch noise modes?"
     a: "Because the feature only runs in Transparency mode. Noise Cancellation and Adaptive both shut the amplification off, which is the single most common reason someone thinks the feature is broken when it's working exactly as designed."
 relatedSlugs:
+  - "airpods-hearing-test"
   - "live-listen-without-airpods"
   - "live-transcribe-iphone"
   - "hearing-aid-app-iphone"
@@ -50,7 +51,7 @@ Apple makes earbuds. In September 2024 it shipped a software feature, named the 
 
 That's not a technicality. If it were a device, you'd go buy one. Because it's software welded to particular hardware, the real question is whether you qualify, and the answer is written in requirements lists rather than on a price tag.
 
-It also sits alongside two sibling features that people mix up constantly. The Hearing Test is a five-minute pure-tone check you take at home. Hearing Protection clamps loud environments. The Hearing Aid feature is the one that amplifies quiet speech so you can follow it.
+It also sits alongside two sibling features that people mix up constantly. The [Hearing Test](/blog/airpods-hearing-test/) is a five-minute pure-tone check you take at home. Hearing Protection clamps loud environments. The Hearing Aid feature is the one that amplifies quiet speech so you can follow it.
 
 All three run on the same two earbuds. None of them run on anything else Apple sells, and none of them run on your phone alone. If you're mapping what your phone can already do without buying anything, the rest of that territory is covered in our [iPhone hearing tools](/blog/topics/iphone-hearing/) guides.
 
