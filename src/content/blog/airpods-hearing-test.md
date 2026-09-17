@@ -11,7 +11,7 @@ secondaryKeywords:
   - "hearing test iphone without airpods"
 cluster: "iphone-hearing"
 intent: "definition"
-publishDate: 2026-09-16
+publishDate: 2026-09-17
 author: "Mahipal"
 heroImage: "../../assets/blog/airpods-hearing-test.png"
 heroAlt: "Article cover: AirPods Hearing Test, How Accurate It Is and What to Do Next"
@@ -39,7 +39,7 @@ relatedSlugs:
   - "apple-hearing-aid-feature"
   - "airpods-hearing-aid"
   - "hearing-aid-app-iphone"
-draft: true
+draft: false
 ---
 
 Apple's Hearing Test is the most convenient hearing check you'll ever take, and it comes with a hardware bill attached. It runs on AirPods Pro 2 and AirPods Pro 3, paired with an iPhone, for adults, in a quiet room, in about five minutes. Nothing else Apple sells can run it, and no other headphones can either.
