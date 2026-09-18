@@ -38,6 +38,7 @@ relatedSlugs:
   - "live-listen-without-airpods"
   - "live-transcribe-iphone"
   - "hearing-aid-app-iphone"
+  - "conversation-boost"
 draft: false
 ---
 
@@ -113,7 +114,7 @@ Setup takes about five minutes and the order matters.
 
 Take the Hearing Test first, on the same AirPods, in a quiet room. The feature tunes itself from that result, and skipping it leaves you adjusting a generic curve by hand. If you already have an audiogram from a clinic, you can add it to the Health app instead and the feature will use that, which is the better input of the two.
 
-Then open your AirPods settings on the iPhone, turn on Hearing Assistance, and set amplification and tone there. Once it's running, the Hearing control in Control Center is where you'll actually live: amplification level, balance, and Conversation Boost, which narrows focus to whoever is directly in front of you.
+Then open your AirPods settings on the iPhone, turn on Hearing Assistance, and set amplification and tone there. Once it's running, the Hearing control in Control Center is where you'll actually live: amplification level, balance, and [Conversation Boost](/blog/conversation-boost/), which narrows focus to whoever is directly in front of you.
 
 One habit will save you a lot of confusion. Leave the earbuds in Transparency and stop switching modes. If the amplification vanishes, that's the first thing to check, before firmware, before settings, before anything else.
 
