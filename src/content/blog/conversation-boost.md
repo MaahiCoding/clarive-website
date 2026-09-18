@@ -38,7 +38,7 @@ relatedSlugs:
   - "airpods-hearing-aid"
   - "apple-hearing-aid-feature"
   - "live-listen-without-airpods"
-draft: true
+draft: false
 ---
 
 Conversation Boost is the most useful AirPods setting almost nobody has switched on. It's free, it's been shipping since iOS 15, it's still in the current AirPods User Guide, and it's buried four levels deep in Accessibility where nobody goes looking. What it does is narrow: it points the AirPods Pro microphones at the person in front of you and turns their voice up relative to everything else.
