@@ -40,7 +40,7 @@ relatedSlugs:
   - "conversation-boost"
   - "apple-hearing-aid-feature"
   - "airpods-hearing-test"
-draft: true
+draft: false
 ---
 
 Headphone Accommodations is the setting people switch on hoping it will help them hear, and then can't tell whether it did anything. That's because it does exactly half of what the name suggests. It reshapes the sound your iPhone plays into your headphones, and it leaves the sound of the room alone.
