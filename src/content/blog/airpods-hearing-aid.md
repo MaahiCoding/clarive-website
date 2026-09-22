@@ -36,6 +36,7 @@ faq:
 relatedSlugs:
   - "airpods-hearing-test"
   - "live-listen-without-airpods"
+  - "conversation-boost"
 draft: false
 ---
 
@@ -107,6 +108,8 @@ Apple documents this in a single line and the reviews mostly skip past it: "The 
 Switch to Noise Cancellation or Adaptive and the amplification stops. No alert, no indicator, nothing that tells you the feature you turned on is now doing nothing. You just quietly stop hearing better and assume the whole thing was overhyped.
 
 Adaptive mode is the trap, because it sounds like the smart choice and it's what a lot of people leave their AirPods on by default. Check the noise control setting first, every time, before concluding anything is wrong.
+
+The same Transparency requirement gates a different, often-confused setting: [Conversation Boost](/blog/conversation-boost/), which narrows the microphones toward whoever's in front of you rather than amplifying to a hearing profile. Different feature, same switch it depends on.
 
 ## Where it holds up
 

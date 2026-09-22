@@ -34,6 +34,7 @@ faq:
     a: "Probably not, and it isn't designed to. Hearing aids are fitted to your specific hearing and do far more than raise volume. If your hearing aids aren't working well in a particular situation, that's a conversation for your audiologist rather than a phone app."
 relatedSlugs:
   - "hearing-aid-app-iphone"
+  - "conversation-boost"
 draft: false
 ---
 
@@ -50,6 +51,8 @@ The catch is the last step. Live Listen doesn't send audio out through the norma
 - Hearing devices certified under the [Made for iPhone program](https://support.apple.com/en-us/HT201466)
 
 That third one matters if you already wear hearing aids: Live Listen is the free remote microphone for them, and we've covered how to pair them and what the brand app does on top in [hearing aid app for iPhone](/blog/hearing-aid-app-iphone/).
+
+If you're already wearing AirPods Pro and the person is right across the table rather than across the room, you don't need Live Listen or a second device at all: [Conversation Boost](/blog/conversation-boost/) does that job with the AirPods' own microphones, no phone placement required.
 
 Everything else is excluded. Not throttled, not degraded. Excluded. Your Sony over-ears, the Bluetooth earbuds that came free with something, the wired EarPods in the drawer: none of them can receive a Live Listen stream, and no setting will change that.
 
