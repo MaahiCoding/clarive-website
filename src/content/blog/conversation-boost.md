@@ -38,6 +38,7 @@ relatedSlugs:
   - "airpods-hearing-aid"
   - "apple-hearing-aid-feature"
   - "live-listen-without-airpods"
+  - "headphone-accommodations"
 draft: false
 ---
 
@@ -96,7 +97,7 @@ This is where most of the confusion on this topic lives, and Apple has done noth
 
 **Live Listen** uses your iPhone as a remote microphone and sends audio to your AirPods, which is the answer when the person you want to hear is across a room rather than across a table. It's also the one with the [hardware restriction people run into hardest](/blog/live-listen-without-airpods/).
 
-**Headphone Accommodations**, the setting Conversation Boost lives inside, shapes tone and amplification to a profile. Useful, and as the table above shows, close to useless in noise on its own.
+**[Headphone Accommodations](/blog/headphone-accommodations/)**, the setting Conversation Boost lives inside, shapes tone and amplification to a profile. Useful for calls and podcasts, and as the table above shows, close to useless in noise on its own.
 
 ## When it won't help
 

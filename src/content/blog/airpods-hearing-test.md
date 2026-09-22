@@ -39,6 +39,7 @@ relatedSlugs:
   - "apple-hearing-aid-feature"
   - "airpods-hearing-aid"
   - "hearing-aid-app-iphone"
+  - "headphone-accommodations"
 draft: false
 ---
 
@@ -91,7 +92,7 @@ You get one number for each ear, in decibels of hearing level, written dBHL. It'
 | 41 to 60 dBHL | Moderate | You need a raised voice at three feet |
 | 61 to 80 dBHL | Severe | Some words come through when shouted close to the ear |
 
-Tap Show Details and you get the audiogram itself, a chart of each ear across the pitches tested. It's stored in the Health app with Export PDF underneath. Take the PDF to any appointment. An audiologist will run their own test, but arriving with a dated one turns "do you have a problem" into "here's what I found, what does it mean".
+Tap Show Details and you get the audiogram itself, a chart of each ear across the pitches tested. It's stored in the Health app with Export PDF underneath, and [Headphone Accommodations](/blog/headphone-accommodations/) can build its playback profile from it on any AirPods or EarPods, not only the Pro. Take the PDF to any appointment. An audiologist will run their own test, but arriving with a dated one turns "do you have a problem" into "here's what I found, what does it mean".
 
 Two results deserve their own sentence. If one ear is much worse than the other, that isn't a hearing-aid question, it's a doctor question, and soon. And if your hearing dropped suddenly, over hours or a couple of days, the NIDCD is blunt that [sudden hearing loss is a medical emergency](https://www.nidcd.nih.gov/health/sudden-deafness): treatment works best when it starts within days, and an at-home test is not the place to spend those days.
 
