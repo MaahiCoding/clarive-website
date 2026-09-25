@@ -37,6 +37,7 @@ relatedSlugs:
   - "hearing-aid-app-iphone"
   - "conversation-boost"
 draft: false
+updatedDate: 2026-09-25
 ---
 
 You add the Hearing control, tap Live Listen, and nothing reaches your headphones. Nothing's broken. Live Listen was never able to send audio to them.
