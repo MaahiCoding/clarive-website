@@ -1,6 +1,6 @@
 ---
 title: "Live Listen on iPhone: What It's For and When to Use It"
-description: "Live Listen turns your iPhone into a remote mic for AirPods. What it's good for, how to turn it on in iOS 26, and when another tool does the job better."
+description: "Live Listen on iPhone turns your phone into a remote mic for AirPods. What it's for, how to turn it on in iOS 26, and when to use something else."
 keyword: "live listen iphone"
 secondaryKeywords:
   - "turn on live listen on iphone"
@@ -41,9 +41,9 @@ relatedSlugs:
 draft: true
 ---
 
-Live Listen is the one hearing feature on the iPhone that works like a piece of equipment rather than a setting. You put the phone down near the person talking, and their voice streams straight into your ears. It's great at one job, hearing something from across a room, and it's easy to try it on the wrong one.
+Live Listen on iPhone turns the phone into a remote microphone. You put it down near the person talking, and their voice streams straight into your AirPods. It's great at one job, hearing something from across a room, and it's easy to try it on the wrong one.
 
-It streams only to AirPods, some Beats models, and Made for iPhone hearing aids. If you wear other headphones, [Clarive](/) does the same job with any pair you own, and it adds live captions on the phone. Everything else your iPhone can do for hearing is collected in our [iPhone hearing tools](/blog/topics/iphone-hearing/) guides.
+This guide is for people who have AirPods, some Beats, or a Made for iPhone hearing aid. If you don't, Live Listen can't reach your headphones, and our piece on [Live Listen without AirPods](/blog/live-listen-without-airpods/) explains the workaround: an app like [Clarive](/) that does the same job on any pair. Everything else your iPhone can do for hearing is collected in our [iPhone hearing tools](/blog/topics/iphone-hearing/) guides.
 
 ## What Live Listen is actually for
 
@@ -60,17 +60,11 @@ What it doesn't do well is the problem it usually gets tried on: one person acro
 
 Hearing aid brands sell clip-on remote microphones for exactly the across-the-room job, and they cost real money. If you already have AirPods or a Made for iPhone hearing aid, Live Listen is that accessory for free.
 
-## Which headphones and hearing aids work
+## Which headphones work with Live Listen
 
-Live Listen streams through a private audio path Apple built for hearing accessibility, not the ordinary Bluetooth output that music uses. Only three kinds of device can receive it:
+AirPods (including AirPods Pro and AirPods Max), some Beats models such as Powerbeats Pro and Beats Fit Pro, and Made for iPhone hearing aids. That's the whole list, and it needs iOS 14.3 or later. Apple keeps the current models on [its Live Listen support page](https://support.apple.com/en-us/102479), and the hearing aid route has [its own page](https://support.apple.com/en-us/111777). Pairing a hearing aid is covered in our guide to [hearing aid apps for iPhone](/blog/hearing-aid-app-iphone/).
 
-- **AirPods**, including AirPods Pro and AirPods Max
-- **Some Beats models**, such as Powerbeats Pro and Beats Fit Pro
-- **Made for iPhone hearing aids**, the ones that pair under Settings, Accessibility, Hearing Devices
-
-Apple's page lists the current AirPods and Beats models and needs iOS 14.3 or later. The hearing aid route has [its own support page](https://support.apple.com/en-us/111777), and our guide to [hearing aid apps for iPhone](/blog/hearing-aid-app-iphone/) covers the pairing.
-
-Everything else is out. Sony, Bose, Samsung, wired EarPods: they work for every other sound the phone makes and can't receive this one. We wrote a whole piece on [Live Listen without AirPods](/blog/live-listen-without-airpods/), because it's the most common reason people think the feature is broken.
+Other brands' Bluetooth headphones and wired EarPods can't receive it. If that's you, skip to the [Live Listen without AirPods](/blog/live-listen-without-airpods/) guide rather than hunting for a setting that doesn't exist.
 
 ## How to turn on Live Listen
 
@@ -92,15 +86,13 @@ To stop, open Control Center and tap it again.
 
 With a Made for iPhone hearing aid the path is different: Settings, Accessibility, Hearing Devices, tap your hearing aid, then Start Live Listen. End Live Listen on the same screen stops it. If you set up the Accessibility Shortcut, a triple-click of the side button gets you there faster.
 
-## Where to put the phone
+## Getting good sound out of it
 
-This is the part that decides whether Live Listen impresses you or disappoints you, and none of the page-one guides mention it.
+The phone is the microphone, so its position decides everything. Face-up, bottom edge pointed at the speaker, as close to the voice as you can get it. Every step closer raises the voice against the room, and no setting can fake that.
 
-The iPhone's main microphone sits on the bottom edge. Face-up on the table with the bottom edge pointed at the speaker is the setup that works. Face-down on a tablecloth muffles it. In a pocket, you'll mostly hear fabric. People ask on hearing forums whether the phone can stay in a pocket or bag during a conversation, and the honest answer is no: the phone is the microphone, so it has to be out and close.
+People ask on hearing forums whether the phone can stay in a pocket or bag. It can't, not usefully: you'll mostly hear fabric. If you can't get the phone close, Apple supports plugging an external microphone into the phone's port, so you can clip the mic near the speaker and keep the phone with you.
 
-Distance matters more than anything else. Every step closer to the voice raises it against the background noise, and no setting on the phone can fake that. If you can't get the phone close, Apple supports plugging an external microphone into the phone's port, which lets you clip the mic to the speaker and keep the phone near you.
-
-How far away you can be is set by Bluetooth, between the phone and your earbuds. Apple doesn't publish a figure, and you should distrust any guide that quotes one. Plan on the same room; walls and distance cut a Bluetooth link quickly.
+How far away you can sit is set by the Bluetooth link between phone and earbuds. Apple doesn't publish a figure, and you should distrust any guide that quotes one. Plan on the same room; walls and distance cut the link quickly.
 
 ## New in iOS 26: captions and Apple Watch control
 
@@ -130,18 +122,12 @@ My position: if you own AirPods Pro, set up Conversation Boost for the dinner ta
 
 And if conversations have been getting harder in most rooms, not just the loud ones, no phone feature is the answer. That's a hearing test with an audiologist first. The [NIDCD's guide to hearing aids](https://www.nidcd.nih.gov/health/hearing-aids) is a good plain-English start.
 
-## Without AirPods: the same idea on any headphones
+## If your headphones aren't on the list
 
-The restriction is on Apple's private audio path, not on the microphone. Any app can read the iPhone's microphone and play the result through the normal audio output, which every pair of headphones accepts.
-
-[Clarive](/) is the app I build for this. It takes sound from the iPhone's built-in microphone, amplifies it, and plays it through whatever headphones are connected: wired EarPods, Bluetooth earbuds from any brand, over-ears. Five presets cover the common rooms (Clear, Conversation, Noisy Place, TV & Media, Speech Clarity), Voice Isolation focuses on the person in front of you, and live captions in 40+ languages appear on the phone as people speak, with transcripts you can save. It all runs on-device, with no account.
-
-It costs something Live Listen doesn't. Clarive is free to download with five uses a day; paid plans run from $4.99 to $29.99 depending on the billing period. If you already have AirPods, use Live Listen, because it's free and it's good. Clarive is for the headphones Apple left out.
-
-The placement rules above apply to any app too. With wired headphones the phone has to stay within cable reach, so use Bluetooth if you want the phone across the room.
+The limit is Apple's private audio path, not your iPhone's microphone. [Clarive](/) is the app I build for this: it takes sound from the iPhone's microphone and plays it through whatever headphones are connected, with Voice Isolation for the person in front of you and live captions in 40+ languages on the phone. It's free to download with five uses a day, and it runs on-device with no account. If you already own AirPods, use Live Listen instead, because it's free and it's good. The full comparison is in [Live Listen without AirPods](/blog/live-listen-without-airpods/).
 
 ## The short version
 
-Live Listen makes your iPhone a remote microphone for AirPods, some Beats, and Made for iPhone hearing aids. Put the phone near the voice, not near you, and use it for distance: lectures, meetings, the far end of a room. On iOS 26, an Apple Watch adds a remote, a 10-second rewind, and captions. For the person across the table, Conversation Boost is the better tool. For headphones Apple doesn't support, you need an app.
+Live Listen makes your iPhone a remote microphone for AirPods, some Beats, and Made for iPhone hearing aids. Put the phone near the voice, not near you, and use it for distance: lectures, meetings, the far end of a room. On iOS 26, an Apple Watch adds a remote, a 10-second rewind, and captions. For the person across the table, Conversation Boost is the better tool. For headphones Apple doesn't support, [the workaround is an app](/blog/live-listen-without-airpods/).
 
 No AirPods? [Get Clarive on the App Store](https://apps.apple.com/us/app/listening-device-clarive/id6748903280) and use the headphones you already own.

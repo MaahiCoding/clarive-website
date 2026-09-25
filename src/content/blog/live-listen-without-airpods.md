@@ -33,6 +33,7 @@ faq:
   - q: "Will this help if I already wear hearing aids?"
     a: "Probably not, and it isn't designed to. Hearing aids are fitted to your specific hearing and do far more than raise volume. If your hearing aids aren't working well in a particular situation, that's a conversation for your audiologist rather than a phone app."
 relatedSlugs:
+  - "live-listen-iphone"
   - "hearing-aid-app-iphone"
   - "conversation-boost"
 draft: false
@@ -42,7 +43,7 @@ You add the Hearing control, tap Live Listen, and nothing reaches your headphone
 
 ## What Live Listen actually is
 
-Live Listen turns your iPhone into a remote microphone. It is one of several [iPhone hearing tools](/blog/topics/iphone-hearing/) worth knowing about. Put the phone near whoever you're trying to hear, across a restaurant table or at the front of a lecture room, and its microphone picks up the sound and pipes it to your ears. It's genuinely useful, and it's been part of iOS for years.
+Live Listen turns your iPhone into a remote microphone. It is one of several [iPhone hearing tools](/blog/topics/iphone-hearing/) worth knowing about. Put the phone near whoever you're trying to hear, across a restaurant table or at the front of a lecture room, and its microphone picks up the sound and pipes it to your ears. It's genuinely useful, and it's been part of iOS for years. If you do have AirPods, our guide to [Live Listen on iPhone](/blog/live-listen-iphone/) covers setup, where to put the phone, and what iOS 26 added.
 
 The catch is the last step. Live Listen doesn't send audio out through the normal route that music and podcasts use. It uses a separate path Apple built for hearing accessibility, and only three kinds of device can receive it:
 
