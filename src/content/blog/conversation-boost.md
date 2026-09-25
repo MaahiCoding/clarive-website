@@ -95,7 +95,7 @@ This is where most of the confusion on this topic lives, and Apple has done noth
 
 **The Hearing Aid feature** is the serious one. On AirPods Pro 2 and 3 it takes the result of Apple's own [AirPods hearing test](/blog/airpods-hearing-test/) and shapes amplification to your measured loss, which is a genuinely different order of thing from a forward-facing beam. We covered [what it does and who it's for](/blog/apple-hearing-aid-feature/) separately. If your AirPods support it, use it, and treat Conversation Boost as a complement rather than an alternative.
 
-**Live Listen** uses your iPhone as a remote microphone and sends audio to your AirPods, which is the answer when the person you want to hear is across a room rather than across a table. It's also the one with the [hardware restriction people run into hardest](/blog/live-listen-without-airpods/).
+**[Live Listen](/blog/live-listen-iphone/)** uses your iPhone as a remote microphone and sends audio to your AirPods, which is the answer when the person you want to hear is across a room rather than across a table. It's also the one with the [hardware restriction people run into hardest](/blog/live-listen-without-airpods/).
 
 **[Headphone Accommodations](/blog/headphone-accommodations/)**, the setting Conversation Boost lives inside, shapes tone and amplification to a profile. Useful for calls and podcasts, and as the table above shows, close to useless in noise on its own.
 

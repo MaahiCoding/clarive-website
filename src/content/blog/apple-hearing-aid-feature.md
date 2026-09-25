@@ -64,7 +64,7 @@ Here's the whole thing on one screen, which is the table Apple's own pages never
 | Hearing Test | Pure-tone check at home, about five minutes, result stored in Health | AirPods Pro 2 or 3, adult, quiet room |
 | Hearing Aid | Amplifies speech and ambient sound, tuned to your test result | AirPods Pro 2 or 3, adult, mild to moderate loss, Transparency mode |
 | Hearing Protection | Reduces loud environments while keeping speech usable | AirPods Pro 2 or 3, on by default in most modes |
-| Live Listen | iPhone becomes a remote microphone you place near a speaker | AirPods, some Beats, or a Made for iPhone hearing device |
+| [Live Listen](/blog/live-listen-iphone/) | iPhone becomes a remote microphone you place near a speaker | AirPods, some Beats, or a Made for iPhone hearing device |
 | Live Captions | Turns speech into on-screen text, no amplification | Recent iPhone, no special headphones |
 
 Two things fall out of that table. The first three rows are one hardware purchase wearing three hats. The last two are the only rows a person without AirPods Pro can use at all, and only one of those makes anything louder.

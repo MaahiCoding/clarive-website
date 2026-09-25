@@ -55,7 +55,7 @@ Think of it as a hearing profile for playback. Two things get adjusted. Soft sou
 
 You can set them by hand, or you can tap Customize Audio and answer a short listening test. The phone plays a very quiet voice and asks if you heard it, then plays pairs of music clips and asks which sounds better. At the end it proposes a profile. If you have an audiogram in the Health app, from an audiologist or from the [AirPods hearing test](/blog/airpods-hearing-test/), it can build the profile from that instead.
 
-Then you pick where it applies. Phone covers phone calls, FaceTime and third-party video calls. Media covers music, movies, podcasts, audiobooks, Siri, voicemail and, a detail worth knowing, Live Listen. Once it's set on your iPhone the profile follows the headphones, so your iPad, your Mac and your Apple Watch pick it up too.
+Then you pick where it applies. Phone covers phone calls, FaceTime and third-party video calls. Media covers music, movies, podcasts, audiobooks, Siri, voicemail and, a detail worth knowing, [Live Listen](/blog/live-listen-iphone/). Once it's set on your iPhone the profile follows the headphones, so your iPad, your Mac and your Apple Watch pick it up too.
 
 ## What it won't do
 
