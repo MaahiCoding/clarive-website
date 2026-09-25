@@ -38,7 +38,7 @@ relatedSlugs:
   - "live-listen-without-airpods"
   - "conversation-boost"
   - "apple-hearing-aid-feature"
-draft: true
+draft: false
 ---
 
 Live Listen on iPhone turns the phone into a remote microphone. You put it down near the person talking, and their voice streams straight into your AirPods. It's great at one job, hearing something from across a room, and it's easy to try it on the wrong one.
