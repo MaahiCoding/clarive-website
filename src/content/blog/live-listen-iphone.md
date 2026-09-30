@@ -39,6 +39,7 @@ relatedSlugs:
   - "conversation-boost"
   - "apple-hearing-aid-feature"
 draft: false
+updatedDate: 2026-09-30
 ---
 
 Live Listen on iPhone turns the phone into a remote microphone. You put it down near the person talking, and their voice streams straight into your AirPods. It's great at one job, hearing something from across a room, and it's easy to try it on the wrong one.
@@ -111,12 +112,13 @@ Captions on the wrist are the bigger deal. Reading along while you listen catche
 
 ## Live Listen or another AirPods feature?
 
-The iPhone now has four hearing tools that sound alike. They do different jobs.
+The iPhone now has five hearing tools that are easy to mix up. They do different jobs.
 
 - **Live Listen** hears from where the phone is. Use it across a room.
 - **[Conversation Boost](/blog/conversation-boost/)** uses the microphones in AirPods Pro to focus on the person facing you. Use it across a table. No phone placement needed.
 - **[The Hearing Aid feature](/blog/apple-hearing-aid-feature/)** on AirPods Pro 2 and 3 applies a profile from your hearing test to everything around you, all day.
 - **[Headphone Accommodations](/blog/headphone-accommodations/)** shapes what the phone plays, like music and calls. It doesn't hear the room at all.
+- **[Sound Recognition](/blog/sound-recognition-iphone/)** alerts you to sounds like a doorbell or a siren. It doesn't amplify anything or help you follow speech.
 
 My position: if you own AirPods Pro, set up Conversation Boost for the dinner table, and keep Live Listen for the lecture hall. People who turn on Live Listen to hear someone sitting next to them usually conclude it doesn't work, when the problem is that they picked the wrong tool.
 

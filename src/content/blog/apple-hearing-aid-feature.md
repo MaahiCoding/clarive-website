@@ -41,6 +41,7 @@ relatedSlugs:
   - "headphone-accommodations"
   - "conversation-boost"
 draft: false
+updatedDate: 2026-09-30
 ---
 
 The hearing aid Apple built isn't a device you buy. It's software, and it lives on exactly two products: AirPods Pro 2 and AirPods Pro 3.
@@ -55,7 +56,7 @@ That's not a technicality. If it were a device, you'd go buy one. Because it's s
 
 It also sits alongside two sibling features that people mix up constantly. The [Hearing Test](/blog/airpods-hearing-test/) is a five-minute pure-tone check you take at home. Hearing Protection clamps loud environments. The Hearing Aid feature is the one that amplifies quiet speech so you can follow it.
 
-All three run on the same two earbuds. None of them run on anything else Apple sells, and none of them run on your phone alone. If you're mapping what your phone can already do without buying anything, the rest of that territory is covered in our [iPhone hearing tools](/blog/topics/iphone-hearing/) guides.
+All three run on the same two earbuds. None of them run on anything else Apple sells, and none of them run on your phone alone. The phone's own sound feature is a different job: [Sound Recognition](/blog/sound-recognition-iphone/) alerts you to a doorbell or a siren, and doesn't help you follow speech. If you're mapping what your phone can already do without buying anything, the rest of that territory is covered in our [iPhone hearing tools](/blog/topics/iphone-hearing/) guides.
 
 Here's the whole thing on one screen, which is the table Apple's own pages never quite put together:
 
