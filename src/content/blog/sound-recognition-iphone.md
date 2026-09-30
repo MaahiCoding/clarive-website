@@ -38,7 +38,7 @@ relatedSlugs:
   - "live-listen-iphone"
   - "conversation-boost"
   - "live-transcribe-iphone"
-draft: true
+draft: false
 ---
 
 Sound Recognition makes your iPhone listen for sounds you'd rather not miss and notify you when it hears one. Apple's examples are a doorbell, a siren and a crying baby. It covers sound you can't hear or aren't listening for, and it's limited, because all it does is name a sound.
