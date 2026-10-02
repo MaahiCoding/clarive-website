@@ -24,8 +24,8 @@ export interface AppRating {
 
 export const appRating: AppRating = {
   value: "4.7",
-  count: "7",
-  checked: "2026-09-01",
+  count: "8",
+  checked: "2026-10-02",
 };
 
 /** Star-bar fill, so the visual matches the number rather than a guessed width. */
