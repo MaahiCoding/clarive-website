@@ -119,6 +119,17 @@ const COMPETITOR_DOMAINS = [
   'abilitycentral.org',
   'rnid.org.uk',
   'abilitynet.org.uk',
+  // Hearing-aid lab and makers: cited as evidence on hearing-aid lane pages, never endorsed (2026-10-02).
+  'hearadvisor.com',
+  'phonak.com',
+  'oticon.com',
+  'resound.com',
+  'signia.net',
+  'starkey.com',
+  'jabraenhance.com',
+  'lexiehearing.com',
+  'widex.com',
+  'eargo.com',
 ];
 
 function rehypeCompetitorNofollow() {
