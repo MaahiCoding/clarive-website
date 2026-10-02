@@ -105,4 +105,4 @@ And it can't tell you anything about your ears. If hearing in one ear dropped su
 
 If you own AirPods, try Live Listen first. It's free and already on your iPhone. Clarive is for when your headphones aren't AirPods or Beats, which is exactly where Live Listen stops. Our [Live Listen without AirPods guide](/blog/live-listen-without-airpods/) walks through that case.
 
-If your headphones aren't AirPods, [get Clarive on the App Store](https://apps.apple.com/us/app/listening-device-clarive/id6748903280) and use any pair that connects to your iPhone.
+If your headphones aren't AirPods or Beats, [get Clarive on the App Store](https://apps.apple.com/us/app/listening-device-clarive/id6748903280) and use any pair that connects to your iPhone.
