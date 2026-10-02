@@ -38,7 +38,7 @@ relatedSlugs:
   - "headphone-accommodations"
   - "live-listen-iphone"
   - "live-listen-without-airpods"
-draft: true
+draft: false
 ---
 
 Mono Audio is a switch in your iPhone's accessibility settings that adds the left and right channels together and plays the result in both ears. Apple's support guide gives it a single line and leaves the obvious question alone: should yours be on? It's one of several [hearing tools already on your iPhone](/blog/topics/iphone-hearing/).
