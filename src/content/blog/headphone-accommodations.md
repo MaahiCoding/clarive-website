@@ -41,6 +41,7 @@ relatedSlugs:
   - "apple-hearing-aid-feature"
   - "airpods-hearing-test"
 draft: false
+updatedDate: 2026-10-02
 ---
 
 Headphone Accommodations is the setting people switch on hoping it will help them hear, and then can't tell whether it did anything. That's because it does exactly half of what the name suggests. It reshapes the sound your iPhone plays into your headphones, and it leaves the sound of the room alone.
@@ -93,7 +94,7 @@ This is the question that brings people to this screen, and Headphone Accommodat
 
 **Headphone Safety.** Settings, Sounds & Haptics, Headphone Safety. Reduce Loud Sounds caps the output at a level you choose, and the cap is the most common reason a pair feels weak. The cap exists for a reason, and the [NIDCD's page on noise-induced hearing loss](https://www.nidcd.nih.gov/health/noise-induced-hearing-loss) explains it plainly: long or repeated exposure to sounds at or above 85 decibels can cause hearing loss. My suggestion is to leave the cap on and lift the other settings first. I only lower mine for a specific quiet recording, and I put it back.
 
-**Balance.** Settings, Accessibility, Audio & Visual, Balance. If it's drifted off center, one side is being turned down and the whole thing feels quiet. Drag it back to the middle. This is also the answer to making one earbud louder than the other, if that's what you actually want.
+**Balance.** Settings, Accessibility, Audio & Visual, Balance. If it's drifted off center, one side is being turned down and the whole thing feels quiet. Drag it back to the middle. This is also the answer to making one earbud louder than the other, if that's what you actually want. If one ear hears less and you're missing parts of songs rather than volume, Balance won't fix it. That's [Mono Audio](/blog/mono-audio-iphone/), the switch just above it, which plays the full mix in both ears.
 
 **Level, in Headphone Accommodations.** Set it to Strong. This is the setting people mean when they say the feature "made everything louder," and it's the right description: it lifts the quiet parts, so the average level goes up without the peaks going anywhere.
 
