@@ -39,7 +39,7 @@ relatedSlugs:
   - "headphone-accommodations"
   - "conversation-boost"
   - "live-listen-without-airpods"
-draft: true
+draft: false
 ---
 
 If you went looking for Reduce Loud Sounds and found something called Reduce Loud Audio, your phone is fine. Apple renamed the headphone version of this feature and left the old name sitting in two other places, so the term outlived the setting it described.
