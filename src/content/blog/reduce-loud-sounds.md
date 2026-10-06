@@ -1,6 +1,6 @@
 ---
 title: "Reduce Loud Sounds on iPhone: Which One You Found"
-description: "Reduce Loud Sounds now names four different iPhone controls. Which one you found, what each actually does to the sound, and when to leave it on."
+description: "Four iPhone controls have names this close, and only one is still called Reduce Loud Sounds. Which one you found, and whether to leave it on."
 keyword: "reduce loud sounds"
 secondaryKeywords:
   - "reduce loud sounds iphone on or off"
@@ -17,7 +17,7 @@ shortAnswer: "Reduce Loud Sounds is an iPhone toggle at Settings, Sounds & Hapti
 takeaways:
   - "Four iPhone controls have names this close: Reduce Loud Sounds for the speaker, Volume Limit for the speaker, Reduce Loud Audio for headphones, and Hearing Protection inside AirPods Pro 2 and 3."
   - "Apple's own iOS 15 guide called the headphone feature Reduce Loud Sounds. The current guide calls it Reduce Loud Audio, and the Screen Time restriction still uses the old name. That's why Settings doesn't match what you read."
-  - "None of them is a volume cut. They reduce what crosses a threshold, which is why someone can turn one on and find speech easier to follow rather than quieter."
+  - "Reduce Loud Sounds and Reduce Loud Audio aren't volume cuts. They reduce what crosses a threshold, which is why someone can switch one on and find speech easier to follow. Set the headphone slider below the level you actually listen at, though, and it pulls speech down too."
   - "The one worth checking if audio is too quiet is Volume Limit, under Built-In Speaker. That's a hard ceiling on everything, and it's a different setting from Reduce Loud Sounds."
   - "On headphones that aren't Apple or Beats, Apple says the level is estimated from your iPhone's volume. If you want the room amplified rather than the phone softened, that's an app like Clarive, not a safety setting."
 faq:
@@ -30,9 +30,9 @@ faq:
   - q: "Does Reduce Loud Audio work with headphones that aren't AirPods?"
     a: "The setting applies, but the measurement behind it is weaker. Apple says headphone audio measurements are most accurate with Apple or Beats headphones and that audio through other headphones can be estimated based on your iPhone's volume. So on a third-party pair the decibel number you set is a calculation about your phone's output, not a reading from your ears. Treat the slider position as a rough preference rather than a precise limit."
   - q: "Why is my iPhone suddenly really loud?"
-    a: "Usually something turned a limit off rather than something turning the volume up. Check Settings, Sounds & Haptics for Volume Limit under Built-In Speaker and Reduce Loud Audio under Headphone Safety, since an iOS update or a restore can leave either one in a state you didn't choose. Also check whether Change with Buttons is on, because with it off the side buttons stop touching alert volume and ringtones can land much louder than media."
+    a: "Usually something turned a limit off rather than something turning the volume up. Check Settings, Sounds & Haptics for Volume Limit under Built-In Speaker and Reduce Loud Audio under Headphone Safety, and see whether either is switched off. Then check Change with Buttons on the same screen, because with that off the side buttons only control media playback, so alerts and ringtones keep whatever level they had and can land much louder than the podcast you were just listening to."
   - q: "Does Reduce Loud Audio make speech harder to hear?"
-    a: "Not by itself, and some people report the opposite. On a hard-of-hearing forum thread about this setting, one person found audio easier to follow in background noise with it on and pointed out that it doesn't simply lower the volume. That's consistent with how it works: trimming the loud moments is what lets you raise the master volume without the peaks becoming painful, and quiet speech comes up with it."
+    a: "It depends entirely on where the slider sits. Apple's wording is that the iPhone reduces any sound above the level you set, so if that level is below the volume you actually listen at, speech is above the line too and gets pulled down with everything else. Set it above your usual listening level and only the peaks get trimmed, which is why some people report the opposite effect. On a hard-of-hearing forum thread about this setting, one person found audio easier to follow in background noise with it on and pointed out that it doesn't simply lower the volume. Both outcomes are the same mechanism at different slider positions."
   - q: "I'm very sensitive to loud noise. Is this the setting that fixes it?"
     a: "It can take the edge off your own phone, and that's the limit of what it does. Sounds that feel painfully loud to you and ordinary to other people in the same room is something to raise with an audiologist or your doctor rather than solve in Settings, and the NIDCD's hearing pages are a reasonable place to read first. Software on a phone can't tell you what's going on."
 relatedSlugs:
@@ -48,7 +48,9 @@ There are now four controls on an iPhone with names close enough to mix up, and 
 
 ## Which Reduce Loud Sounds did you find?
 
-All four of these are in Apple's current iPhone guide, in the [Adjust the volume](https://support.apple.com/guide/iphone/adjust-the-volume-iphb71f9b54d/ios) section called "Limit the speaker and headphone volume."
+One thing to rule out first. If you came here because voices are hard to follow rather than because something's too loud, none of these four is your setting. Softening peaks doesn't make a quiet talker clearer. That job needs the microphone involved, which means an amplifier app like [Clarive](/) on any headphones that connect to your iPhone, or Apple's own Live Listen and Conversation Boost if you have AirPods. Our [iPhone hearing tools](/blog/topics/iphone-hearing/) guides cover all three.
+
+For everyone whose problem really is loudness, all four controls are in Apple's current iPhone guide, in the [Adjust the volume](https://support.apple.com/guide/iphone/adjust-the-volume-iphb71f9b54d/ios) section called "Limit the speaker and headphone volume."
 
 | Control | Where it lives | What Apple says it does | What you get |
 |---|---|---|---|
@@ -59,21 +61,19 @@ All four of these are in Apple's current iPhone guide, in the [Adjust the volume
 
 The last one is worth knowing about even though it isn't in Settings at all. On AirPods Pro 2 and 3, [Hearing Protection](https://support.apple.com/en-us/120850) works on the room rather than on anything your phone is playing, and Apple turns it on by default whenever a Listening mode is active. In Transparency and Adaptive modes it pulls down harder as the room gets louder. If you own those earbuds, something is already reducing loud sounds for you and it isn't the toggle you were hunting for.
 
-One more thing to rule out before you touch any of it. If you came here because voices are hard to follow rather than because something's too loud, none of these four is your setting. Softening peaks doesn't make a quiet talker clearer, and the tools for that job are a different set: Apple's own accessibility audio features, or an amplifier app like [Clarive](/) running on whatever headphones you already own. Our [iPhone hearing tools](/blog/topics/iphone-hearing/) guides cover both.
-
 ## The rename, and why nobody told you
 
 Apple's iOS 15 guide for Headphone Safety said to turn on Reduce Loud Sounds, then drag the slider. The [current guide for that same screen](https://support.apple.com/guide/iphone/check-your-headphone-audio-levels-iph0596a9152/ios) says to turn on Reduce Loud Audio, then drag the slider. Same screen, same slider, new label.
 
-Apple never announced which release made the change, and I'm not going to guess at one. What's clear is that the rename isn't finished. Open Settings, Screen Time, Content & Privacy Restrictions and the item that locks the headphone level for a family member is still called Reduce Loud Sounds. The old name is live in iOS today, two taps from the new one, describing the same feature.
+Apple never announced which release made the change, and I'm not going to guess at one. What's clear is that the rename isn't finished. On that same current guide page, the note about locking the headphone level for a family member sends you to Settings, Screen Time, Content & Privacy Restrictions and calls the item there Reduce Loud Sounds. By Apple's own documentation the old name is still live in iOS, in a different part of Settings, describing the same feature.
 
-That's the whole reason this search term won't die. Half the guides on the web were written against the old label, the parental control still uses it, and the screen itself doesn't.
+So if a guide told you to look under Headphone Safety for Reduce Loud Sounds, it wasn't wrong when it was written. The screen moved on and the guide didn't.
 
 ## What these settings actually do to the sound
 
 Here's the part the how-to posts skip. Reduce Loud Audio is not a volume control. Apple's wording is specific: the iPhone analyzes your headphone audio and reduces any sound above the level you set. Sound under that level is left alone.
 
-That distinction matters more than it sounds. A volume cut takes the whole signal down together, loud parts and quiet parts, so the gap between a shouted line and a mumbled one stays exactly as wide as it was. Trimming only the peaks narrows that gap. The quiet material doesn't get louder in absolute terms, but it gets closer to the loud material, and you can then raise the master volume further before anything becomes painful.
+A volume cut takes the whole signal down together, loud parts and quiet parts, so the gap between a shouted line and a mumbled one stays exactly as wide as it was. Trimming only the peaks narrows that gap. The quiet material doesn't get louder in absolute terms, but it gets closer to the loud material, and you can then raise the master volume further before anything becomes painful.
 
 Which is why the reports on this setting look contradictory until you read them properly. On a hard-of-hearing forum thread about this exact feature, someone described audio being easier to follow in background noise with it switched on, and noted that it doesn't actually lower the volume. That isn't a mystery or a placebo. It's what peak reduction does.
 
@@ -93,13 +93,13 @@ If you want to know what you're actually listening at instead of guessing, add t
 
 ## On non-Apple headphones, the ceiling is a guess
 
-This is the caveat I haven't seen on a single page that ranks for this term, and it's in Apple's own documentation.
+Apple's own documentation adds a caveat that changes what the slider means.
 
 Apple says headphone audio measurements are most accurate when you're using Apple or Beats headphones, and that audio played through other headphones can be estimated based on the volume of your iPhone. Read that again with a decibel slider in mind. On a third-party pair, the number you set isn't being compared against a measurement. It's being compared against a calculation derived from your phone's volume setting.
 
 So if you're wearing wired earbuds from a brand Apple has never heard of, the ceiling you set is a preference with a decibel label on it. It'll still trim peaks, and it's still worth having on. Just don't treat the figure as a reading.
 
-Worth noting what the setting covers, too. Apple's phrase is "your headphone audio," with no exception listed for particular apps. The straightforward reading is that it sits downstream of whatever is producing the sound, including an amplifier app, though Apple doesn't spell that out either way.
+Apple's phrase is "your headphone audio," and no exception is listed for particular apps. The plain reading is that the ceiling applies to any app's output, whatever is producing the sound. Apple doesn't confirm that either way.
 
 ## If your problem is the opposite one
 
@@ -113,8 +113,8 @@ Every setting on this page works on audio your iPhone is playing. None of them t
 
 For that you need the microphone involved. Apple's [Live Listen](/blog/live-listen-without-airpods/) does it, with the catch that it wants AirPods, Beats or an MFi hearing device. [Conversation Boost](/blog/conversation-boost/) does a narrower version of it, and only on AirPods Pro.
 
-Clarive is the version that doesn't care what you plugged in. It's a sound amplification app: it takes the iPhone's microphone, amplifies what it hears, and plays it into any headphones that connect to the phone, wired or Bluetooth, Apple-made or not. Five environment presets cover the usual rooms, from Clear through Speech Clarity, and the six-band EQ is there when a preset nearly works. Everything runs on-device, with no account and no audio leaving the phone.
+Clarive works with any headphones that connect to the iPhone. No AirPods, no MFi device, no extra hardware. It's a sound amplification app: it takes the iPhone's microphone, amplifies what it hears, and plays it into any headphones that connect to the phone, wired or Bluetooth, Apple-made or not. Five environment presets cover the usual rooms, from Clear through Speech Clarity, and the six-band EQ is there when a preset nearly works. Everything runs on-device, with no account and no audio leaving the phone.
 
-Two honest caveats. It works best close to the voice, within arm's reach for Voice Isolation, so it's a table tool and not a lecture-hall tool. And if you can afford AirPods Pro, buy those instead of paying for an app. They do a version of this in hardware, and I'd rather tell you that than take the subscription.
+It works best close to the voice, within arm's reach for Voice Isolation, so it's a table tool and not a lecture-hall tool. And if you can afford AirPods Pro, buy those instead of paying for an app. They do a version of this in hardware, and I'd rather tell you that than take the subscription.
 
-If an app is the right fit, the amplifier side of Clarive has no daily cap on the free tier, so you can find out in a real room before deciding anything. [Try it on your own headphones](/).
+If an app is the right fit, the amplifier side of Clarive has no daily cap on the free tier, so you can find out in a real room before deciding anything. It's iPhone only, iOS 26 or later. [See what Clarive does on listeningdevice.app](/).
