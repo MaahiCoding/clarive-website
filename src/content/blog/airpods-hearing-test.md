@@ -1,6 +1,6 @@
 ---
-title: "AirPods Hearing Test: How Accurate It Is, What to Do Next"
-description: "Apple's Hearing Test runs on AirPods Pro 2 and 3 in five minutes. What a 2026 study found on accuracy, how to read your dBHL result, and what to do next."
+title: "AirPods Hearing Test: Which Models Work and How Accurate"
+description: "Apple's Hearing Test runs only on AirPods Pro 2 and 3. Which models work, what a 2026 study found on accuracy, and how to read your dBHL result."
 keyword: "airpods hearing test"
 secondaryKeywords:
   - "hearing test airpods pro"
@@ -8,6 +8,8 @@ secondaryKeywords:
   - "airpods hearing test results"
   - "apple hearing test results meaning"
   - "hearing test with airpods 4"
+  - "airpods 3 hearing test"
+  - "airpods pro 3 hearing test"
   - "hearing test iphone without airpods"
 cluster: "iphone-hearing"
 intent: "definition"
@@ -26,7 +28,7 @@ faq:
   - q: "How long does the AirPods Hearing Test take?"
     a: "About five minutes. In the 2026 validation study the median was 5.5 minutes, against 10 minutes for the same measurement in a clinic booth. It runs longer if the room gets noisy or you take an earbud out, because the test pauses until things settle and then picks up where it left off."
   - q: "Does the Hearing Test work with AirPods 4?"
-    a: "No. It runs on AirPods Pro 2 and AirPods Pro 3 only. AirPods 4, AirPods Max, Beats, and every non-Apple earbud are outside it, and no setting changes that. The test depends on sealed ear tips playing calibrated tones, and the open-fit AirPods 4 don't seal, which is the obvious reason they aren't on the list even though they're newer."
+    a: "No. It runs on AirPods Pro 2 and AirPods Pro 3 only. AirPods 4, AirPods Max, Beats, and every non-Apple earbud are outside it, and no setting changes that."
   - q: "Is the AirPods hearing test accurate?"
     a: "For what it measures, yes. A 2026 study in Otolaryngology-Head and Neck Surgery compared it with booth audiometry in 25 adults and found 86.5% of thresholds within 10 dB, with results that repeated within 5 dB most of the time. What it can't do is tell you why a tone was hard to hear. Earwax, fluid from a cold, and nerve-related loss all look the same on the chart."
   - q: "What do the AirPods Hearing Test results mean?"
@@ -41,11 +43,12 @@ relatedSlugs:
   - "hearing-aid-app-iphone"
   - "headphone-accommodations"
 draft: false
+updatedDate: 2026-10-09
 ---
 
-Apple's Hearing Test is the most convenient hearing check you'll ever take, and it comes with a hardware bill attached. It runs on AirPods Pro 2 and AirPods Pro 3, paired with an iPhone, for adults, in a quiet room, in about five minutes. Nothing else Apple sells can run it, and no other headphones can either.
+Apple's Hearing Test is a convenient hearing check, and it comes with a hardware bill attached. It runs on AirPods Pro 2 and AirPods Pro 3, paired with an iPhone, for adults, in a quiet room, in about five minutes. Nothing else Apple sells can run it, and no other headphones can either.
 
-The question underneath the search is usually one of two. Is the number it gives you real? And what are you supposed to do with it, especially if the earbuds aren't yours? Apple's support page answers neither, the reviews stop at "neat", and the one independent study that measured the thing against a clinic sits on PubMed where nobody reads it. That study is the spine of this article.
+The question underneath the search is usually one of two. Is the number it gives you real? And what are you supposed to do with it, especially if the earbuds aren't yours? Apple's page tells you what the bands mean but never how close the number is to a clinic's. The reviews stop at "neat", and the one independent study that measured the thing against a clinic sits on PubMed where nobody reads it. That study is the spine of this article.
 
 The last third is for the reader without AirPods Pro, where a phone-based amplifier like [Clarive](/) on the headphones you already own is the honest fallback. It can't test your hearing, and I'll say so again when we get there.
 
@@ -53,19 +56,34 @@ The last third is for the reader without AirPods Pro, where a phone-based amplif
 
 It's a pure-tone hearing test, the same kind an audiologist starts with. Your AirPods play soft tones between 250 Hz and 8 kHz, one ear at a time, and you tap the screen when you hear one. Each tone pulses three times so you have a fair chance at it, and missing a few is expected. Over about five minutes the test finds the quietest level you can hear at each pitch, and that set of thresholds is your audiogram.
 
-The requirements are short and each one is a hard stop. You need AirPods Pro 2 or AirPods Pro 3 on current firmware, an iPhone or iPad on current software, and an age of 18 or older, which Apple states as a requirement rather than advice. You also need to be in a country where Apple has clearance ([worth a ten-second check](https://www.apple.com/airpods-pro/feature-availability/) if you're outside the US) and in a quiet room, which the test enforces by listening to the background and refusing to start until it's satisfied.
+The requirements are short and each one is a hard stop. You need AirPods Pro 2 or AirPods Pro 3 on current firmware, an iPhone or iPad on current software, and an age of 18 or older, which Apple states as a requirement rather than advice. You also need to be in a country where Apple has clearance ([Apple's feature-availability list by country](https://www.apple.com/airpods-pro/feature-availability/) is a ten-second check if you're outside the US) and in a quiet room, which the test enforces by listening to the background and refusing to start until it's satisfied.
 
 What it doesn't need is a clinic, an appointment, or anyone else in the room, and that's the whole point of it. It's also the whole limit. If your earbuds are AirPods 4, AirPods Max, Beats, or anything from another maker, this test isn't available to you and no setting changes that. The rest of what an iPhone can and can't do for hearing is mapped in our [iPhone hearing tools](/blog/topics/iphone-hearing/) guides; everything that runs on other headphones comes from outside Apple, and we'll get to it once we've dealt with the number.
 
+## Which AirPods can take it
+
+Apple's [support page for the test](https://support.apple.com/en-us/120991) names two models. Checked October 2026.
+
+| Your AirPods | Hearing Test |
+|---|---|
+| AirPods Pro 3 | Yes |
+| AirPods Pro 2 | Yes |
+| AirPods 4 | Not on Apple's list |
+| AirPods 3 | Not on Apple's list |
+| AirPods Pro (1st generation) | Not on Apple's list |
+| AirPods Max | Not on Apple's list |
+
+If you own one of the unlisted models, the test won't appear and no setting adds it. Don't spend an evening hunting through menus. Your options are a clinic, which gives you a result you can act on, or the [amplifier route further down](#a-mild-result-without-airpods-pro) if the real question is whether louder helps.
+
 ## How accurate it is, measured against a clinic
 
-In 2026 a team of audiologists published the first proper validation of the feature in [Otolaryngology-Head and Neck Surgery](https://pubmed.ncbi.nlm.nih.gov/41793292/). They took 25 adults who reported mild to moderate hearing loss, ran each of them through booth audiometry with an audiologist, then had them take Apple's test twice on AirPods Pro 2 in an ordinary quiet room. Sixteen thresholds per person, 400 comparisons in total.
+In 2026 a team of audiologists published a validation of the feature against booth audiometry in [Otolaryngology-Head and Neck Surgery](https://pubmed.ncbi.nlm.nih.gov/41793292/). They took 25 adults who reported mild to moderate hearing loss, ran each of them through booth audiometry with an audiologist, then had them take Apple's test twice on AirPods Pro 2 in an ordinary quiet room. Sixteen thresholds per person, 400 comparisons in total.
 
 The headline: 86.5% of the AirPods thresholds landed within 10 dB of the booth result, and the typical deviation ran between 3 and 10 dB depending on the frequency and the ear, inside the range clinicians accept as usable. The test also agreed with itself. Taken twice in one session, 84% of thresholds repeated within 5 dB and 97% within 10. And it was quicker: a median of 5.5 minutes against 10 for the booth.
 
 Two caveats the abstract is honest about, so I'll be too. It was one clinic, one iPhone model, one earbud model, and 25 people, all of whom already suspected a mild to moderate loss. Nobody has yet published how it behaves on people with typical hearing or on the AirPods Pro 3.
 
-The practical reading is the one Henry Ford Health's audiologist gave when [asked whether the test is reliable](https://www.henryford.com/blog/2025/11/is-the-airpods-hearing-test-reliable): it's a screening tool, not a diagnosis. That distinction matters more here than it sounds.
+The practical reading is the one Henry Ford Health's audiologist gave when [asked whether the test is reliable](https://www.henryford.com/blog/2025/11/is-the-airpods-hearing-test-reliable): it's a screening tool, not a diagnosis.
 
 What the test measures is air conduction, which is how well sound coming in through your ear canal reaches the inner ear. A poor score at one pitch tells you sound isn't getting through. It can't tell you whether the reason is wax, fluid left over from a cold, or the kind of loss that comes with age or noise. A clinic finds that out by adding bone conduction, middle-ear pressure, and a speech-understanding test, and the answer changes what you should do next, because wax gets removed and the other kinds don't.
 
@@ -83,12 +101,12 @@ The whole procedure is in [Apple's own instructions](https://support.apple.com/e
 
 ## What your result actually means
 
-You get one number for each ear, in decibels of hearing level, written dBHL. It's the average of your thresholds across the frequencies that carry speech, and the higher it is, the louder a sound has to be before you hear it. Apple's bands sit close to the ones clinics use:
+You get one number for each ear, in decibels of hearing level, written dBHL. It's the average of your thresholds across the frequencies that carry speech, and the higher it is, the louder a sound has to be before you hear it. Apple's bands and descriptions, from [Apple Support](https://support.apple.com/en-us/120991), sit close to the ones clinics use:
 
-| Result | Apple's label | What it's like |
+| Result | Apple's label | Apple's description |
 |---|---|---|
-| Up to 25 dBHL | Little to no hearing loss | Quiet speech is fine in a quiet room |
-| 26 to 40 dBHL | Mild | A conversational voice from three feet away is still clear; soft or distant speech isn't |
+| Up to 25 dBHL | Little to no hearing loss | No hearing loss flagged |
+| 26 to 40 dBHL | Mild | A conversational voice from three feet away is still clear |
 | 41 to 60 dBHL | Moderate | You need a raised voice at three feet |
 | 61 to 80 dBHL | Severe | Some words come through when shouted close to the ear |
 
@@ -96,7 +114,7 @@ Tap Show Details and you get the audiogram itself, a chart of each ear across th
 
 Two results deserve their own sentence. If one ear is much worse than the other, that isn't a hearing-aid question, it's a doctor question, and soon. And if your hearing dropped suddenly, over hours or a couple of days, the NIDCD is blunt that [sudden hearing loss is a medical emergency](https://www.nidcd.nih.gov/health/sudden-deafness): treatment works best when it starts within days, and an at-home test is not the place to spend those days.
 
-For everything in the mild band, Apple's next step is its own Hearing Aid feature, which takes this result and tunes the earbuds to it. That feature is good, it's the right move if you own the earbuds, and I've written up [what it does and doesn't do](/blog/apple-hearing-aid-feature/) separately. What Apple's page doesn't say is that mild is also the band where an audiologist has the most options, and where waiting costs the least to fix.
+For everything in the mild band, Apple's next step is its own Hearing Aid feature, which takes this result and tunes the earbuds to it. It loads the result into the earbuds' sound settings, which is worth doing if you already own them. I've written up [Apple's Hearing Aid feature, explained](/blog/apple-hearing-aid-feature/) separately.
 
 ## When the test won't show up, or won't run
 
@@ -118,21 +136,21 @@ This is the reader every ranking page skips: you took the test on a borrowed pai
 
 See someone, if conversations have been getting harder for a while. The test has just put a number on it, and probably a mild one, which is the stage where a clinic can still rule out the fixable causes. The NIDCD's figure is that [only about one in five people who'd benefit from a hearing aid uses one](https://www.nidcd.nih.gov/health/hearing-aids), and the gap is mostly waiting. You've already done the hard part, which is finding out.
 
-Buy AirPods Pro, if they suit you. If you'd wear them anyway and your loss is in the mild to moderate band, the Hearing Aid feature turns this test result into something that works, and the independent lab numbers on how well are in [AirPods as a hearing aid](/blog/airpods-hearing-aid/). I'd rather you spent $249 on that than on an app subscription. I build an app in this space and I'll still say it, because it's true for a lot of people.
+Buy AirPods Pro, if they suit you. If you'd wear them anyway, Apple's own next step for a mild to moderate result is its Hearing Aid feature, and the measured numbers are in [AirPods as a hearing aid](/blog/airpods-hearing-aid/). I'd rather you spent the price of a pair of AirPods Pro on that than on an app subscription. I build an app in this space and I'll still say it, because it's true for a lot of people.
 
-Use the headphones you already own, if neither of those is happening tonight. This is where a phone-based amplifier fits. Your iPhone's microphone picks up the room, the app makes it louder and clearer, and the result plays through wired EarPods, Bluetooth earbuds, or over-ear headphones, whatever is in the drawer. It doesn't need AirPods and it doesn't need a test result.
+Use the headphones you already own, if neither of those is happening tonight. This is where a phone-based amplifier fits. Your iPhone's microphone picks up whoever is within arm's reach or so, the app makes it louder and clearer, and the result plays through wired EarPods, Bluetooth earbuds, or over-ear headphones, whatever is in the drawer. It doesn't need AirPods and it doesn't need a test result.
 
-What it gives you is the answer the test leaves hanging: whether louder and clearer actually helps you at dinner. If it does, that's worth taking to the appointment. If it doesn't, you've spent nothing finding out. All three routes and their hardware gates sit side by side in [hearing aid app for iPhone](/blog/hearing-aid-app-iphone/).
+What it gives you is a louder, clearer version of the voice in front of you, through headphones you already own, while you wait for an appointment. All three routes and their hardware gates sit side by side in [hearing aid app for iPhone](/blog/hearing-aid-app-iphone/).
 
 ## Where Clarive fits, and where it doesn't
 
-Clarive is a sound amplification app for iPhone. The phone's built-in microphone picks up the room, amplification is applied, and the result plays through any headphones connected to the iPhone. Wired EarPods, ordinary Bluetooth earbuds, over-ear headphones, all fine. No AirPods requirement, no hardware to buy.
+Clarive is a sound amplification app for iPhone. It plays through any headphones connected to the iPhone: wired EarPods, ordinary Bluetooth earbuds, over-ear headphones. No AirPods requirement, no hardware to buy.
 
-Five environment presets (Clear, Conversation, Noisy Place, TV & Media, and Speech Clarity) sit over a Live EQ you can shape by hand. Voice Isolation narrows the sound to whoever is in front of you, and Focus Mode narrows it to what's ahead. There are live captions too, built on Apple's on-device speech recognition, in 40+ languages with automatic detection, and transcripts can be saved.
+Five environment presets (Clear, Conversation, Noisy Place, TV & Media, and Speech Clarity) sit over a Live EQ you can shape by hand. Voice Isolation narrows the sound to whoever is in front of you, and Focus Mode narrows it to what's ahead. There are live captions too, built on Apple's on-device speech recognition, in 40+ languages with automatic detection, and transcripts can be saved on the paid tier.
 
-Everything runs on the phone. No account, no audio sent to a server, and amplification works fully offline. It's free to download with a free tier capped at 5 uses per day, and paid plans range from $4.99 to $29.99 depending on billing period, including a lifetime option. It needs iOS 26 or later.
+Everything runs on the phone. No account, no audio sent to a server, and amplification works fully offline. It's free to download with a free tier that has no daily limit on amplification and 5 Live Captions sessions a day, and paid plans range from $4.99 to $29.99 depending on billing period, including a lifetime option. It needs iOS 26 or later.
 
-And the honest limit, since this article is about a test: Clarive has no hearing test. It can't measure your hearing and it can't tune itself to your audiogram the way Apple's feature does. No app can do that honestly on headphones it has never met. A tone at a known level needs a known speaker in a sealed ear, which Apple can promise about its own tips and nobody can promise about yours. What Clarive can do is make tonight's conversation easier to follow on whatever you plug in, and tell you quickly whether that's the kind of help you need.
+And the honest limit, since this article is about a test: Clarive has no hearing test. It can't measure your hearing and it can't tune itself to your audiogram the way Apple's feature does. A calibrated tone at a known level needs a known speaker in a sealed ear, which Apple can promise about its own tips and nobody can promise about yours. What Clarive can do is make tonight's conversation easier to follow on whatever you plug in.
 
 ## So should you take it
 
@@ -140,4 +158,4 @@ If you own AirPods Pro 2 or 3, yes, today, in a quiet room, with tips that seal.
 
 If the result is little to no loss and conversations still feel harder than they used to, believe the conversations, not the number. The test measures tones in silence, and the thing you're struggling with is speech in noise, which it doesn't test at all. That's a clinic question.
 
-If the result is mild or worse, you have a dated audiogram and a reason to book something. Do that. In the meantime, Apple's feature if you own the earbuds, the headphones you already have if you don't. Either way the test has done its job: it turned a vague feeling into a number you can act on. You can read more about who's behind this site on the [about page](/about/).
+If the result is mild or worse, you have a dated audiogram and a reason to book something. Do that. A severe result, or a big gap between your ears, goes to a clinician first and nothing else. For a mild or moderate one, Apple's Hearing Aid feature is its own next step if you own the earbuds, and the headphones you already have are the stopgap if you don't.
